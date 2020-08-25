@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Feed-->
+    <!--Screen Name-->
+    <item name="analytics_feed_screen_name" translatable="false" type="string">FEED</item>
+
+    <!--Categories-->
+    <item name="analytics_feed_category" translatable="false" type="string">FEED</item>
+
+    <!--Action-->
+    <item name="analytics_feed_like_action" translatable="false" type="string">LIKE</item>
+    <item name="analytics_feed_comment_action" translatable="false" type="string">COMENTAR</item>
+    <item name="analytics_feed_delete_action" translatable="false" type="string">DELETAR</item>
+    <item name="analytics_checkin_screen_name" translatable="false" type="string">CHECK_IN</item>
+    <item name="analytics_checkin_category" translatable="false" type="string">CHECK_IN</item>
+    <item name="analytics_new_post_screen_name" translatable="false" type="string">NOVO_POST</item>
+    <string name="analytics_back_label_identifier" translatable="false">VOLTAR</string>
+    <item name="analytics_checkin_back_action" translatable="false" type="string">VOLTAR</item>
+    <item name="analytics_checkin_select_place_action" translatable="false" type="string">LOCAL_CHECK_IN</item>
+    <string name="analytics_local_checkin_label_identifier" translatable="false">LOCAL_CHECK_IN:%s</string>
+    <item name="analytics_checkin_search_action" translatable="false" type="string">PESQUISAR</item>
+    <string name="analytics_search_term_label_identifier" translatable="false">TERMO_PESQUISA:%s</string>
+    <string translatable="false" name="feed_screen_name">FEED</string>
+    <string translatable="false" name="create_post_screen_name">CRIAR_POST</string>
+    <string translatable="false" name="checkin_screen_name">POST_CHECK_IN</string>
+    <string translatable="false" name="post_feelings_screen_name">POST_SENTIMENTOS</string>
+    <string translatable="false" name="comment_screen_view">POST_COMENTARIOS</string>
+    <item name="analytics_feed_what_are_you_feeling_action" translatable="false" type="string">INPUT_TEXTO</item>
+    <item name="analytics_feed_new_post_action" translatable="false" type="string">POST</item>
+    <item name="analytics_feed_invite_friends_action" translatable="false" type="string">PROCURAR_AMIGOS</item>
+    <item name="analytics_feed_notifications_action" translatable="false" type="string">NOTIFICACOES</item>
+
+</resources>

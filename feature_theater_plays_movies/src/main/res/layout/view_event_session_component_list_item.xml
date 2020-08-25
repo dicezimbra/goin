@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@color/white"
+    android:paddingTop="16dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/textViewMovieName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:textColor="@color/dark_grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mamma Mia!" />
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:textColor="@color/slate_grey"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMovieName"
+        tools:text="Sala 1" />
+
+    <LinearLayout
+        android:id="@+id/tags_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/room"
+        app:layout_constraintStart_toEndOf="@+id/room"
+        app:layout_constraintTop_toTopOf="@+id/room" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTimeSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:orientation="horizontal"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/room"
+        tools:listitem="@layout/item_time_session"/>
+
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/event_icon_adress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewTimeSession" />
+
+    <TextView
+        android:id="@+id/full_address_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:maxLines="3"
+        android:text=""
+
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/location_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location_icon"
+        app:layout_constraintTop_toTopOf="@+id/location_icon"
+        tools:text="Rua kndlksnlskdlsddsd lknlknlk ldknc dasasasdasdadasasds" />
+
+
+    <ImageView
+        android:id="@+id/imageViewDirectionEstablishment"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/how_to_arrive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_icon" />
+
+    <TextView
+        android:id="@+id/textViewHowToGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:text="@string/como_chegar"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDirectionEstablishment"
+        app:layout_constraintStart_toEndOf="@+id/imageViewDirectionEstablishment"
+        app:layout_constraintTop_toBottomOf="@+id/full_address_text"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDirectionEstablishment" />
+
+    <TextView
+        android:id="@+id/textViewAvailableRoutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand"
+        android:padding="5dp"
+        android:text="@string/veja_rotas_dispon_veis"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewHowToGet"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewArrowAvailableRoutes"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toEndOf="@+id/textViewHowToGet" />
+
+    <ImageView
+        android:id="@+id/imageViewArrowAvailableRoutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:src="@drawable/arrow_forward"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAvailableRoutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewAvailableRoutes" />
+
+
+    <ImageView
+        android:id="@+id/imageViewUber"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/uber_icon_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDirectionEstablishment" />
+
+    <TextView
+        android:id="@+id/textViewGoToUber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:text="@string/v_de_uber"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewUber"
+        app:layout_constraintStart_toEndOf="@+id/imageViewUber"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUber" />
+
+    <TextView
+        android:id="@+id/uber_estimated_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/quicksand"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewGoToUber"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGoToUber"
+        app:layout_constraintEnd_toStartOf="@+id/uber_estimated_price"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewGoToUber"
+        app:layout_constraintTop_toTopOf="@+id/textViewGoToUber"
+        tools:text="@string/uber_wait_time" />
+
+    <TextView
+        android:id="@+id/uber_estimated_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/uber_estimated_time"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewArrowUber"
+        tools:text="@string/uber_price" />
+
+    <ImageView
+        android:id="@+id/imageViewArrowUber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:src="@drawable/arrow_forward"
+        app:layout_constraintBottom_toBottomOf="@+id/uber_estimated_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uber_estimated_price" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

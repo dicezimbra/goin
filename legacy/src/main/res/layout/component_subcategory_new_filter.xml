@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="data"
+            type="br.com.legacy.components.SubcategoryComponent"></variable>
+    </data>
+
+    <TextView
+        android:id="@+id/selectable_subcategory_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:background="@{data.isSelected.get() ? @drawable/not_too_round_background_grapefruit_filled : @drawable/background_white_filter_subcategory}"
+        android:gravity="center"
+        android:onClick="@{()->data.onClickSubcategoryComponent()}"
+        android:padding="@dimen/_4sdp"
+        android:text="@{data.name}"
+        bind:setFont="@{data.font.get()}"
+        android:textColor="@{data.isSelected.get() ? @color/white : @color/grayTabEditProfile}"
+        android:textSize="14sp"
+        tools:text="Fetival"/>
+</layout>

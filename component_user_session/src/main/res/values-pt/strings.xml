@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+</resources>

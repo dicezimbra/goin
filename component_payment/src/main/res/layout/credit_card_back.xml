@@ -1,0 +1,81 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a_credit_card_back"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_189sdp"
+    android:layout_marginTop="@dimen/_30sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <View
+            android:id="@+id/faixa1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="#447d7e7e"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_80sdp"
+            android:background="#227d7e7e"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faixa1">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/a_credit_card_cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/cvv"
+                android:maxLength="4"
+                android:textColor="@color/card_gray_2"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteY="97dp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/number_cc_reverse"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp"
+            android:shadowColor="@color/gray_dark_error"
+            android:shadowRadius="10"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:alpha="0.4"
+            android:textStyle="bold"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

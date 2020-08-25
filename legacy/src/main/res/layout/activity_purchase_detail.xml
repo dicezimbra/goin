@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:databinding="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="br.com.legacy.viewModels.PurchaseDetailVM" />
+
+        <import type="br.com.legacy.models.PurchaseModel" />
+
+        <import type="br.com.legacy.viewControllers.activitites.PurchaseDetailActivity.PurchaseDetailType" />
+
+        <variable
+            name="activity"
+            type="br.com.legacy.viewControllers.activitites.PurchaseDetailActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundBoard"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/purchase_detail_toolbar"
+            layout="@layout/item_custom_toolbar_orange"
+            app:model="@{activity.toolbar}"
+            app:parent="@{activity}" />
+
+        <ProgressBar
+            android:id="@+id/purchase_detail_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="@{activity.isLoading.get() ? View.VISIBLE : View.GONE, default = gone}" />
+
+        <TextView
+            android:id="@+id/purchase_detail_error_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="@string/purchase_detail_error"
+            android:textStyle="italic"
+            android:visibility="@{activity.shouldShowErrorMessage.get() ? View.VISIBLE : View.GONE, default = gone}" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/purchase_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="@{activity.isLoading.get() || activity.shouldShowErrorMessage.get() ? View.GONE : View.VISIBLE, default = visible}">
+
+                <LinearLayout
+                    android:id="@+id/purchase_detail_event_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21.5dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/purchase_detail_event_name"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_32sdp"
+                        android:ellipsize="end"
+                        android:text="@{activity.purchaseDetailVM.purchaseModel.eventName}"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/purchase_detail_event_date"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@{activity.dateText}" />
+
+                    <TextView
+                        android:id="@+id/purchase_detail_event_address"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_32sdp"
+                        android:ellipsize="end"
+                        android:text="@{activity.purchaseDetailVM.purchaseModel.eventAddress}" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/purchase_detail_ticket_name"
+                            style="@style/text_primaryDark_15sp_bold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.purchaseDetailVM.purchaseModel.ticketName}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/purchase_detail_ticket_price"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintWidth_default="wrap" />
+
+                        <TextView
+                            android:id="@+id/purchase_detail_ticket_price"
+                            style="@style/text_primaryDark_15sp_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@{activity.ticketPriceText}"
+                            app:layout_constraintBottom_toTopOf="@id/purchase_detail_ticket_name"
+                            app:layout_constraintLeft_toRightOf="@id/purchase_detail_ticket_name"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/purchase_detail_ticket_name" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/purchase_detail_vip_box_capacity"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@{activity.vipBoxCapacityInformation}"
+                        android:visibility="@{activity.getVipBoxInfoVisibility()}" />
+
+                    <TextView
+                        android:id="@+id/purchase_detail_pendencies"
+                        style="@style/text_primaryDark_13sp_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@{activity.pendenciesText}"
+                        android:visibility="@{activity.getPendenciesVisibility() ? View.VISIBLE : View.GONE, default = gone}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/purchase_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21.5dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="26.5dp"
+                    android:orientation="vertical"
+                    android:visibility="@{activity.purchaseInfoVisibility}">
+
+                    <TextView
+                        android:id="@+id/purchase_details_label"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/purchase_information"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/purchase_date"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@{activity.purchaseDateText}" />
+
+                    <TextView
+                        android:id="@+id/purchase_buyer"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@{activity.buyerUserText}"
+                        android:visibility="@{activity.type.equals(PurchaseDetailType.PurchaseConfirmation) ? View.GONE : View.VISIBLE, default = gone}" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ticket_owners_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        databinding:binding_data="@{activity.purchaseDetailVM.ticketOwnerInfoComponents}"
+                        databinding:binding_layout="@{@layout/component_ticket_owner_display}"
+                        databinding:binding_variable='@{"data"}' />
+
+                    <TextView
+                        android:id="@+id/purchase_total_price"
+                        style="@style/text_primaryDark_15sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@{activity.totalValueText}"
+                        android:visibility="@{activity.paymentInfoVisibility, default = gone}" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/payment_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21.5dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="@{activity.paymentInfoVisibility, default = gone}">
+
+                    <TextView
+                        android:id="@+id/payment_info_label"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/info_payment"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/payment_type"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25.5dp"
+                        android:text="@{activity.paymentMethodText}" />
+
+                    <LinearLayout
+                        android:id="@+id/payment_simple_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/payment_name"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerNameText}" />
+
+                        <TextView
+                            android:id="@+id/payment_cpf"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.cpfText}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payment_card_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{activity.purchaseDetailVM.purchaseModel.paymentType.equals(PurchaseModel.PaymentType.CreditCard) ? View.VISIBLE : View.GONE, default = gone}">
+
+                        <TextView
+                            android:id="@+id/payment_card_installments"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.installmentsText}" />
+
+                        <TextView
+                            android:id="@+id/payment_card_number"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.cardNumberText}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payment_bank_slip_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{activity.purchaseDetailVM.purchaseModel.paymentType.equals(PurchaseModel.PaymentType.BankSlip) ? View.VISIBLE : View.GONE, default = gone}">
+
+                        <TextView
+                            android:id="@+id/payment_bank_slip_info_email"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerEmail}" />
+
+                        <TextView
+                            android:id="@+id/payment_bank_slip_info_phone"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerPhone}" />
+
+                        <TextView
+                            android:id="@+id/payment_bank_slip_info_postal_code"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerPostalCode}" />
+
+                        <TextView
+                            android:id="@+id/payment_bank_slip_info_adress"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerAdress}" />
+
+                        <TextView
+                            android:id="@+id/payment_bank_slip_info_neighborhood"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerNeighborhood}" />
+
+                        <TextView
+                            android:id="@+id/payment_bank_slip_info_city_and_state"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.buyerCityAndState}" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/transfer_ticket_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="@{activity.type == PurchaseDetailType.TransferTicket ? View.VISIBLE : View.GONE, default = gone}">
+
+                    <TextView
+                        android:id="@+id/ticket_data_label"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ticket_data"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/ticket_transfer_label"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/transfer_ticket_to"
+                        android:textAllCaps="true" />
+
+                    <LinearLayout
+                        android:id="@+id/component_ticket_owner_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/confirm_transfer_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="@{activity.type == PurchaseDetailType.ConfirmTransfer ? View.VISIBLE : View.GONE, default = gone}">
+
+
+                    <TextView
+                        android:id="@+id/transfer_info_label"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="17.5dp"
+                        android:text="@string/transfer_info"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/transfer_date"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@{activity.transferDateText}" />
+
+                    <TextView
+                        android:id="@+id/ticket_transfer_from_label"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/transfer_from" />
+
+                    <LinearLayout
+                        android:id="@+id/component_ticket_from_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ticket_transfer_to_label"
+                        style="@style/text_grey_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/transfer_to" />
+
+                    <LinearLayout
+                        android:id="@+id/component_ticket_to_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/view_bank_slip_button"
+                        style="@style/text_white_13sp_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="-5dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/background_primary_dark"
+                        android:onClick="@{activity::onClickOpenBankSlipButton}"
+                        android:text="@string/open_bank_slip"
+                        android:visibility="@{activity.goneSlipBankbutton() ? View.VISIBLE : View.GONE, default = gone}" />
+
+                    <Button
+                        android:id="@+id/purchase_detail_button"
+                        style="@style/text_white_13sp_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/background_primary_dark"
+                        android:onClick="@{activity::onClickActionButton}"
+                        android:text="@{activity.buttonText}" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

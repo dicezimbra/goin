@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.component.payment">
+
+    <application>
+        <activity android:name="br.com.goin.component.confirmation.ConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme" />
+        <activity
+            android:name="br.com.goin.component.listcreditcards.ListCreditCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme" />
+        <activity
+            android:name="br.com.goin.component.newcreditcard.NewCreditCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="br.com.goin.component.newaddress.NewAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="br.com.goin.component.listadresses.ListAdressesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme" />
+    </application>
+
+</manifest>

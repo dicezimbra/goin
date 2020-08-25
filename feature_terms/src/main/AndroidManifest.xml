@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.component.terms" >
+
+    <application>
+        <activity
+            android:name=".TermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme"/>
+
+
+    </application>
+</manifest>

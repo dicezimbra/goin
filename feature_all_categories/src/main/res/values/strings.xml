@@ -1,0 +1,67 @@
+<resources>
+
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+
+    <!--Field Validation-->
+
+
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    "
+
+    <!-- map fragment-->
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+
+    <string name="categories_title">Categories</string>
+
+    <!-- terms of use lorem -->
+
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+
+</resources>
+

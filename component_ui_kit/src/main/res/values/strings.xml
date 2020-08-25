@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="retry_message">CLICK TO TRY AGAIN</string>
+    <string name="retry_message_modal">Try again</string>
+    <string name="error_not_internet">Go In is unreachable</string>
+    <string name="error_not_internet_modal">Slow or no internet connection.\nPlease check your internet settings.</string>
+    <string name="oops" translatable="false">Ooops!</string>
+    <string name="unknow_error">Something unexpected happened!</string>
+    <string name="success_payment">Estamos processando sua compra, em alguns minutos você receberá uma notificação no aplicativo confirmando sua compra.</string>
+    <string name="success_payment_title">Recebemos seu pedido!</string>
+    <string name="input_payment">Digite o código localizado atrás do seu cartão final %s</string>
+    <string name="input_payment_title">Código de Segurança</string>
+    <string name="error">Ops...!</string>
+</resources>

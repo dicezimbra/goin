@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="value_up_to">Up to</string>
+    <string name="categorie_label">Category:</string>
+    <string name="clear_filter">Clear Filters</string>
+    <string name="filter_button">Filter</string>
+    <string name="filter_lable_price">price</string>
+    <string name="date">Date</string>
+    <string name="from">From</string>
+    <string name="toDate">To</string>
+    <string name="invalid_date">Invalid Date!</string>
+    <string name="search_cities">Search Cities</string>
+    <string name="filter_search">Filter</string>
+    <string name="no_result_nearby">Ahhh! We could not find any results based on the region you selected. :cry: Showing the closest results.</string>
+    <string translatable="false" name="all">Todos</string>
+    <string translatable="false" name="today">Hoje</string>
+    <string translatable="false" name="tomorrow">Amanhã</string>
+    <string translatable="false" name="weekend">Esse fim de semana</string>
+    <string translatable="false" name="week">Essa Semana</string>
+    <string translatable="false" name="month">Esse mês</string>
+    <string translatable="false" name="next_month">Próximo mês</string>
+    <string translatable="false" name="showing_by_distance">Exibindo por <b>distância:</b></string>
+    <string name="convenince">Convenience</string>
+    <string name="label_price">Price</string>
+    <string translatable="false" name="more_options">Mais opções</string>
+    <string name="range_dollar">to</string>
+    <string name="range_label_dollar">$ to $$$$$</string>
+    <string translatable="false" name="up_to">up to</string>
+
+</resources>

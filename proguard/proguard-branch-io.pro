@@ -1,0 +1,13 @@
+# http://stackoverflow.com/questions/29679177/cardview-shadow-not-appearing-in-lollipop-after-obfuscate-with-proguard/29698051
+-keep class io.branch.indexing.** { *; }
+-keep class com.google.firebase.appindexing.** { *; }
+-keep interface io.branch.indexing.** { *; }
+-keep interface com.google.firebase.appindexing.** { *; }
+-keep class com.google.android.gms.ads.identifier.** { *; }
+-keep class com.facebook.applinks.** { *; }
+-keepclassmembers class com.facebook.applinks.** { *; }
+-keep class com.facebook.FacebookSdk { *; }
+-keep class com.crashlytics.android.answers.shim.** { *; }
+-keep class com.google.firebase.appindexing.ActionBuilder
+-dontwarn com.google.firebase.appindexing.**
+-dontwarn com.crashlytics.android.answers.shim.**

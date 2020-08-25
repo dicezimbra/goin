@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/invite_friends_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="br.com.legacy.viewControllers.activitites.InviteFriendsActivity">
+
+    <include
+        android:id="@+id/invite_friends_toolbar"
+        layout="@layout/item_custom_toolbar_term" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_search_bar"
+            android:id="@+id/invite_search_bar"/>
+
+        <ProgressBar
+            android:id="@+id/friends_list_loading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_rvs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.3" />
+
+
+            <TextView
+                android:id="@+id/event_no_friends_to_invite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:layout_constraintTop_toBottomOf="@id/invited_friends_list"
+                android:layout_margin="14dp"
+                android:gravity="center"
+                android:text="@string/you_have_no_friends"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/friends_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/invited_friends_list"
+                app:layout_constraintBottom_toBottomOf="@id/container_rvs"
+                app:layout_constraintLeft_toLeftOf="@id/container_rvs"
+                app:layout_constraintRight_toRightOf="@id/container_rvs"
+                app:layout_constraintHorizontal_bias="0"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/invited_friends_list"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="8dp"
+                android:layoutDirection="ltr"
+                app:layout_constraintBottom_toTopOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_filter_chip"
+                tools:orientation="vertical"
+                app:layout_constraintHeight_max="@dimen/_300sdp"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintWidth_default="spread"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/text_white_13sp_bold"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_primary_dark"
+            android:text="@string/next"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

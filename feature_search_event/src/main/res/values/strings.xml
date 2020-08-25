@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--facebook-->
+    <string name="facebook_app_id" translatable="false">1864781376934348</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1864781376934348</string>
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="email_exists">This e-mail address is already registered.</string>
+    <string name="invalid_user">Invalid e-mail address or password.</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+    <string name="email_not_confirmed">Your e-mail address has not been confirmed.</string>
+    <string name="fill_all_fields_to_sing_in">Please, fill all required fields to sign in.</string>
+    <string name="really_want_to_leave">Really want to leave?</string>
+    <string name="delete_ticket_success">Delete Success</string>
+    <!--Field Validation-->
+    <string name="invalid_checked">Please agree to the terms and conditions.</string>
+    <string name="emptyFeed">There are no posts.</string>
+    <string name="invalid_password">The password must contain at least 8 characters and a capital letter</string>
+
+
+    <string name="different_passwords">Differents Passwords</string>
+    <string name="fill_all_fields_password">Fill in all the fields</string>
+    <string name="invalid_password_error">Invalid Password</string>
+    <string name="send">Send</string>
+    <string name="btn_sign_in2">Sign in</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="email">E-mail*</string>
+    <string name="name">Name*</string>
+    <string name="phone">Phone number*</string>
+    <string name="password">Password*</string>
+    <string name="confirm_password">Confirm password*</string>
+    <string-array name="sex_selection">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+    <string name="rg">RG*</string>
+    <string name="half_entrance_id">Half entrance document identification*</string>
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name*</string>
+    <string name="cpf">CPF*</string>
+    <string name="birthday">Birthday*</string>
+    <string name="card_numer">Card Number*</string>
+    <string name="expiration_month">Expiration Month: Eg. 01</string>
+    <string name="expiration_year">Expiration Year: Eg. 25</string>
+    <string name="cvv">CVV*</string>
+    <string name="parcels_number">Installments Number*</string>
+    <string name="postal_code">Postal Code*</string>
+    <string name="street">Street*</string>
+    <string name="street_number">Number*</string>
+    <string name="location_complement">Complement</string>
+    <string name="neighborhood">Neighborhood*</string>
+    <string name="city">City*</string>
+    <string name="state">State*</string>
+    <string name="save_button">Save</string>
+
+    <string name="see_more">see more</string>
+    <string name="posts">Posts</string>
+    <string name="next_events">Next eventApis</string>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="photo_detail">Photo Detail</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="unfollow">UNFOLLOW</string>"
+    <string name="followersConnections">Followers</string>
+    <string name="followingConnections">Following</string>
+
+    <string name="search">Search</string>
+    <string name="search_users">Find users</string>
+    <string name="search_friends">Find friends</string>
+
+    <string name="invite_button">Invite</string>
+    <string name="invited_button">INVITATION SENT</string>
+
+    <string name="comment_hint">Insert your comment here…</string>
+    <string name="post_hint">Write your text here…</string>
+    <string name="new_post">New Post</string>
+    <string name="comments">Comments</string>
+
+    <string name="week_suggestion">Next events</string>
+    <string name="near_events_home">Close to me</string>
+    <string name="you_have_no_events_suggestions">You have no recommended eventApis.</string>
+    <string name="you_have_no_events">You have no eventApis.</string>
+    <string name="you_have_no_friends">You don\u0027 t have any friends on Go In.</string>
+    <string name="you_have_no_followers">You don\u0027 t have any followers.</string>
+    <string name="you_dont_follow_anyone">You do not follow anyone.</string>
+    <string name="value_up_to">Up to</string>
+    <string name="cancel">Cancel</string>
+    <string name="unfollow_alert">Stop following %1$s?</string>
+    <string name="share_alert">Share %1$s\'s post?</string>
+
+    <string name="tickets">tickets</string>
+    <string name="categories">Categories</string>
+    <string name="categorie_label">Categorie:</string>
+    <string name="subcategories">Subcategories</string>
+    <string name="no_subcategories_message">Could not find subcategories for this category.</string>
+    <string name="edit">Edit profile</string>
+    <string name="interest">Interests</string>
+
+    <string name="find_friends_facebook">Find friends from Facebook</string>
+
+    <string name="Following">Following</string>
+    <string name="Followers">Followers</string>
+    <string name="post_likes">Likes</string>
+
+    <!-- map fragment-->
+    <string name="x">x</string>
+
+    <string name="filter_search">Filter</string>
+    <string name="change_password">Change Password</string>
+
+    <string name="new_password">New Password</string>
+    <string name="new_password_confirmation">Confirm new Password</string>
+    <string name="change">Change</string>
+    <string name="edit_profile">Edit Profile</string>
+
+
+    <string name="feed">Feed</string>
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="free">Free</string>
+    <string-array name="tabsmain_toolbar_titles">
+        <item>Feed</item>
+        <item>Events</item>
+        <item>Connections</item>
+        <item>Conversations</item>
+        <item>Profile</item>
+    </string-array>
+
+    <!--Notifications-->
+    <string name="notification_comment">%s commented on your post.</string>
+    <string name="notification_invite">%1$s invited you to the eventApi %2$s.</string>
+    <string name="notification_like">%s liked your post.</string>
+    <string name="notification_event">You have an eventApi this week: %s.</string>
+    <string name="notification_checkin">%1$s checked in to %2$s.</string>
+    <string name="notification_follow">%s followed you.</string>
+    <string name="notification_comment_tag">%s tagged you in a post’s comments.</string>
+    <string name="notification_post_tag">%s tagged you in a post.</string>
+    <string name="notification_added_to_group">%1$s added you to %2$s.</string>
+    <string name="notification_ticket_received">%1$s gave you a ticket to %2$s.</string>
+    <string name="notification_ticket_confirmed">%1$s: The ticket`s payment was confirmed.</string>
+    <string name="notification_vip_box_invite">%1$s invited you to share a vip box for the eventApi %2$s.</string>
+
+    <string name="terms_of_use">Terms of use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="entry_policy">Half Price Policy</string>
+    <string name="logout">Logout</string>
+    <string name="without_information_message">Not informed</string>
+    <string name="delete">Delete</string>
+    <string name="report">Report</string>
+    <string name="please_insert_name">Please enter your name.</string>
+    <string name="alteration_saved">Your changes have been saved.</string>
+    <string name="please_insert_password">Please enter your password.</string>
+    <string name="please_confirm_password">Please confirm your password.</string>
+    <string name="password_dont_match">The passwords are different.</string>
+    <string name="password_incomplete">Password must be at least 6 characters long.</string>
+
+
+    <!--Rating-->
+    <string name="rate">Rate</string>
+    <string name="ranking">Ranking</string>
+    <string name="without_ratings_message">Be the first to review this establishment!</string>
+    <string name="rate_club_message">Review this place: </string>
+    <string name="rate_comment_field_message">Write your comment: </string>
+    <string name="new_rating_success_message">Your rating for this place was sent successfully!</string>
+    <string name="delete_rating_success_message">Your rating for this place was deleted successfully!</string>
+    <plurals name="ratings_count">
+        <item quantity="one">%d rating</item>
+        <item quantity="other">%d ratings</item>
+    </plurals>
+
+    <plurals name="attendance">
+        <item quantity="one"> person is interested</item>
+        <item quantity="other"> people are interested</item>
+    </plurals>
+
+    <!--Event EventSessionDetail-->
+    <string name="distance_from_you"> %s from you</string>
+    <string name="uber_estimate_time_arrival"> %d minutes</string>
+    <string name="confirmation_checkin">Would you like to check in to this eventApi?</string>
+    <string name="to">to</string>
+    <string name="at">at</string>
+    <string name="check_in_disabled_message">It’s only possible to check-in during the eventApi.</string>
+    <string name="failure_get_categories_message">It was not possible to load the categories. Please, try again later.</string>
+
+    <!--Post-->
+    <string name="is_feeling">is feeling</string>
+    <string name="my_feeling">I am feeling…</string>
+    <string name="feeling">Feelings</string>
+    <string name="in">in</string>
+    <string name="did_checkin">checked in to</string>
+    <string name="shared_a_post">shared a post.</string>
+    <string name="share">share</string>
+    <string name="share_success">Post successfully shared.</string>
+    <string name="error_share">It was not possible to share this post. Please, try again.</string>
+
+    <!--Chat-->
+    <string name="contacts">Contacts</string>
+    <string name="message_input_hint">Write your message here…</string>
+    <string name="error_uploading_image">It was not possible to upload the image. It is not stored locally in your device.</string>
+    <string name="next">Next</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="empty_members_list">It is not possible to create a group without members.</string>
+    <!--Global Search-->
+    <!--Tickets-->
+    <string name="my_tickets">My Tickets</string>
+    <string name="buy">Buy</string>
+    <string name="sold_out">Sold out</string>
+    <string name="pending_payment">Pending Payment</string>
+    <string name="friends_pending_payment">Waiting for friends\' payments</string>
+    <string name="no_tickets_message">No tickets available at the moment.</string>
+    <plurals name="tickets_bought">
+        <item quantity="one">%d ticket bought</item>
+        <item quantity="other">%d tickets bought</item>
+    </plurals>
+    <plurals name="tickets_vip_box_bought">
+        <item quantity="one">For %d person</item>
+        <item quantity="other">For %d people</item>
+    </plurals>
+    <plurals name="tickets_pending">
+        <item quantity="one">%d pending ticket</item>
+        <item quantity="other">%d pending tickets</item>
+    </plurals>
+    <string name="purchase_date">Purchase date: %s</string>
+    <string name="button_paypal_text">Pay with paypal</string>
+    <string name="button_card_text">Pay with card</string>
+    <string name="button_boleto_text">Pay with boleto</string>
+    <string name="ticket_purchase">Ticket Purchase</string>
+    <string name="tickets_data">Tickets Data</string>
+    <string name="add_friends_button_text">Add friends +</string>
+    <string name="ticket_owner_info_incomplete">There are some blank fields yet.</string>
+    <string name="ticket_owner_info_invalid">There are some invalid fields yet.</string>
+    <string name="buy_for_myself">Buy for myself</string>
+    <string name="info_payment">Information Payment</string>
+    <string name="purchase_confirmation">Purchase Confirmation</string>
+    <string name="purchase_detail">Purchase Detail</string>
+    <string name="payment_confirmation_pendencies">Pending! Waiting for confirmation of payment.</string>
+    <string name="friends_payment_pending">Pending! Waiting for friends\' payment.</string>
+    <string name="purchase_information">Purchase Information</string>
+    <string name="purchase_date_info">Purchase Date: </string>
+    <string name="user_rg_info">Rg: </string>
+    <string name="user_half_info">Half Entrance Id: </string>
+    <string name="total_value_info">Total Value: </string>
+    <string name="btn_log_in">Log in</string>
+    <string name="payment_method_info">Payment Method: </string>
+    <string name="installments_info">Installments Number: </string>
+    <string name="name_info">Name: </string>
+    <string name="user_cpf_info">CPF: </string>
+    <string name="card_number_info">Card number: </string>
+    <string name="credit_card">Credit Card</string>
+    <string name="boleto">Bank Slip</string>
+    <string name="open_bank_slip">Open Bank Slip</string>
+    <string name="open_bank_slip_fail">Fail to open bank slip. Please, try again later.</string>
+    <string name="user_email_info">E-mail: </string>
+    <string name="user_phone_info">Telephone: </string>
+    <string name="user_postal_code_info">Postal code: </string>
+    <string name="paypal">PayPal</string>
+    <string name="error_with_payment_infos">Error. Incorrect card billing data.</string>
+    <string name="finish_payment">Finish Payment</string>
+    <string name="buy_more_tickets">Buy more tickets</string>
+    <string name="bought_by_info">Bought by  </string>
+    <string name="purchase_detail_error">It was not possible to get the purchase details. Please, try again later.</string>
+    <string name="empty_ticket_owners_list">There is no selected ticket owners.</string>
+    <string name="invalid_selected_quantity">The number of selected ticket owners is greater than the remaining tickets.</string>
+    <string name="success_purchase_message">Successful purchase !</string>
+    <string name="failure_purchase_message">It was not possible to buy the ticket.</string>
+    <string name="transfer">Transfer</string>
+    <string name="choose_friend">Choose friend</string>
+    <string name="ticket_transfer">Ticket transfer</string>
+    <string name="transfer_confirmation">Transfer confirmation</string>
+    <string name="ticket_data">Ticket Data</string>
+    <string name="transfer_ticket_to">Transfer ticket to:</string>
+    <string name="transfer_info">Transfer Information</string>
+    <string name="transfer_from">Transfer from:  </string>
+    <string name="transfer_to">To:  </string>
+    <string name="transfer_date_info">Transfer Date: </string>
+    <string name="success_transfer_ticket">The ticket was transferred successfully !</string>
+    <string name="failure_transfer_ticket">It was not possible to transfer the ticket. Please, try again later.</string>
+    <string name="split_vip_box">Split value with invited friends</string>
+    <plurals name="vip_box_capacity_label">
+        <item quantity="one">For %d person</item>
+        <item quantity="other">For %d people</item>
+    </plurals>
+    <string name="selected_friends_over_capacity">The selected ticket owners number is bigger than vip box capacity.</string>
+    <string name="vip_box_payment">Vip Box Payment</string>
+    <string name="vip_box_payment_message">You were invited to split the vip box with your friends ! \n\n Select the payment method:</string>
+    <string name="price_to_pay">Price to pay: </string>
+
+
+    <string name="cant_remove_checkin">It is not possible to remove your interest after you checked in.</string>
+    <string name="unfollow_event_question">Do you want to unfollow this eventApi?</string>
+    <string name="presence_confirmed">Your presence is confirmed</string>
+    <string name="change_password_old_password">Old Password</string>
+    <string name="limit_exceeded">Limit exceeded, please wait a few minutes and try again.</string>
+    <string name="retrofit_error_unable_to_connect">Unable to connect to the internet. Please check your network settings.</string>
+    <string name="retrofit_error_unknown">A network error has occurred. Please check your network settings.</string>
+
+    <string name="raffle_at">lottery at </string>
+    <string name="participate">Participate</string>
+    <string name="participating">Participating</string>
+    <plurals name="maximum_of_participant">
+        <item quantity="one">up to %d participant</item>
+        <item quantity="other">at least %d participants</item>
+    </plurals>
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <string name="emoji_glad">Glad</string>
+    <string name="emoji_excited">Excited</string>
+    <string name="emoji_happy">Happy</string>
+    <string name="emoji_cool">Cool</string>
+    <string name="emoji_anxious">Anxious</string>
+    <string name="emoji_joyful">Joyful</string>
+    <string name="emoji_seductive">Seductive</string>
+    <string name="emoji_angry">Angry</string>
+    <string name="emoji_sick">Sick</string>
+    <string name="no_notifications_message">You have no notifications</string>
+    <string name="what_are_you_thinking">What are you thinking?</string>
+
+    <string name="there_is_no_events_near_you_to_check_in">There are no eventApis near you to check in</string>
+    <string name="no_users_found">No users found</string>
+    <string name="be_the_first_to_comment">Be the first to comment</string>
+    <string name="this_post_has_no_likes">This post has no likes</string>
+    <string name="post_reported_message">We’ll analyse your report and, if necessary, we’ll get in touch soon.</string>
+    <string name="confirm_report_message">Are you sure you\'d like to report this post?</string>
+    <string name="confirm_delete_message">Are you sure you want to delete this post?</string>
+    <string name="confirm_delete_comment">Are you sure you want to delete this comment?</string>
+    <string name="change_password_success">Password changed successfully!</string>
+    <plurals name="days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="seconds_ago">
+        <item quantity="one">%d second ago</item>
+        <item quantity="other">%d seconds ago</item>
+    </plurals>
+    <string name="long_time_ago">a long time ago</string>
+    <string name="choose_another_picture">CHOOSE ANOTHER</string>
+    <string name="choose_picture">CHOOSE PICTURE</string>
+    <string name="not_now">Not now</string>
+    <string name="choose_your_profile_picture">Choose your profile picture</string>
+    <string name="save_picture">SAVE CHOICE</string>
+    <string name="use_picture_from_facebook">USE PICTURE FROM FACEBOOK</string>
+    <string name="error_playing_video">An error occurred while trying to play this video. Please try again in a few moments.</string>
+    <string name="post_title">Post</string>
+    <string name="no_fb_friends">It seems like that none of your Facebook friends are using Go In yet!</string>
+    <string name="expired_session">Your session has expired. Please sign in again.</string>
+    <string name="confirm_unfollow_club">Are you sure you want to stop following this place?</string>
+    <string name="confirm_unfollow_raffle">Are you sure you want to stop participating in this lottery?</string>
+    <string name="search_no_results">There were no results for this search.</string>
+    <string name="error_media_not_supported">This media type is not currently supported. We apologize for the inconvenience.</string>
+    <string name="read_more"><![CDATA[Read more >]]></string>
+    <string name="label_valid_ticket">Valid</string>
+    <string name="label_old_ticket">Old</string>
+
+    <string-array name="welcome_activity_array">
+        <item>Is the party going to bomb? Real-time updates will tell you if the party is going to be worth it. Then just go for fun!</item>
+        <item>Unique advantages and benefits. No Fee Tickets, Points Program, Sweepstakes and more! Everything for you to have fun as you deserve.</item>
+        <item>Do not let anything pass! Organize your leisure schedule and do not miss any chance to have fun.</item>
+        <item>For those who seek the best of entertainment! Always find the best programs and places, based on your interests and habits.</item>
+    </string-array>
+
+    <string-array name="welcome_title_activity_array">
+        <item>SOCIAL</item>
+        <item>FACILITATOR</item>
+        <item>ORGANIZER</item>
+        <item>GUIDE</item>
+    </string-array>
+
+
+    <string name="change_password_title">Change Password</string>
+    <string name="forgot_password">Forgot my Password</string>
+    <string name="enter">Login</string>
+    <string name="type_your_password">Your password</string>
+    <string name="type_your_email">Your email</string>
+    <string name="person">Person</string>
+    <string name="publish">Publish</string>
+    <string name="dottedline">dottedLine</string>
+    <string name="lorem_full">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum convallis nibh in gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus vel luctus purus, vel pellentesque ante. Suspendisse in nisi sem. In tempus metus quis hendrerit elementum. Phasellus ut felis et risus eleifend hendrerit. In dignissim elementum dolor, nec commodo metus pharetra non. Quisque commodo risus eget maximus consequat. Sed hendrerit sapien sit amet lectus euismod, suscipit venenatis tellus ultricies. Etiam mi eros, facilisis pharetra justo sed, consectetur commodo sapien. Nunc ornare aliquet arcu, a consectetur nibh porttitor vel. Suspendisse gravida porttitor ante quis vulputate. Sed pellentesque vulputate ante. Nullam tincidunt ultricies lorem, sed congue metus ullamcorper mollis.
+
+Mauris euismod dui vel sagittis ultrices. Sed nec lorem quis magna ornare tristique ut auctor enim. Nullam non ante lacinia lorem faucibus vulputate ac ut erat. Vestibulum sit amet sapien a leo cursus gravida id sed diam. Sed ac pulvinar ante, quis tempus urna. Vivamus id massa et elit fermentum tincidunt. Quisque dignissim vestibulum erat. Vestibulum quis leo libero. Sed condimentum leo ac arcu bibendum, eget pharetra ante auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel pulvinar diam, eu tincidunt mauris. Nam quis tellus ullamcorper, egestas mauris euismod, sodales massa. Vestibulum mauris metus, rhoncus non suscipit quis, congue a tellus. In hendrerit augue et nunc lacinia luctus. Vestibulum egestas fringilla viverra. In elementum purus ut vulputate semper.
+
+Sed varius lectus sed ante pellentesque vehicula. Praesent orci lorem, volutpat quis euismod sed, varius vel mi. Vivamus ac velit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus id faucibus tortor, non vulputate eros. Proin semper vestibulum tortor vel placerat. Sed ac risus lectus. Donec semper nibh eu sapien pretium, eu fringilla turpis posuere. Aliquam id sollicitudin leo. In est justo, bibendum id neque porttitor, mollis congue orci. Phasellus eget nisl sit amet risus sagittis lacinia. Duis mollis congue vestibulum. Curabitur scelerisque arcu vitae erat blandit, vel tristique erat cursus. Proin ornare, nisl in elementum pellentesque, leo felis tempor nunc, a aliquet augue urna eget velit.
+
+Pellentesque molestie, massa id aliquet consequat, lacus nunc accumsan lacus, ut consectetur ligula tortor eget nisl. Etiam auctor leo vel sollicitudin accumsan. Praesent posuere sem quis erat suscipit, sit amet auctor mauris mattis. Mauris semper nec libero vitae laoreet. Morbi pharetra ultrices erat, id dictum risus cursus ultricies. Proin ut rutrum erat, et ultrices nisl. Suspendisse vitae tempor neque, at malesuada sapien.
+
+Aenean massa arcu, pellentesque at molestie malesuada, hendrerit fermentum ipsum. Aliquam sit amet euismod risus. Suspendisse potenti. Mauris ultrices est sed urna dignissim, nec luctus tortor ullamcorper. Vivamus tempus vitae lorem vel lacinia. Sed vestibulum eleifend nulla, sit amet vestibulum odio maximus at. Duis egestas nibh ac orci ultrices pellentesque.
+
+Morbi in tincidunt metus. Nullam facilisis eleifend tincidunt. Nam non ex ligula. Integer euismod gravida venenatis. Praesent eget interdum quam, quis tempus mi. Nullam hendrerit, tortor id finibus viverra, est odio dapibus augue, eget tincidunt sapien lectus eu nisl. Duis lacus nunc, cursus ac lorem a, pretium sagittis nunc. Proin id faucibus turpis, ac blandit leo. Ut vel risus at ex tempor scelerisque in eu nunc. Cras efficitur dapibus est sed blandit. Nunc eget odio commodo, fermentum eros congue, ultricies sapien. Cras eleifend eu sem et molestie. Nulla aliquet ante et tempor auctor. Duis rhoncus lacus nisl, nec auctor metus pretium vitae. Vestibulum fringilla lobortis tortor sit amet efficitur.
+
+Donec aliquam malesuada auctor. Duis egestas condimentum neque eu fermentum. Nullam quis erat nec risus lobortis bibendum nec vel lacus. Mauris bibendum pellentesque ex, quis molestie sem pretium at. Proin maximus ipsum nisi, et condimentum diam pretium quis. Quisque tincidunt, leo ac mattis suscipit, quam ante tristique sem, nec tempor odio quam eu est. Cras volutpat eros nulla, tempus facilisis purus convallis porta. Curabitur vel orci gravida, porta mi sit amet, dictum nunc. Ut vel neque nec nisl tempus fermentum quis et elit. Fusce sed sem commodo, eleifend eros eu, laoreet magna. Sed eget tristique dui, vitae tempor justo. Pellentesque laoreet, enim quis iaculis feugiat, augue mauris mattis metus, at aliquet tortor dui et diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris purus risus, malesuada vel ultricies quis, semper eu erat.
+
+Sed leo nunc, semper vitae euismod ac, aliquet ut enim. Cras ut felis luctus, sodales massa quis, gravida justo. Ut consectetur iaculis urna, in feugiat nibh elementum id. Quisque sapien augue, volutpat iaculis vestibulum et, consequat eu augue. Nunc ut consequat nisl. Mauris suscipit, nisl in iaculis dapibus, neque arcu vehicula nibh, a rutrum sapien mi ut tortor. Morbi vel metus viverra, molestie dolor id, ullamcorper mi. Nullam tincidunt augue eget quam fringilla efficitur. Phasellus congue, lacus eget fermentum placerat, augue massa aliquam odio, in elementum purus augue et nisi. Donec auctor, tortor nec feugiat blandit, lacus lorem porta lorem, venenatis pulvinar nisl massa at arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dapibus vestibulum mauris, ac pellentesque nunc cursus eu. Vestibulum eleifend ligula lorem, ac bibendum neque malesuada id.
+
+Proin tempor dignissim laoreet. Duis dignissim posuere risus, in interdum leo luctus vitae. Vivamus elementum, nibh id tincidunt pellentesque, turpis purus aliquet augue, tincidunt elementum arcu nulla quis enim. Nulla purus neque, scelerisque ut augue eget, faucibus condimentum mauris. Cras mollis sem quis eros varius molestie. Cras scelerisque, augue eget dictum porta, leo nulla sodales dui, non maximus urna quam quis sapien. Pellentesque non nulla maximus, dignissim sapien tristique, laoreet est. Sed gravida vulputate velit, eget blandit sapien blandit nec.
+
+Aenean tristique finibus risus eget iaculis. Nulla vitae feugiat risus. Aenean faucibus nulla quis nunc aliquam consequat. Vestibulum sed volutpat velit. Donec eget sodales neque. Nulla ut velit quis nunc ornare vulputate. In a enim non ipsum condimentum porttitor. Aenean nec augue nisl. Mauris placerat est purus, at blandit arcu consequat vitae. Pellentesque ultricies aliquet libero, convallis maximus ante pulvinar sit amet. Nulla feugiat ullamcorper rhoncus.
+
+Maecenas risus lectus, efficitur a quam eu, auctor suscipit velit. Maecenas consectetur turpis at blandit imperdiet. Aliquam sodales, magna at mattis dapibus, nisi libero elementum nunc, vel tempus turpis libero non orci. Nam vestibulum quam ut ligula posuere mollis. Ut id turpis cursus, vestibulum lorem non, varius dolor. Donec diam ipsum, feugiat eget dignissim ac, pellentesque vel nisl. Donec fringilla est at diam dapibus blandit.
+
+Mauris posuere dui vel scelerisque aliquam. Morbi eu scelerisque tortor, sit amet laoreet massa. Etiam fermentum sed eros non facilisis. Donec eget nisl diam. Pellentesque semper nunc vel augue sodales, cursus rutrum lectus consectetur. Nullam non varius ligula, ac pellentesque mauris. In egestas eros at ante iaculis, vitae consectetur mi feugiat.
+
+Cras vitae odio et felis faucibus finibus. Etiam non euismod urna, in consequat dui. Suspendisse condimentum eros et commodo finibus. Aliquam tristique egestas justo. Nam volutpat ante sed turpis luctus finibus. Nulla non justo magna. Nam tortor ipsum, tincidunt nec nunc et, fermentum congue ex. Donec justo sem, tempus quis metus sit amet, tempor commodo sem. Suspendisse ac magna neque. </string>
+    <string name="address_label_establishment">Address</string>
+    <string name="see_all_views_establishment_start">See all</string>
+    <string name="see_all_views_establishment_start_singular">See</string>
+    <string name="see_all_views_establishment_end">ratings</string>
+    <string name="see_all_views_establishment_end_singular">rating</string>
+    <string name="expandable_info">*Information subject\n to changes*</string>
+
+    <string name="do_checkin">Do\nCheckin</string>
+    <string name="buy_ticket">Buy\nTicket</string>
+    <string name="invite_friends_event">Invite\nFriends</string>
+    <string name="information_section">Informations</string>
+    <string name="item_interest">I have interest for </string>
+    <string name="text_view_edit_profile_done">Done</string>
+
+    <string name="qrcode">QRCODE</string>
+    <string name="my_tickets_title">My Tickets</string>
+    <string name="categories_title">Categories</string>
+    <string name="create_post">Create post</string>
+    <string name="tickets_empty_list">No more tickets</string>
+    <string name="follower_count_1">follower</string>
+    <string name="follower_count_2"> followers</string>
+    <string name="order_by_category">Order by</string>
+    <string name="clear_filter">Clear Filters</string>
+    <string name="filter_button">Filter</string>
+    <string name="filter_lable_price">Price</string>
+    <string name="privacy_terms">By registering, I declare that I have read and accept the <u>Terms and Conditions</u> and the <u>Privacy Policy</u>.</string>
+    <string name="privacy_terms_buy">By finishing the purchase, I declare that I have read and accept the <u>Half Price Policy</u>.</string>
+    <string name="see_more_filter">See more</string>
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <string name="find_friends">Find friends</string>
+    <string name="comprar_sem_taxa">BUY TICKET</string>
+    <string name="endere_o">Endereço</string>
+
+    <!-- terms of use lorem -->
+    <string name="edit_rating">Edit rating</string>
+    <string name="date">Date</string>
+    <string name="from">From:</string>
+    <string name="toDate">To:</string>
+    <string name="terms_of_use_lorem">Terms Of Use</string>
+    <string name="invalid_date">Invalid date!</string>
+    <!-- Tab Wallet -->
+    <string name="text_tab_wallet_all">All</string>
+    <string name="text_tab_wallet_booking">Booking</string>
+    <string name="text_tab_wallet_ticket">Ticket</string>
+    <string name="text_tab_wallet_voucher">Voucher</string>
+
+    <!-- Tab Search -->
+    <string name="text_tab_search_all">All</string>
+    <string name="text_tab_search_events">Events</string>
+    <string name="text_tab_search_places">Places</string>
+    <string name="text_tab_search_movies">Movies</string>
+
+    <string name="message_force_udpate">Por favor, faça a atualização do seu aplicativo</string>
+    <string name="message_optional_udpate">Há uma atualização disponível, sugerimos que você faça a atualização</string>
+    <string name="title_update">Update</string>
+
+    <string name="update_not_now">Not now</string>
+    <string name="attendance_confirmation">Confirm attendance</string>
+    <string name="you_dont_have_permissions_to_see_event" formatted="false">You dont have permissions to open this eventApi!</string>
+    <string name="fill_the_discount_field">Fill the discount field.</string>
+    <string name="invalid_discount_code">Invalid discount code.</string>
+    <string name="new_password_same_old">New Password should not be same as old password</string>
+    <string name="download_goin_title">Go In - DOWNLOAD NOW</string>
+    <string name="download_goin_description_start">Join the</string>
+    <string name="download_goin_description_end">on the social entertainment network</string>
+
+
+
+    <string name="needed_permissions">"We need our permission to get the eventApis location!"</string>
+    <string name="needed_permissions_check_in">"We need our permission to check-in eventApis near you!"</string>
+
+    <string name="place_address">Endereço do estabelecimento</string>
+    <string name="facilitator">FACILITATOR</string>
+    <string name="facilitator_description">Unique advantages and benefits. Services charge exemptions, rewards program, tickets raffles, and much more! Everything for you to have fun as you deserve.</string>
+    <string name="social">SOCIAL</string>
+    <string name="social_description">Will the party be cool? Real time updates will tell you if the eventApi will be worth it. Then just go out to have fun.</string>
+    <string name="goin_account">Go In Account</string>
+    <string name="config_holder_play_header">Those who enter have fun,\nthat enter has fun!</string>
+    <string name="config_holder_play">Real-time updates will tell you if the ride will be worth it.\nThen just go for fun!</string>
+
+    <string name="movie">Movie</string>
+    <string name="plays_in_theaters">In teather</string>
+    <string name="plays_coming_soon">Soon</string>
+    <string name="update_app">Update the app</string>
+    <string name="about">About</string>
+    <string name="search_cities">Search cities</string>
+    <string name="current_location">Localização atual</string>
+    <string name="location">Location</string>
+    <string name="searching" formatted="false">Searching</string>
+    <string name="searching_city" formatted="false">Searching \"%s\"</string>
+    <string name="empty_city_search">None city found with name %s</string>
+
+    <string name="search_all_hint">What do you want to search?</string>
+    <string name="no_result_search">No results for</string>
+    <string name="await">Await: </string>
+    <string name="theater_title">Theater</string>
+    <string name="label_pick_time">Choose for which hour would like to buy the ticker</string>
+    <string name="como_chegar">Como chegar</string>
+    <string name="veja_rotas_dispon_veis">Veja rotas disponíveis</string>
+    <string name="v_de_uber">Vá de Uber</string>
+    <string name="coordinates_unavailable">Ainda não está disponível as coordenadas desse evento</string>
+    <string name="uber_wait_time" formatted="false">Espera: %d min </string>
+    <string name="uber_price" formatted="false">R$ %.2f</string>
+    <string name="movie_title">Movies</string>
+    <string name="label_buy_theater">Choose the time to buy the ticket</string>
+    <string name="about_movie">About movie</string>
+</resources>

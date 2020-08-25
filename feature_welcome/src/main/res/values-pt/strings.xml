@@ -1,0 +1,20 @@
+<resources>
+
+    <string-array name="welcome_activity_array">
+        <item>Será que a festa vai bombar? Atualizações em tempo real lhe dirão se o rolê vai valer a pena. Daí é só partir pra diversão!</item>
+        <item>Vantagens e benefícios únicos. Ingressos sem taxa, programa de pontos, sorteios e muito mais! Tudo pra você se divertir como merece.</item>
+        <item>Não deixe nada passar! Organize sua agenda de lazer e não perca nenhuma oportunidade de se divertir.</item>
+        <item>Para quem busca o melhor do entretenimento! Encontre sempre os melhores programas e lugares, baseados nos seus interesses e hábitos.</item>
+    </string-array>
+
+    <string-array name="welcome_title_activity_array">
+        <item>SOCIAL</item>
+        <item>FACILITADOR</item>
+        <item>ORGANIZADOR</item>
+        <item>GUIA</item>
+    </string-array>
+
+    <string name="btn_sign_in2">Entrar</string>
+    <string name="not_now">Agora não</string>
+
+</resources>

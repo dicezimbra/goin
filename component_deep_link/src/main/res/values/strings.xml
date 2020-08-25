@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="download_goin_title">Go In - BAIXE AGORA</string>
+    <string translatable="false" name="download_goin_description_start">Junte- se a</string>
+    <string translatable="false" name="download_goin_description_end">na rede social de entretenimento</string>
+    <string name="share">Share</string>
+</resources>

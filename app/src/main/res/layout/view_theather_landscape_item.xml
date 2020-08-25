@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/play_layout_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="top|center">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:id="@+id/play_layout_image"
+        android:layout_width="160dp"
+        android:foreground="?selectableItemBackground"
+        android:layout_height="106.67dp"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/play_title"
+        android:layout_alignStart="@+id/play_layout_image"
+        android:layout_alignEnd="@+id/play_layout_image"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:text="Missao impossivel"
+        android:textColor="@color/style_orange"
+        android:layout_below="@+id/play_layout_image"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/play_subtitle"
+        android:layout_alignStart="@+id/play_layout_image"
+        android:layout_alignEnd="@+id/play_layout_image"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:gravity="center"
+        tools:text="São paulo"
+        android:textColor="@color/slate_grey"
+        android:layout_below="@+id/play_title"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+</RelativeLayout>

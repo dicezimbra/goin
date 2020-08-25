@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="br.com.goin.component.listadresses.ListAdressesActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_payment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintBottom_toTopOf="@id/event_scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/toolbar_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="#BB000000" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/arrow_left_payment" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back_button"
+            android:layout_alignBottom="@+id/back_button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_toEndOf="@+id/back_button"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:hint="Lista de Cartões"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/arrow_left_payment"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/event_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/content2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_payment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <LinearLayout
+                android:id="@+id/add"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp">
+
+                <ImageView
+                    android:src="@drawable/plusplus"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="#24262a"
+                    android:text="Usar outro cartão" />
+
+            </LinearLayout>
+
+            <View
+                android:background="#229b9b9b"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#fbf9f8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/gradient_background_default_goin_button_back"
+            android:textColor="#454e5a"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Voltar" />
+
+
+        <Button
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/gradient_background_default_goin_button"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_width="match_parent"
+            android:id="@+id/next"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:text="Continuar" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

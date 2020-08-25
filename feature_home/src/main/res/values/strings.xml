@@ -1,0 +1,51 @@
+<resources>
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+
+    <string name="follow">Folleow</string>
+    <string name="following">Following</string>
+    <string name="search">Search</string>
+
+    <string name="week_suggestion">Next events</string>
+    <string name="near_events_home">Close to me</string>
+    <string name="you_have_no_events_suggestions">You have no recommended eventApis.</string>
+
+    <string name="failure_get_categories_message">It was not possible to load the categories. Please, try again later.</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <string name="search_cities">Search cities</string>
+    <string name="highlighted_events">Highlights</string>
+    <string name="this_weekend">This weekend</string>
+    <string name="you_have_no_highlighted_events">You have no highlights</string>
+
+    <string translatable="false" name="category_carossel_this_week">CARROSSEL_ESTA_SEMANA</string>
+    <string translatable="false" name="category_carossel_nearby">CARROSSEL_PERTO_DE_MIM</string>
+    <string translatable="false" name="category_carossel_scroll">CARROSSEL_SCROLL</string>
+
+    <string name="category_carossel_week_events">CARROSEL_PROXIMOS_EVENTOS</string>
+    <string name="category_carossel_weekend_events">CARROSEL_FIM_DE_SEMANA</string>
+    <string name="category_carossel_highlighted_events">CARROSEL_EVENTOS_DE_DESTAQUE</string>
+</resources>
+

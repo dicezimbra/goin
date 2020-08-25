@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="full_ticket_guideline">70dp</dimen>
+    <dimen name="full_ticket_width">300dp</dimen>
+    <dimen name="full_ticket_height">412dp</dimen>
+    <dimen name="full_ticket_picute_size">100dip</dimen>
+    <dimen name="full_ticket_margin_title">0dp</dimen>
+    <dimen name="full_ticket_date_margin_top">10dip</dimen>
+    <dimen name="full_ticket_title_size">20sp</dimen>
+    <dimen name="full_ticket_top_margin">4dp</dimen>
+    <dimen name="full_ticket_scissor">0dip</dimen>
+    <dimen name="full_ticket_scissor_top">4dip</dimen>
+    <dimen name="ticket_width">303dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="message_force_udpate">Por favor, faça a atualização do seu aplicativo</string>
+    <string name="message_optional_udpate">Há uma atualização disponível, sugerimos que você faça a atualização</string>
+    <string name="title_update">Atualização</string>
+    <string name="update_app">Atualizar</string>
+    <string name="update_not_now">Agora não</string>
+    <string translatable="false" name="splash_screen_name">SPLASH</string>
+</resources>

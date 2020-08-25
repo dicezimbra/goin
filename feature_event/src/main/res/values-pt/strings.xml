@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+    <string name="fromPrice">De R$ </string>
+
+    <!--Field Validation-->
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+    <string name="attendance_confirmation">Confirmar presença</string>
+    <string name="cancel">Cancelar</string>
+    <string name="free">Gratuito</string>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <!--Event EventSessionDetail-->
+    <string name="uber_estimate_time_arrival"> %d minutos</string>
+    <string name="confirmation_checkin">Você deseja fazer check-in nesse evento?</string>
+    <string name="check_in_disabled_message">Só é possível realizar check-in durante o evento.</string>
+
+    <!--Tickets-->
+    <string name="await">Espera: </string>
+
+
+    <string name="cant_remove_checkin">Não é possível remover interesse após fazer o check-in.</string>
+    <string name="unfollow_event_question">Você deseja deixar de seguir o evento?</string>
+    <string name="presence_confirmed">Sua presença foi confirmada.</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+    <string name="do_checkin">Fazer\nCheckin</string>
+    <string name="buy_ticket">Comprar\nIngressos</string>
+    <string name="invite_friends_event">Convidar\namigos</string>
+    <string name="information_section">Informações</string>
+    <string name="comprar_sem_taxa">COMPRAR INGRESSOS</string>
+    <string name="endere_o">Endereço</string>
+    <string name="you_dont_have_permissions_to_see_event">Você não possui permissão para visualizar esse evento!</string>
+
+    <!-- Tab Search -->
+    <string name="fill_the_discount_field">Preencha o código do cupom</string>
+    <string name="invalid_discount_code">Código do cupom incorreto</string>
+    <string name="place_address">Endereço do estabelecimento</string>
+
+    <string name="advantages_goin">Vantagens Go In</string>
+    <string name="text_buttom_dialog_voucher">Quero! Resgatar Voucher.</string>
+    <string name="regulation_title"><u>regulamento</u></string>
+    <string name="text_view_check_the_regulation">Confira o regulamento</string>
+    <string name="go_to_party">Partiu! Entrar na lista.</string>
+    <string name="confirm_on_list">Entrar na lista!</string>
+    <string name="go_in_special_list">Go In Lista Especial</string>
+    <string name="access_wallet">Acessar carteira</string>
+    <string name="close">Fechar</string>
+    <string name="enjoy_the_party">Aproveite a festa, seu nome está na lista!</string>
+    <string name="send">Enviar</string>
+    <string name="have_you_used">Você já utilizou</string>
+    <string name="you_can_once_time">Só é possível utilizar uma vez.</string>
+
+</resources>

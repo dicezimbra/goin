@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="red">#ff0000</color>
+    <color name="colorRedButtonFilter">#FF5150</color>
+    <color name="blue">#16559f</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparentAll">#00000000</color>
+
+    <color name="gray">#7d7e7e</color>
+    <color name="grayTabEditProfile">#58626E</color>
+
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+
+    <color name="style_orange">#ff5150</color>
+
+    <color name="battleship_gray">#65707e</color>
+    <color name="dark_grey">#24262a</color>
+    <color name="slate_grey">#58626e</color>
+    <color name="grapefruit">#ff5150</color>
+
+    // Yellow
+
+</resources>

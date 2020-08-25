@@ -1,0 +1,149 @@
+<resources>
+
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="yes">Yes</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+    <string name="delete_ticket_success">Delete Success</string>
+
+    <!--Field Validation-->
+
+
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    "
+
+    <string name="cancel">Cancel</string>
+
+    <!-- map fragment-->
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+    <string name="confirmation_checkin">Would you like to check in to this eventApi?</string>
+    <string name="check_in_disabled_message">It’s only possible to check-in during the eventApi.</string>
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+    <string name="buy">Buy</string>
+    <string name="sold_out">Sold out</string>
+    <string name="pending_payment">Pending Payment</string>
+    <string name="friends_pending_payment">Waiting for friends\' payments</string>
+    <plurals name="tickets_bought">
+        <item quantity="one">%d ticket bought</item>
+        <item quantity="other">%d tickets bought</item>
+    </plurals>
+    <plurals name="tickets_vip_box_bought">
+        <item quantity="one">For %d person</item>
+        <item quantity="other">For %d people</item>
+    </plurals>
+    <plurals name="tickets_pending">
+        <item quantity="one">%d pending ticket</item>
+        <item quantity="other">%d pending tickets</item>
+    </plurals>
+    <string name="purchase_date">Purchase date: %s</string>
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <string name="label_valid_ticket">Valid</string>
+    <string name="label_old_ticket">Old</string>
+
+
+    <string name="dottedline">dottedLine</string>
+    <string name="lorem_full">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum convallis nibh in gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus vel luctus purus, vel pellentesque ante. Suspendisse in nisi sem. In tempus metus quis hendrerit elementum. Phasellus ut felis et risus eleifend hendrerit. In dignissim elementum dolor, nec commodo metus pharetra non. Quisque commodo risus eget maximus consequat. Sed hendrerit sapien sit amet lectus euismod, suscipit venenatis tellus ultricies. Etiam mi eros, facilisis pharetra justo sed, consectetur commodo sapien. Nunc ornare aliquet arcu, a consectetur nibh porttitor vel. Suspendisse gravida porttitor ante quis vulputate. Sed pellentesque vulputate ante. Nullam tincidunt ultricies lorem, sed congue metus ullamcorper mollis.
+
+Mauris euismod dui vel sagittis ultrices. Sed nec lorem quis magna ornare tristique ut auctor enim. Nullam non ante lacinia lorem faucibus vulputate ac ut erat. Vestibulum sit amet sapien a leo cursus gravida id sed diam. Sed ac pulvinar ante, quis tempus urna. Vivamus id massa et elit fermentum tincidunt. Quisque dignissim vestibulum erat. Vestibulum quis leo libero. Sed condimentum leo ac arcu bibendum, eget pharetra ante auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel pulvinar diam, eu tincidunt mauris. Nam quis tellus ullamcorper, egestas mauris euismod, sodales massa. Vestibulum mauris metus, rhoncus non suscipit quis, congue a tellus. In hendrerit augue et nunc lacinia luctus. Vestibulum egestas fringilla viverra. In elementum purus ut vulputate semper.
+
+Sed varius lectus sed ante pellentesque vehicula. Praesent orci lorem, volutpat quis euismod sed, varius vel mi. Vivamus ac velit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus id faucibus tortor, non vulputate eros. Proin semper vestibulum tortor vel placerat. Sed ac risus lectus. Donec semper nibh eu sapien pretium, eu fringilla turpis posuere. Aliquam id sollicitudin leo. In est justo, bibendum id neque porttitor, mollis congue orci. Phasellus eget nisl sit amet risus sagittis lacinia. Duis mollis congue vestibulum. Curabitur scelerisque arcu vitae erat blandit, vel tristique erat cursus. Proin ornare, nisl in elementum pellentesque, leo felis tempor nunc, a aliquet augue urna eget velit.
+
+Pellentesque molestie, massa id aliquet consequat, lacus nunc accumsan lacus, ut consectetur ligula tortor eget nisl. Etiam auctor leo vel sollicitudin accumsan. Praesent posuere sem quis erat suscipit, sit amet auctor mauris mattis. Mauris semper nec libero vitae laoreet. Morbi pharetra ultrices erat, id dictum risus cursus ultricies. Proin ut rutrum erat, et ultrices nisl. Suspendisse vitae tempor neque, at malesuada sapien.
+
+Aenean massa arcu, pellentesque at molestie malesuada, hendrerit fermentum ipsum. Aliquam sit amet euismod risus. Suspendisse potenti. Mauris ultrices est sed urna dignissim, nec luctus tortor ullamcorper. Vivamus tempus vitae lorem vel lacinia. Sed vestibulum eleifend nulla, sit amet vestibulum odio maximus at. Duis egestas nibh ac orci ultrices pellentesque.
+
+Morbi in tincidunt metus. Nullam facilisis eleifend tincidunt. Nam non ex ligula. Integer euismod gravida venenatis. Praesent eget interdum quam, quis tempus mi. Nullam hendrerit, tortor id finibus viverra, est odio dapibus augue, eget tincidunt sapien lectus eu nisl. Duis lacus nunc, cursus ac lorem a, pretium sagittis nunc. Proin id faucibus turpis, ac blandit leo. Ut vel risus at ex tempor scelerisque in eu nunc. Cras efficitur dapibus est sed blandit. Nunc eget odio commodo, fermentum eros congue, ultricies sapien. Cras eleifend eu sem et molestie. Nulla aliquet ante et tempor auctor. Duis rhoncus lacus nisl, nec auctor metus pretium vitae. Vestibulum fringilla lobortis tortor sit amet efficitur.
+
+Donec aliquam malesuada auctor. Duis egestas condimentum neque eu fermentum. Nullam quis erat nec risus lobortis bibendum nec vel lacus. Mauris bibendum pellentesque ex, quis molestie sem pretium at. Proin maximus ipsum nisi, et condimentum diam pretium quis. Quisque tincidunt, leo ac mattis suscipit, quam ante tristique sem, nec tempor odio quam eu est. Cras volutpat eros nulla, tempus facilisis purus convallis porta. Curabitur vel orci gravida, porta mi sit amet, dictum nunc. Ut vel neque nec nisl tempus fermentum quis et elit. Fusce sed sem commodo, eleifend eros eu, laoreet magna. Sed eget tristique dui, vitae tempor justo. Pellentesque laoreet, enim quis iaculis feugiat, augue mauris mattis metus, at aliquet tortor dui et diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris purus risus, malesuada vel ultricies quis, semper eu erat.
+
+Sed leo nunc, semper vitae euismod ac, aliquet ut enim. Cras ut felis luctus, sodales massa quis, gravida justo. Ut consectetur iaculis urna, in feugiat nibh elementum id. Quisque sapien augue, volutpat iaculis vestibulum et, consequat eu augue. Nunc ut consequat nisl. Mauris suscipit, nisl in iaculis dapibus, neque arcu vehicula nibh, a rutrum sapien mi ut tortor. Morbi vel metus viverra, molestie dolor id, ullamcorper mi. Nullam tincidunt augue eget quam fringilla efficitur. Phasellus congue, lacus eget fermentum placerat, augue massa aliquam odio, in elementum purus augue et nisi. Donec auctor, tortor nec feugiat blandit, lacus lorem porta lorem, venenatis pulvinar nisl massa at arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dapibus vestibulum mauris, ac pellentesque nunc cursus eu. Vestibulum eleifend ligula lorem, ac bibendum neque malesuada id.
+
+Proin tempor dignissim laoreet. Duis dignissim posuere risus, in interdum leo luctus vitae. Vivamus elementum, nibh id tincidunt pellentesque, turpis purus aliquet augue, tincidunt elementum arcu nulla quis enim. Nulla purus neque, scelerisque ut augue eget, faucibus condimentum mauris. Cras mollis sem quis eros varius molestie. Cras scelerisque, augue eget dictum porta, leo nulla sodales dui, non maximus urna quam quis sapien. Pellentesque non nulla maximus, dignissim sapien tristique, laoreet est. Sed gravida vulputate velit, eget blandit sapien blandit nec.
+
+Aenean tristique finibus risus eget iaculis. Nulla vitae feugiat risus. Aenean faucibus nulla quis nunc aliquam consequat. Vestibulum sed volutpat velit. Donec eget sodales neque. Nulla ut velit quis nunc ornare vulputate. In a enim non ipsum condimentum porttitor. Aenean nec augue nisl. Mauris placerat est purus, at blandit arcu consequat vitae. Pellentesque ultricies aliquet libero, convallis maximus ante pulvinar sit amet. Nulla feugiat ullamcorper rhoncus.
+
+Maecenas risus lectus, efficitur a quam eu, auctor suscipit velit. Maecenas consectetur turpis at blandit imperdiet. Aliquam sodales, magna at mattis dapibus, nisi libero elementum nunc, vel tempus turpis libero non orci. Nam vestibulum quam ut ligula posuere mollis. Ut id turpis cursus, vestibulum lorem non, varius dolor. Donec diam ipsum, feugiat eget dignissim ac, pellentesque vel nisl. Donec fringilla est at diam dapibus blandit.
+
+Mauris posuere dui vel scelerisque aliquam. Morbi eu scelerisque tortor, sit amet laoreet massa. Etiam fermentum sed eros non facilisis. Donec eget nisl diam. Pellentesque semper nunc vel augue sodales, cursus rutrum lectus consectetur. Nullam non varius ligula, ac pellentesque mauris. In egestas eros at ante iaculis, vitae consectetur mi feugiat.
+
+Cras vitae odio et felis faucibus finibus. Etiam non euismod urna, in consequat dui. Suspendisse condimentum eros et commodo finibus. Aliquam tristique egestas justo. Nam volutpat ante sed turpis luctus finibus. Nulla non justo magna. Nam tortor ipsum, tincidunt nec nunc et, fermentum congue ex. Donec justo sem, tempus quis metus sit amet, tempor commodo sem. Suspendisse ac magna neque. </string>
+
+    <string name="qrcode">QRCODE</string>
+    <string name="my_tickets_title">My Tickets</string>
+    <string name="tickets_empty_list">No more tickets</string>
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <!-- terms of use lorem -->
+
+    <!-- Tab Wallet -->
+    <string name="text_tab_wallet_all">All</string>
+    <string name="text_tab_wallet_booking">Booking</string>
+    <string name="text_tab_wallet_ticket">Ticket</string>
+    <string name="text_tab_wallet_voucher">Voucher</string>
+    <string name="check_regulament">Confira o regulamento</string>
+    <string name="voucher_type">VOUCHER</string>
+
+    <string name="voucher_information">Apresente este ingresso \n e aproveite a festa sem fila.</string>
+    <string name="label_regulament">Regulamento de utilização</string>
+    <string name="regulament_text">Apenas um cupom poderá ser utilizado por pedido. O benefício não é cumulativo com outro cupom ou Vale-Presente. Em caso de cancelamento da compra devido a arrependimento, troca ou devolução, o valor a ser restituído será o mesmo do pagamento efetuado, já incluído o desconto.</string>
+    <string name="confirmation_cut_ticket">Tem certeza que deseja validar seu ingresso?</string>
+    <string name="success">Compartilhe com seus amigos o que esta rolando.</string>
+    <string name="sucess_title">Aproveite a festa!</string>
+    <string name="enjoy_party">Aproveite a festa!</string>
+    <string name="share_party">Compartilhe com seus amigos o que esta rolando.</string>
+    <string name="close">Fechar</string>
+    <string name="back">Voltar</string>
+    <string name="ja_era">Já era!</string>
+    <string name="ja_era_mensagem">A data para utilizar o voucher expirou.</string>
+    <string name="used">Você já utilizou!</string>
+    <string name="used_message">Só é possível utilizar uma vez.</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel_ticket">Cancelar</string>
+    <string name="ooops">Ooops!</string>
+    <string name="problem_cut_ticket">Aconteceu um problema ao cortar o ticket.\nTente novamente mais tarde.</string>
+    <!-- Tab Search -->
+</resources>
+

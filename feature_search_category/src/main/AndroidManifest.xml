@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.search.category">
+
+    <application>
+        <activity android:name=".filter.FilterByCategoryPartyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Animated.AppTheme"/>
+        <activity
+            android:name=".SearchByCategoryActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/SearchByCategoryTheme" />
+
+    </application>
+
+</manifest>

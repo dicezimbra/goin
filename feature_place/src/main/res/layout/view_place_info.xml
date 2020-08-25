@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_place">
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_info"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:constraint_referenced_ids="club_money, button_checkin, button_interrest, button_invite_friend,button_send, textViewDistanceNewClub,club_name,textViewEvaluateRanking,textViewEstablishmentCategories,club_description,imageViewStarEvaluate,club_address,seeAllViewsEstablishment" />
+
+    <TextView
+        android:id="@+id/club_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/coral"
+        android:layout_marginTop="16dp"
+        tools:text="$$$$"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewStarEvaluate"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/star_rating"
+        android:tint="#EAAE5C"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEvaluateRanking"
+        />
+
+    <TextView
+        android:id="@+id/textViewEvaluateRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:textColor="#EAAE5C"
+        android:textSize="13sp"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_right"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewStarEvaluate"
+        app:layout_constraintTop_toTopOf="@+id/imageViewStarEvaluate"
+        tools:text="4,5" />
+
+    <Button
+        android:id="@+id/button_checkin"
+        style="@style/button_actions"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/ic_icon_location"
+        android:text="@string/check_in"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_interrest"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/club_money" />
+
+    <Button
+        android:id="@+id/button_interrest"
+        style="@style/button_actions"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/background_interest"
+        android:text="@string/interrest"
+        app:elevation="5dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/button_send"
+        app:layout_constraintStart_toEndOf="@+id/button_checkin"
+        app:layout_constraintTop_toBottomOf="@+id/club_money" />
+
+    <Button
+        android:id="@+id/button_send"
+        style="@style/button_actions"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button_actions"
+        android:drawableTop="@drawable/ic_noun_send_204956"
+        android:text="@string/send"
+        app:elevation="5dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/button_interrest"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/club_money" />
+
+
+    <TextView
+        android:id="@+id/club_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/quicksand"
+        android:textSize="13sp"
+        android:ellipsize="end"
+        android:textColor="@color/battleship_grey"
+        app:layout_constraintTop_toBottomOf="@+id/button_checkin"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        tools:text="teste" />
+
+    <ImageView android:id="@+id/tag"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_tag"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/club_description"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"/>
+
+    <TextView
+        android:id="@+id/club_tags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/quicksand"
+        android:textSize="13sp"
+        android:ellipsize="end"
+        android:layout_marginStart="5dp"
+        android:drawablePadding="5dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:includeFontPadding="false"
+        android:textColor="@color/battleship_grey"
+        app:layout_constraintTop_toTopOf="@+id/tag"
+        app:layout_constraintTop_toBottomOf="@+id/club_description"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLabelVouchers"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_right"
+        app:layout_constraintStart_toEndOf="@id/tag"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet odio, nec dapibus leo. Maecenas vitae nunc ac diam ornare vulputate. Nam vulputate pulvinar leo, id aliquet lorem consequat et. Fusce vitae pellentesque ipsum, et vulputate tortor. Fusce risus lorem, eleifend ut enim non, posuere rutrum eros. Curabitur cursus dolor eu urna varius ultricies. Fusce tempus vehicula felis id posuere." />
+</merge>

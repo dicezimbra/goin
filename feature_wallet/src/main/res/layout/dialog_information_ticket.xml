@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/adark_grey"
+    android:orientation="vertical"
+    android:paddingEnd="40dp"
+    android:paddingStart="40dp">
+
+    <TextView
+        android:id="@+id/txtDialogOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:text="Pronto"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/dialog_info_partners" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="Lanchonete da Cidade Pinheiros"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/event_icon_date_w"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txtDateEventFullticket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="top"
+                android:text="Sexta-feira, 14 de dez das 22:00 às 23:40"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtAddEventToCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="42dp"
+            android:text="Adicionar ao calendário"
+            android:textColor="@color/grapefruit"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_location_pin" />
+
+
+            <TextView
+                android:id="@+id/txtEventAddressFullticket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Lanchonete Gosto Bom"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="42dp"
+            android:text="Av. Dr. Enéas de Carvalho Aguiar, 44 São Paulo - SP, 05403-900, Brasil"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/txtSeeOnGoogleMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="4dp"
+            android:text="Ver no mapa"
+            android:textColor="@color/grapefruit"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observações"
+            android:textColor="@color/melon"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textViewObs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:text="1. A reserva só pode ser cancelada até XX horas antes do horário reservado."
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/textViewAnotherObs"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2. Aenean euismod bibendum laoreet. Proin gravida dolor sit"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <Button
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/btnCheckFullticketPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/button_round_ticket_policy"
+                android:text="Consulte a Política de Ingressos"
+                android:textColor="@color/grapefruit"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

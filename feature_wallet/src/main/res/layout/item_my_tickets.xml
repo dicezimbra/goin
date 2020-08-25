@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_my_tickets"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <com.vipulasri.ticketview.TicketView
+        android:id="@+id/ticketView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ticketCornerRadius="10dp"
+        app:ticketCornerType="rounded"
+        app:ticketDividerColor="#C2C8D1"
+        app:ticketDividerDashGap="4dp"
+        app:ticketDividerDashLength="6dp"
+        app:ticketDividerPadding="10dp"
+        app:ticketDividerType="dash"
+        app:ticketDividerWidth="1dp"
+        app:ticketElevation="6dp"
+        app:ticketOrientation="vertical"
+        app:ticketScallopPositionPercent="30"
+        app:ticketScallopRadius="6dp"
+        app:ticketShowBorder="false"
+        app:ticketShowDivider="true" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ticketView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/ticketView"
+        app:layout_constraintTop_toTopOf="@+id/ticketView">
+
+        <ImageView
+            android:id="@+id/img_my_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ticketView"
+        app:layout_constraintEnd_toEndOf="@+id/ticketView"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/ticketView">
+
+        <TextView
+            android:id="@+id/titleMyTickets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/quicksand_medium"
+            android:lineSpacingExtra="2sp"
+            android:maxLines="1"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Lanchonete da Cidade - Pinhe..." />
+
+        <TextView
+            android:id="@+id/subtitleMyTickets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:lineSpacingExtra="5sp"
+            android:textColor="@color/grapefruit"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/titleMyTickets"
+            app:layout_constraintTop_toBottomOf="@+id/titleMyTickets"
+            tools:text="Reserva de Mesa"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/subtitleMyTickets"
+            app:layout_constraintTop_toBottomOf="@+id/subtitleMyTickets"
+            app:srcCompat="@drawable/date" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/icon_pessoas_ticket" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/info"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/check_regularment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/quicksand"
+            android:maxLines="1"
+            android:text="@string/check_regulament"
+            android:textColor="@color/slate_grey"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/quantityPeopleMyTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/quicksand"
+            android:maxLines="1"
+            android:textColor="@color/slate_grey"
+            android:visibility="gone"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            tools:text="@string/check_regulament" />
+
+        <TextView
+            android:id="@+id/dateMyTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/quicksand"
+            android:maxLines="1"
+            android:text="21/09/2018 - 14:00"
+            android:textColor="@color/slate_grey"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

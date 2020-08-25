@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ticket_background">
+
+    <br.com.goin.v2.GoinTicketView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:goinTicketBackground="@android:color/white"
+        app:goinTicketBottomLayout="@+id/info_container"
+        app:goinTicketCirclesRadius="9dp"
+        app:goinTicketElevation="10dp"
+        app:goinTicketTopLayout="@+id/top"
+        android:clipToPadding="false"
+        app:goinTicketStatus="withouScissor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo_container"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/background_ticket_regulament"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/branco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ticket_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dip"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/label_regulament"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo_container" />
+
+            <TextView
+                android:id="@+id/voucher_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="43dip"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="43dip"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:lines="2"
+                tools:text="1 cerveja grátis"
+                android:textColor="#FF5150"
+                android:textSize="@dimen/full_ticket_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ticket_type" />
+
+            <TextView
+                android:id="@+id/regulament_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="50dp"
+                android:maxLines="10"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/regulament_text"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/voucher_description" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/voucher_back_button"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dip"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="#FF5050"
+                android:foreground="?selectableItemBackground"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </br.com.goin.v2.GoinTicketView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

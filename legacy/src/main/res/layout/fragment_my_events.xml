@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="event"
+            type="br.com.goin.component.model.event.Event" />
+
+        <variable
+            name="hasNoNextEvents"
+            type="Boolean" />
+
+        <variable
+            name="hasNoPastEvents"
+            type="Boolean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundBoard"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/club_events_toolbar"
+            layout="@layout/new_item_custom_toolbar"
+            android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/event_no_my_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_margin="14dp"
+                        android:gravity="center"
+                        android:text="@string/you_have_no_events"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/event_my_events_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="12dp"/>
+
+                </LinearLayout>
+    </LinearLayout>
+</layout>

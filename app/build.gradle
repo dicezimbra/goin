@@ -1,0 +1,252 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'jacoco-android'
+apply plugin: 'com.github.triplet.play'
+
+def versionMajor = 2
+def versionMinor = 5
+def versionPatch = 1
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    def versionBuild = 1656
+
+    applicationVariants.all { variant ->
+        if (variant.buildType.name == "release") {
+            increaseReleaseVersionCode()
+            def versionReleaseBuild = System.getenv('BUILD_NUMBER') != null ? System.getenv("BUILD_NUMBER") as Integer : readReleaseVersionCode()
+            variant.outputs.each { output ->
+                output.versionCodeOverride = versionReleaseBuild
+                output.versionNameOverride = "${versionMajor}.${versionMinor}.${versionPatch}.${versionReleaseBuild}"
+            }
+        }
+    }
+
+    testOptions.unitTests.all {
+        reports.html.enabled = false
+        reports.junitXml.enabled = false
+    }
+
+    defaultConfig {
+        applicationId "br.com.goin"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode versionBuild
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}"
+        testInstrumentationRunner 'com.github.tmurakami.dexopener.DexOpenerAndroidJUnitRunner'
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ['resourcePackageName': android.defaultConfig.applicationId]
+            }
+        }
+
+        ext.betaDistributionReleaseNotes = "Upload by jenkins"
+        ext.betaDistributionGroupAliases = "go-in"
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("key_android_project.keystore")
+            storePassword '@123b456'
+            keyAlias 'key0'
+            keyPassword '@123b456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+
+            proguardFiles(file('../proguard').listFiles())
+            proguardFile 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            ext.enableCrashlytics = false
+            testCoverageEnabled = false
+        }
+    }
+
+    testOptions {
+        unitTests.all {
+            jacoco {
+                includeNoLocationClasses = true
+            }
+        }
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+        homolog {
+            resValue "string", "app_name_build", "Go In Hmg"
+            applicationId = "br.com.goin.homolog"
+            dimension "app"
+            versionNameSuffix "-homolog"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:95225dc0-7ab3-4cfd-885f-ea1cffe098fb\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_vmmkhBIFQ\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"24ipob6jg17ib5p3ojvdd1irlo\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"1mvu2rgdtgravlpqpv5emon9lu8qvli90b0fprtji06s62lqa0cb\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-hmg\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-hmg.s3-accelerate.amazonaws.com/\""
+        }
+        local {
+            resValue "string", "app_name_build", "Go In Local"
+            applicationId = "br.com.goin"
+            dimension "app"
+            versionNameSuffix "-local"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:8272cd20-c87a-4cd9-8a2b-d97d5c2eafe1\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_OnQZQ1uEo\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"lefmonak5qfl8r84mqifi4ncb\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"19d61t2iaitn3r8tubr8oinr3iqe53i4hup6f6jfpr37lo1qa6o0\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-test\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://s3-sa-east-1.amazonaws.com/\""
+        }
+
+        develop {
+            resValue "string", "app_name_build", "Go In Dev"
+            applicationId = "br.com.goin.develop"
+            dimension "app"
+            versionNameSuffix "-develop"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:090ad616-fd7a-4afe-852d-0e472d3c599c\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_HRZ5Y2b0T\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"7clhsumcmartvpp3p0cao8an3f\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"cggvsu0c72tdliiu5f6oa94dbcbdu1fk8g5pctt7mlunfc5lrl0\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-dev\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-dev.s3-accelerate.amazonaws.com/\""
+        }
+
+        prod {
+            resValue "string", "app_name_build", "Go In"
+            applicationId = "br.com.goin"
+            dimension "app"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:8272cd20-c87a-4cd9-8a2b-d97d5c2eafe1\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_OnQZQ1uEo\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"lefmonak5qfl8r84mqifi4ncb\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"19d61t2iaitn3r8tubr8oinr3iqe53i4hup6f6jfpr37lo1qa6o0\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public.s3-accelerate.amazonaws.com/\""
+        }
+
+
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation project(':legacy')
+
+    //Components
+    implementation project(':component_navigation')
+    implementation project(':component_user_session')
+
+    //Features
+    implementation project(':feature_change_password')
+    implementation project(':feature_login')
+    implementation project(':feature_feed')
+    implementation project(':feature_terms')
+    implementation project(':feature_notifications')
+    implementation project(':feature_all_categories')
+    implementation project(':feature_home')
+    implementation project(':feature_search_event')
+    implementation project(':feature_event')
+    implementation project(':feature_wallet')
+    implementation project(':feature_search_location')
+    implementation project(':feature_theater_plays_movies')
+    implementation project(':feature_welcome')
+    implementation project(':feature_place')
+    implementation project(':feature_configuration')
+    implementation project(':component_deep_link')
+    implementation project(':component_payment')
+    implementation project(':feature_full_image')
+    implementation project(':feature_movie_theater')
+    implementation project(':feature_search_category')
+    implementation project(':feature_followings')
+    implementation project(':feature_invite_friends')
+    implementation project(':feature_splash')
+    implementation project(':feature_find_friends')
+    implementation project(':feature_profile')
+
+    //Crashlytics
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true
+    }
+
+    kapt 'com.android.databinding:compiler:3.1.4'
+
+    api('io.branch.sdk.android:library:3.0.4') {
+        exclude module: 'answers-shim'
+    }
+    api 'com.adjust.sdk:adjust-android:4.14.0'
+    api 'com.android.installreferrer:installreferrer:1.0'
+    implementation project(path: ':feature_configuration')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+}
+
+sonarqube {
+    properties {
+        property "sonar.jacoco.reportPath", "build/jacoco/testDebugUnitTest.exec"
+        property "sonar.java.coveragePlugin", "jacoco"
+    }
+}
+
+jacoco {
+    toolVersion = "0.7.6.201602180812"
+}
+
+jacocoAndroidUnitTestReport {
+    csv.enabled false
+    html.enabled false
+    xml.enabled true
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+play {
+
+    serviceAccountCredentials = file("ff698ab52d0e.json")
+    track = "production"
+    releaseStatus = "draft"
+    resolutionStrategy = "auto"
+    outputProcessor { // this: ApkVariantOutput
+        versionNameOverride = "${versionMajor}.${versionMinor}.${versionPatch}.$versionCode"
+    }
+}
+
+ext.betaDistributionGroupAliases = "go-in"

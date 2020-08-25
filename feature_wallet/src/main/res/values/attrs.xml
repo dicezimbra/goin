@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageScaleView">
+        <attr name="matrixType" format="enum">
+            <enum name="top_center" value="0" />
+            <enum name="bottom_center" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="icon" format="reference" />
+        <attr name="id" format="string"/>
+        <attr name="hint_text" format="string"/>
+        <attr name="hint_color" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="text_color" format="color"/>
+        <attr name="icon_color" format="color"/>
+        <attr name="editable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="GoinTicketView">
+        <attr name="radius" format="dimension" value="10dp" />
+        <attr name="headerLayout" format="reference" />
+        <attr name="footerLayout" format="reference" />
+        <attr name="goinTicketOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="goinTicketTopLayout" format="reference" />
+        <attr name="goinTicketBottomLayout" format="reference" />
+        <attr name="goinTicketBackground" format="color" />
+        <attr name="goinTicketStatus" format="enum" >
+            <enum name="normal" value="0"/>
+            <enum name="cutoff" value="1"/>
+            <enum name="withouScissor" value="2"/>
+        </attr>
+        <attr name="goinTicketCirclesRadius" format="dimension" />
+        <attr name="android:elevation" />
+        <attr name="goinTicketElevation" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TicketView">
+        <attr name="ticketOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ticketBackgroundColor" format="color" />
+        <attr name="ticketScallopRadius" format="dimension" />
+        <attr name="ticketScallopPositionPercent" format="float" />
+        <attr name="ticketShowBorder" format="boolean" />
+        <attr name="ticketBorderWidth" format="dimension" />
+        <attr name="ticketBorderColor" format="color" />
+        <attr name="ticketShowDivider" format="boolean" />
+        <attr name="ticketDividerWidth" format="dimension" />
+        <attr name="ticketDividerPadding" format="dimension" />
+        <attr name="ticketDividerColor" format="color" />
+        <attr name="ticketDividerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="ticketDividerDashGap" format="dimension" />
+        <attr name="ticketShowTopShadow" format="boolean" />
+        <attr name="ticketShowBottomShadow" format="boolean" />
+        <attr name="ticketDividerDashLength" format="dimension" />
+        <attr name="ticketCornerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="rounded" value="1" />
+            <enum name="scallop" value="2" />
+        </attr>
+        <attr name="ticketCornerRadius" format="dimension" />
+        <attr name="android:elevation" />
+        <attr name="ticketElevation" format="dimension" />
+    </declare-styleable>
+</resources>

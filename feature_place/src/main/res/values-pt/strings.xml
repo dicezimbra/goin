@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+
+    <!--Field Validation-->
+
+
+    <string name="see_more"> ver mais</string>
+    <string name="next_events">Próximos eventos</string>
+    <string name="photo_gallery">Galeria de Fotos</string>
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+    <string name="error_rating">Erro ao enviar sua avaliação</string>
+
+    <!-- map fragment-->
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <!--Event EventSessionDetail-->
+    <string name="uber_estimate_time_arrival"> %d minutos</string>
+
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+    <string name="await">Espera: </string>
+
+
+    <string name="unfollow_place_question">Você deseja deixar de seguir o lugar?</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+
+    <string name="address_label_establishment">Endereço</string>
+
+    <string name="see_all_views_establishment">Ver todas as avaliações</string>
+    <string name="see_all_views_establishment_singular">Ver as %d avaliação</string>
+
+    <string name="expandable_info">*Informações sujeitas\n a alterações*</string>
+
+
+    <!-- Tab Wallet-->
+
+    <!-- Tab Search -->
+    <string name="advantages_goin">Vantagens Go In</string>
+    <string name="text_buttom_dialog_voucher">Quero! Resgatar Voucher.</string>
+    <string name="regulation_title"><u>regulamento</u></string>
+    <string name="text_view_check_the_regulation">Confira o regulamento</string>
+    <string name="access_wallet">Acessar Wallet</string>
+    <string name="close">fechar</string>
+    <string name="send">Enviar</string>
+    <string name="enjoy_the_party">Aproveite a festa, seu nome está na lista!</string>
+    <string name="have_you_used">Você já utilizou</string>
+    <string name="you_can_once_time">Só é possível utilizar uma vez.</string>
+</resources>

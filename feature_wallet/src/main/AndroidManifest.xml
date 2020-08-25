@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.wallet" >
+
+    <application>
+
+      <activity android:name="br.com.goin.features.fullticket.FullticketActivity"
+          android:screenOrientation="portrait"
+          android:theme="@style/LightTheme" />
+
+
+        <activity android:name="br.com.goin.eventticket.TicketsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme" />
+
+    </application>
+</manifest>

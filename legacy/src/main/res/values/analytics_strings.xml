@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Home-->
+        <!--Screen Name-->
+        <item name="analytics_home_screen_name" type="string" translatable="false">HOME</item>
+
+        <!--Categories-->
+        <item name="analytics_home_category" type="string" translatable="false">HOME</item>
+
+        <!--Action-->
+        <item name="analytics_home_highlight_action" type="string" translatable="false">DESTAQUE</item>
+        <item name="analytics_home_category_action" type="string" translatable="false">CATEGORIA</item>
+        <item name="analytics_home_next_events_action" type="string" translatable="false">PROXIMOS_EVENTOS</item>
+        <item name="analytics_home_ad_action" type="string" translatable="false">PUBLICIDADE</item>
+
+    <!--Establisment-->
+        <!--Screen Name-->
+        <item name="analytics_establishment_screen_name" type="string" translatable="false">ESTABELECIMENTO_DETALHE</item>
+
+        <!--Categories-->
+        <item name="analytics_establishment_category" type="string" translatable="false">ESTABELECIMENTO_DETALHE</item>
+
+        <!--Action-->
+        <item name="analytics_establishment_favorite_action" type="string" translatable="false">FAVORITAR</item>
+        <item name="analytics_establishment_share_action" type="string" translatable="false">COMPARTILHAR</item>
+        <item name="analytics_establishment_waypoint_action" type="string" translatable="false">COMO_CHEGAR</item>
+        <item name="analytics_establishment_uber_action" type="string" translatable="false">VADE_UBER</item>
+        <item name="analytics_establishment_new_avaliation_action" type="string" translatable="false">NOVA_AVALIACAO_POSTAR</item>
+        <item name="analytics_establishment_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Feed-->
+        <!--Screen Name-->
+        <item name="analytics_feed_screen_name" type="string" translatable="false">FEED</item>
+
+        <!--Categories-->
+        <item name="analytics_feed_category" type="string" translatable="false">FEED</item>
+
+        <!--Action-->
+        <item name="analytics_feed_what_are_you_feeling_action" type="string" translatable="false">INPUT_TEXTO</item>
+        <item name="analytics_feed_new_post_action" type="string" translatable="false">POST</item>
+        <item name="analytics_feed_invite_friends_action" type="string" translatable="false">PROCURAR_AMIGOS</item>
+        <item name="analytics_feed_notifications_action" type="string" translatable="false">NOTIFICACOES</item>
+        <item name="analytics_feed_like_action" type="string" translatable="false">LIKE</item>
+        <item name="analytics_feed_comment_action" type="string" translatable="false">COMENTAR</item>
+        <item name="analytics_feed_delete_action" type="string" translatable="false">DELETAR</item>
+
+    <!--Profile-->
+        <!--Screen Name-->
+        <item name="analytics_profile_screen_name" type="string" translatable="false">PERFIL</item>
+
+        <!--Categories-->
+        <item name="analytics_profile_category" type="string" translatable="false">PERFIL</item>
+        <item name="analytics_profile_events_category" type="string" translatable="false">MAIS_EVENTOS</item>
+
+        <!--Action-->
+        <item name="analytics_profile_click_event_action" type="string" translatable="false">EVENTO</item>
+        <item name="analytics_profile_follow_action" type="string" translatable="false">SEGUIR</item>
+        <item name="analytics_profile_find_friends_action" type="string" translatable="false">PROCURAR_AMIGOS</item>
+        <item name="analytics_profile_notification_action" type="string" translatable="false">NOTIFICACAO</item>
+        <item name="analytics_profile_posts_action" type="string" translatable="false">POSTS</item>
+        <item name="analytics_profile_interests_action" type="string" translatable="false">INTERESSES</item>
+        <item name="analytics_profile_followers_action" type="string" translatable="false">SEGUIDORES</item>
+        <item name="analytics_profile_following_action" type="string" translatable="false">SEGUINDO</item>
+        <item name="analytics_profile_edit_action" type="string" translatable="false">EDITAR_PERFIL</item>
+
+        <!--Parameters-->
+        <item name="analytics_profile_follow_parameter" type="string" translatable="false">SEGUIR</item>
+        <item name="analytics_profile_unfollow_parameter" type="string" translatable="false">DESSEGUIR</item>
+
+    <!--New post-->
+        <!--Screen Name-->
+        <item name="analytics_new_post_screen_name" type="string" translatable="false">NOVO_POST</item>
+
+        <!--Categories-->
+        <item name="analytics_new_post_category" type="string" translatable="false">NOVO_POST</item>
+
+        <!--Action-->
+        <item name="analytics_new_post_publish_action" type="string" translatable="false">PUBLICAR</item>
+        <item name="analytics_new_post_checkin_action" type="string" translatable="false">CHECK_IN</item>
+        <item name="analytics_new_post_photo_action" type="string" translatable="false">FOTO</item>
+        <item name="analytics_new_post_video_action" type="string" translatable="false">VIDEO</item>
+        <item name="analytics_new_post_feeling_action" type="string" translatable="false">FEELING</item>
+        <item name="analytics_new_post_tag_friend_action" type="string" translatable="false">MARCAR</item>
+
+    <!--Check in-->
+        <!--Screen Name-->
+        <item name="analytics_checkin_screen_name" type="string" translatable="false">CHECK_IN</item>
+
+        <!--Categories-->
+        <item name="analytics_checkin_category" type="string" translatable="false">CHECK_IN</item>
+
+        <!--Action-->
+        <item name="analytics_checkin_back_action" type="string" translatable="false">VOLTAR</item>
+        <item name="analytics_checkin_search_action" type="string" translatable="false">PESQUISAR</item>
+        <item name="analytics_checkin_select_place_action" type="string" translatable="false">LOCAL_CHECK_IN</item>
+
+    <!--Welcome-->
+        <!--Screen Name-->
+        <item name="analytics_welcome_screen_name" type="string" translatable="false">BEM_VINDO</item>
+
+        <!--Categories-->
+        <item name="analytics_welcome_category" type="string" translatable="false">BEM_VINDO</item>
+
+        <!--Action-->
+        <item name="analytics_welcome_sign_up_action" type="string" translatable="false">CADASTRAR</item>
+        <item name="analytics_welcome_not_now_action" type="string" translatable="false">AGORA_NÃO</item>
+
+    <!--Login-->
+        <!--Screen Name-->
+        <item name="analytics_login_screen_name" type="string" translatable="false">LOGIN</item>
+
+    <!--Sign up-->
+        <!--Screen Name-->
+        <item name="analytics_sign_up_screen_name" type="string" translatable="false">CRIAR_CONTA</item>
+
+        <!--Categories-->
+        <item name="analytics_sign_up_category" type="string" translatable="false">CRIAR_CONTA</item>
+
+        <!--Action-->
+        <item name="analytics_sign_up_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Forgot Password-->
+        <!--Screen Name-->
+        <item name="analytics_forgot_password_screen_name" type="string" translatable="false">ESQUECI_SENHA</item>
+
+        <!--Categories-->
+        <item name="analytics_forgot_password_category" type="string" translatable="false">ESQUECI_SENHA</item>
+
+        <!--Action-->
+        <item name="analytics_forgot_password_send_action" type="string" translatable="false">ENVIAR</item>
+        <item name="analytics_forgot_password_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--My tickets-->
+        <!--Screen Name-->
+        <item name="analytics_my_tickets_screen_name" type="string" translatable="false">MEUS_TICKETS</item>
+
+        <!--Categories-->
+        <item name="analytics_my_tickets_category" type="string" translatable="false">MEUS_TICKETS</item>
+
+        <!--Action-->
+        <item name="analytics_my_tickets_click_action" type="string" translatable="false">TICKET</item>
+        <item name="analytics_my_tickets_click_ticket_tab_action" type="string" translatable="false">TICKET</item>
+        <item name="analytics_my_tickets_click_all_tab_action" type="string" translatable="false">TODOS</item>
+        <item name="analytics_my_tickets_click_booking_tab_action" type="string" translatable="false">BOOKING</item>
+        <item name="analytics_my_tickets_click_voucher_tab_action" type="string" translatable="false">VOUCHER</item>
+
+    <!--Ticket details-->
+        <!--Screen Name-->
+        <item name="analytics_ticket_details_screen_name" type="string" translatable="false">TICKET</item>
+
+        <!--Categories-->
+        <item name="analytics_ticket_details_category" type="string" translatable="false">TICKET</item>
+
+        <!--Action-->
+        <item name="analytics_ticket_details_see_ticket_action" type="string" translatable="false">VER_TICKET</item>
+        <item name="analytics_ticket_details_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+        <item name="analytics_ticket_details_checkin_action" type="string" translatable="false">CHECKIN</item>
+        <item name="analytics_ticket_details_information_action" type="string" translatable="false">INFORMACAO</item>
+        <item name="analytics_ticket_details_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Event details-->
+        <!--Screen Name-->
+        <item name="analytics_event_details_screen_name" type="string" translatable="false">EVENTO_DETALHE</item>
+
+        <!--Categories-->
+        <item name="analytics_event_details_category" type="string" translatable="false">EVENTO_DETALHE</item>
+
+        <!--Action-->
+        <item name="analytics_event_details_buy_ticket_carousel_action" type="string" translatable="false">COMPRAR_TICKET_CARROUSSEL</item>
+        <item name="analytics_event_details_buy_main_ticket_action" type="string" translatable="false">COMPRAR_TICKET_PRINCIPAL</item>
+        <item name="analytics_event_details_back_action" type="string" translatable="false">VOLTAR</item>
+        <item name="analytics_event_details_favorite_action" type="string" translatable="false">FAVORITAR</item>
+        <item name="analytics_event_details_share_action" type="string" translatable="false">COMPARTILHAR</item>
+        <item name="analytics_event_details_checkin_action" type="string" translatable="false">FAZER_CHECKIN</item>
+        <item name="analytics_event_details_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+        <item name="analytics_event_details_informations_action" type="string" translatable="false">INFORMACAO</item>
+        <item name="analytics_event_details_waypoint_action" type="string" translatable="false">COMO_CHEGAR</item>
+        <item name="analytics_event_details_uber_action" type="string" translatable="false">VA_DE_UBER</item>
+
+    <!--Play-->
+        <!--Screen Name-->
+        <item name="analytics_play_screen_name" type="string" translatable="false">HOME_PLAY</item>
+
+        <!--Categories-->
+        <item name="analytics_play_category" type="string" translatable="false">HOME_PLAY</item>
+
+        <!--Action-->
+        <item name="analytics_play_click_carousel_action" type="string" translatable="false">CARROUSSEL</item>
+        <item name="analytics_play_click_grid_action" type="string" translatable="false">GRADE</item>
+        <item name="analytics_play_select_soon_action" type="string" translatable="false">GRADE_EM_BREVE</item>
+        <item name="analytics_play_select_in_theater_action" type="string" translatable="false">GRADE_EM_CARTAZ</item>
+        <item name="analytics_play_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Play details-->
+        <!--Screen Name-->
+        <item name="analytics_play_details_screen_name" type="string" translatable="false">PLAY_DETALHE</item>
+
+        <!--Categories-->
+        <item name="analytics_play_details_category" type="string" translatable="false">PLAY_DETALHE</item>
+
+        <!--Action-->
+        <item name="analytics_play_details_select_section_action" type="string" translatable="false">SELECIONAR_SESSAO</item>
+        <item name="analytics_play_details_back_action" type="string" translatable="false">VOLTAR</item>
+        <item name="analytics_play_details_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+        <item name="analytics_play_details_informations_action" type="string" translatable="false">INFORMACAO</item>
+        <item name="analytics_play_details_select_day_action" type="string" translatable="false">SELECIONAR_DIA</item>
+
+    <!--Search-->
+        <!--Screen Name-->
+        <item name="analytics_search_screen_name" type="string" translatable="false">PESQUISA</item>
+
+        <!--Categories-->
+        <item name="analytics_search_category" type="string" translatable="false">PESQUISA</item>
+
+        <!--Action-->
+        <item name="analytics_search_search_action" type="string" translatable="false">PESQUISA</item>
+        <item name="analytics_search_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Categories list-->
+        <!--Screen Name-->
+        <item name="analytics_categories_list_screen_name" type="string" translatable="false">LISTAGEM</item>
+
+        <!--Categories-->
+        <item name="analytics_categories_list_category" type="string" translatable="false">LISTAGEM</item>
+
+        <!--Action-->
+        <item name="analytics_categories_list_subcategory_action" type="string" translatable="false">SUB_CATEGORIA</item>
+        <item name="analytics_categories_list_click_item_action" type="string" translatable="false">ITEM_LISTA</item>
+        <item name="analytics_categories_list_filter_action" type="string" translatable="false">FILTRO</item>
+        <item name="analytics_categories_list_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Filter-->
+        <!--Screen Name-->
+        <item name="analytics_filter_screen_name" type="string" translatable="false">FILTRO</item>
+
+        <!--Categories-->
+        <item name="analytics_filter_category" type="string" translatable="false">FILTRO</item>
+
+        <!--Action-->
+        <item name="analytics_filter_filter_action" type="string" translatable="false">FILTRO</item>
+        <item name="analytics_filter_clear_filter_action" type="string" translatable="false">LIMPAR_FILTRO</item>
+
+    <!--Movie About-->
+        <!--Screen Name-->
+        <item name="analytics_movie_about_screen_name" type="string" translatable="false">SOBRE</item>
+
+        <!--Categories-->
+        <item name="analytics_movie_about_category" type="string" translatable="false">SOBRE</item>
+
+        <!--Action-->
+        <item name="analytics_movie_about_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Search Friends-->
+        <!--Screen Name-->
+        <item name="analytics_search_friends_screen_name" type="string" translatable="false">PROCURAR_AMIGOS</item>
+
+        <!--Categories-->
+        <item name="analytics_search_friends_category" type="string" translatable="false">PROCURAR_AMIGOS</item>
+
+        <!--Action-->
+        <item name="analytics_search_friends_followers_action" type="string" translatable="false">SEGUIDORES</item>
+        <item name="analytics_search_friends_following_action" type="string" translatable="false">SEGUINDO</item>
+        <item name="analytics_search_friends_search_friend_action" type="string" translatable="false">PESQUISA_USUARIO</item>
+        <item name="analytics_search_friends_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Comments-->
+        <!--Screen Name-->
+        <item name="analytics_comments_screen_name" type="string" translatable="false">COMENTARIOS</item>
+
+        <!--Categories-->
+        <item name="analytics_comments_category" type="string" translatable="false">COMENTARIOS</item>
+
+        <!--Action-->
+        <item name="analytics_comments_post_comment_action" type="string" translatable="false">POSTAR_COMENTARIO</item>
+        <item name="analytics_comments_delete_action" type="string" translatable="false">DELETAR</item>
+        <item name="analytics_comments_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Followers-->
+        <!--Screen Name-->
+        <item name="analytics_followers_screen_name" type="string" translatable="false">SEGUIDORES</item>
+
+        <!--Categories-->
+        <item name="analytics_followers_category" type="string" translatable="false">SEGUIDORES</item>
+
+        <!--Action-->
+        <item name="analytics_followers_follow_action" type="string" translatable="false">SEGUIR</item>
+        <item name="analytics_followers_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Following-->
+        <!--Screen Name-->
+        <item name="analytics_following_screen_name" type="string" translatable="false">SEGUINDO</item>
+
+        <!--Categories-->
+        <item name="analytics_following_category" type="string" translatable="false">SEGUINDO</item>
+
+        <!--Action-->
+        <item name="analytics_following_follow_action" type="string" translatable="false">SEGUIR</item>
+        <item name="analytics_following_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Edit profile-->
+        <!--Screen Name-->
+        <item name="analytics_edit_profile_screen_name" type="string" translatable="false">EDITAR_PERFIL</item>
+
+        <!--Categories-->
+        <item name="analytics_edit_profile_category" type="string" translatable="false">EDITAR_PERFIL</item>
+
+        <!--Action-->
+        <item name="analytics_edit_profile_load_photo_action" type="string" translatable="false">CARREGAR_FOTO</item>
+        <item name="analytics_edit_profile_save_action" type="string" translatable="false">SALVAR</item>
+        <item name="analytics_edit_profile_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Configurations-->
+        <!--Screen Name-->
+        <item name="analytics_configurations_screen_name" type="string" translatable="false">CONFIGURACOES</item>
+
+        <!--Categories-->
+        <item name="analytics_configurations_category" type="string" translatable="false">CONFIGURACOES</item>
+
+        <!--Action-->
+        <item name="analytics_configurations_user_terms_action" type="string" translatable="false">TERMOS_USO</item>
+        <item name="analytics_configurations_half_price_policy_action" type="string" translatable="false">POLITICA_MEIA_ENTRADA</item>
+        <item name="analytics_configurations_privacy_policy_action" type="string" translatable="false">POLITICA_PRIVACIDADE</item>
+        <item name="analytics_configurations_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+        <item name="analytics_configurations_logout_action" type="string" translatable="false">SAIR</item>
+        <item name="analytics_configurations_edit_profile_action" type="string" translatable="false">EDITAR_PERFIL</item>
+        <item name="analytics_configurations_change_password_action" type="string" translatable="false">MUDAR_SENHA</item>
+
+    <!--Change Password-->
+        <!--Screen Name-->
+        <item name="analytics_change_password_screen_name" type="string" translatable="false">ALTERAR_SENHA</item>
+
+        <!--Categories-->
+        <item name="analytics_change_password_category" type="string" translatable="false">ALTERAR_SENHA</item>
+
+        <!--Action-->
+        <item name="analytics_change_password_change_action" type="string" translatable="false">ALTERAR_SENHA</item>
+
+    <!--Label Identifier-->
+    <string name="analytics_ticket_label_identifier" translatable="false">NOME_TICKET:%s</string>
+    <string name="analytics_event_label_identifier" translatable="false">NOME_EVENTO:%s</string>
+    <string name="analytics_event_hour_label_identifier" translatable="false">HORA_EVENTO:%s</string>
+    <string name="analytics_play_day_label_identifier" translatable="false">DIA_PLAY:%s</string>
+    <string name="analytics_category_label_identifier" translatable="false">NOME_CATEGORIA:%s</string>
+    <string name="analytics_subcategory_label_identifier" translatable="false">NOME_SUB_CATEGORIA:%s</string>
+    <string name="analytics_publish_post_label_identifier" translatable="false">PUBLICAR</string>
+    <string name="analytics_status_label_identifier" translatable="false">STATUS:%s</string>
+    <string name="analytics_search_term_label_identifier" translatable="false">TERMO_PESQUISA:%s</string>
+    <string name="analytics_back_label_identifier" translatable="false">VOLTAR</string>
+    <string name="analytics_establishment_label_identifier" translatable="false">NOME_ESTABELECIMENTO:%s</string>
+    <string name="analytics_local_checkin_label_identifier" translatable="false">LOCAL_CHECK_IN:%s</string>
+    <string name="analytics_label_identifier_concatenate" translatable="false">%s,%s</string>
+    <string translatable="false" name="onboarding_social_screen_view">ONBOARDING_SOCIAL</string>
+    <string translatable="false" name="onboarding_organizer_screen_view">ONBOARDING_ORGANIZADOR</string>
+    <string translatable="false" name="create_post_screen_name">CRIAR_POST</string>
+    <string translatable="false" name="post_video_screen_view">POST_VISUALIZAR_VIDEO</string>
+
+</resources>

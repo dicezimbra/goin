@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="alert_warning">Alert</string>
+    <string name="alert_ok" translatable="false">Ok</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+    <string name="permissions_dialog_title">Permissions</string>
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+
+
+</resources>

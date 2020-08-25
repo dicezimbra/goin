@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Feature Configuration</string>
+    <string name="really_want_to_leave">Really want to leave?</string>
+    <string name="logout">Logout</string>
+    <string name="no">No</string>
+    <string name="goin_account">Go In Account</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="change_password_title">Change password</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="entry_policy">Half Price Policy</string>
+    <string name="config_holder_play_header">Those who enter have fun,\nthat enter has fun!</string>
+    <string name="config_holder_play">Real-time updates will tell you if the ride will be worth it.\nThen just go for fun!</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="download_goin_title">Go In - DOWNLOAD NOW</string>
+    <string name="download_goin_description_start">Join the</string>
+    <string name="download_goin_description_end">on the social entertainment network</string>
+    <string name="share">Share</string>
+
+
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_establishment_info"
+    android:layout_width="match_parent"
+    android:foreground="?selectableItemBackgroundBorderless"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_category_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background_logo"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_category_search_black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+
+    <TextView
+        android:id="@+id/upper_title"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:drawablePadding="5dp"
+        android:textColor="@color/red_wallet"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="8 de ABRIL" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/quicksand_medium"
+        android:lines="2"
+        android:textColor="#2B2F34"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@+id/upper_title"
+        tools:text="Nome do estabelecimento" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/quicksand_light"
+        android:maxLines="1"
+        android:textColor="@color/gray_subcategory"
+        android:layout_marginEnd="8dp"
+        android:textSize="10dp"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Alameda Amozonas, 938" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="1dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/backgrground_distance_search"
+        android:textColor="@color/backgrground_distance_search"
+        android:textSize="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@id/name"
+        tools:text="1 km"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

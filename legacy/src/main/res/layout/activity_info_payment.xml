@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="br.com.legacy.viewModels.InfoPaymentVM" />
+
+        <variable
+            name="activity"
+            type="br.com.legacy.viewControllers.activitites.InfoPaymentActivity" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/info_payment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundBoard"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/info_payment_toolbar"
+            layout="@layout/item_custom_toolbar_orange"
+            app:model="@{activity.toolbar}"
+            app:parent="@{activity}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_payment_label"
+                    style="@style/text_grey_12sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23.5dp"
+                    android:text="@string/info_payment"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:id="@+id/simple_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_first_name_field"
+                        android:name="@{activity.infoPaymentVM.firstName}"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/first_name"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_last_name_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/last_name"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_cpf_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cpf_mask="@{activity}"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        custom:hint_text="@string/cpf"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_birthday_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        android:birthday_mask="@{activity}"
+                        custom:hint_text="@string/birthday"
+                        custom:icon="@drawable/profile_icon"
+                        android:visibility="@{activity.infoPaymentVM.showAddress() ? View.VISIBLE : View.GONE}"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/credit_card_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="@{activity.infoPaymentVM.isTicket() ? View.GONE : View.VISIBLE}">
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:credit_card_mask="@{activity}"
+                        android:maxLength="@{19}"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        custom:hint_text="@string/card_numer"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_expiration_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:maxLength="@{2}"
+                        android:numericalKeyboard="@{true}"
+                        custom:hint_text="@string/expiration_month"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_expiration_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:maxLength="@{2}"
+                        android:numericalKeyboard="@{true}"
+                        custom:hint_text="@string/expiration_year"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:maxLength="@{4}"
+                        android:numericalKeyboard="@{true}"
+                        custom:hint_text="@string/cvv"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_parcels_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        android:text="1"
+                        android:visibility="gone"
+                        app:text="1"
+                        custom:hint_text="@string/parcels_number"
+                        custom:icon="@drawable/profile_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/boleto_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="@{activity.infoPaymentVM.showAddress() ? View.VISIBLE : View.GONE}"
+                    tools:visibility="visible">
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:email="@{activity.infoPaymentVM.currentUser.email}"
+                        android:email_validate="@{activity}"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/email"
+                        custom:icon="@drawable/profile_icon"
+                        android:visibility="@{activity.infoPaymentVM.isTicket() ? View.VISIBLE : View.GONE}"
+                        tools:visibility="visible"/>
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        android:phone_mask="@{activity}"
+                        custom:hint_text="@string/phone"
+                        custom:icon="@drawable/profile_icon"
+                        android:visibility="@{activity.infoPaymentVM.isTicket() ? View.VISIBLE : View.GONE}"
+                        tools:visibility="visible"/>
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_postal_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        android:postal_code_mask="@{activity}"
+                        custom:hint_text="@string/postal_code"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_street"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/street"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_street_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        android:numericalKeyboard="@{true}"
+                        custom:hint_text="@string/street_number"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_complement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/location_complement"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_neighborhood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/neighborhood"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:setCustomStyle="@{true}"
+                        custom:hint_text="@string/city"
+                        custom:icon="@drawable/profile_icon" />
+
+                    <br.com.legacy.customViews.CustomEditText
+                        android:id="@+id/info_payment_buyer_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="@{2}"
+                        android:setCustomStyle="@{true}"
+                        android:uppercaseKeyboard="@{true}"
+                        custom:hint_text="@string/state"
+                        custom:icon="@drawable/profile_icon" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/info_payment_next_button"
+                    style="@style/text_white_13sp_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/background_primary_dark"
+                    android:onClick="@{activity::onClickNextButton}"
+                    android:text="@string/next" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

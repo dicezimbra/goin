@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="red">#ff0000</color>
+    <color name="colorRedButtonFilter">#FF5150</color>
+    <color name="gray_primary">#F6F6F8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+
+    <color name="style_orange">#ff5150</color>
+
+    <color name="battleship_gray">#65707e</color>
+    <color name="gray_subcategory">#9B9B9B</color>
+    <color name="background_unselected_chip">#FBF9F8</color>
+    <color name="text_color_unselected_chip">#9B9B9B</color>
+    <color name="lightSilver">#f6f6f8</color>
+    <color name="melon">#ff8155</color>
+    <color name="colorRedEndButtonFilter">#FF5050</color>
+    <color name="colorFilterButtonClear">#E7E7E7</color>
+    <color name="colorFilterButtonClearText">#454E5A</color>
+    <color name="grapefruit">#ff5150</color>
+    <color name="battleshipGrey">#65707e</color>
+    <color name="yellowStarProfile">#EAAE5C</color>
+
+    <color name="search_gray">#454E5A</color>
+    <color name="search_category_address">#9B9B9B</color>
+    <color name="red_wallet">#FF5050</color>
+    <color name="ticket_background">#FBF9F8</color>
+    <color name="gold">#EAAE5C</color>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/_16sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_16sdp"
+        android:gravity="center"
+
+        android:text="Se você tem um cupom de desconto, insira-o abaixo e clique em confirmar:"
+        android:textColor="@color/adark_grey_2"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/view2"
+            android:theme="@style/InputTextstyle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_24sdp">
+
+            <EditText
+                android:inputType="textCapCharacters"
+                android:gravity="center"
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Cupom de desconto" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:background="@drawable/button_orange_style"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:id="@+id/btn_yes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textColor="@color/white"
+        android:text="CONFIRMAR"
+
+       />
+
+
+        <Button
+
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/btn_no"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_white_style"
+            android:textColor="@color/style_orange"
+
+            android:text="NÃO TENHO CUPOM"
+            />
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

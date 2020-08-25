@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Home-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Establisment-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Feed-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Profile-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Parameters-->
+
+    <!--New post-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Check in-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Welcome-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Login-->
+        <!--Screen Name-->
+
+    <!--Sign up-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Forgot Password-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--My tickets-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Ticket details-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Event details-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Play-->
+        <!--Screen Name-->
+        <item name="analytics_play_screen_name" type="string" translatable="false">HOME_PLAY</item>
+
+        <!--Categories-->
+        <item name="analytics_play_category" type="string" translatable="false">HOME_PLAY</item>
+
+        <!--Action-->
+        <item name="analytics_play_click_carousel_action" type="string" translatable="false">CARROUSSEL</item>
+        <item name="analytics_play_click_grid_action" type="string" translatable="false">GRADE</item>
+    <item name="analytics_play_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Play details-->
+        <!--Screen Name-->
+        <item name="analytics_play_details_screen_name" type="string" translatable="false">PLAY_DETALHE</item>
+
+        <!--Categories-->
+        <item name="analytics_play_details_category" type="string" translatable="false">PLAY_DETALHE</item>
+
+        <!--Action-->
+        <item name="analytics_play_details_select_section_action" type="string" translatable="false">SELECIONAR_SESSAO</item>
+        <item name="analytics_play_details_back_action" type="string" translatable="false">VOLTAR</item>
+        <item name="analytics_play_details_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+        <item name="analytics_play_details_informations_action" type="string" translatable="false">INFORMACAO</item>
+        <item name="analytics_play_details_select_day_action" type="string" translatable="false">SELECIONAR_DIA</item>
+
+    <!--Search-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Categories list-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Filter-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Movie About-->
+        <!--Screen Name-->
+        <item name="analytics_movie_about_screen_name" type="string" translatable="false">SOBRE</item>
+
+        <!--Categories-->
+        <item name="analytics_movie_about_category" type="string" translatable="false">SOBRE</item>
+
+        <!--Action-->
+        <item name="analytics_movie_about_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Search Friends-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Comments-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Followers-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Following-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Edit profile-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Configurations-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Change Password-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Label Identifier-->
+    <string name="analytics_event_label_identifier" translatable="false">NOME_EVENTO:%s</string>
+    <string name="analytics_event_hour_label_identifier" translatable="false">HORA_EVENTO:%s</string>
+    <string name="analytics_play_day_label_identifier" translatable="false">DIA_PLAY:%s</string>
+    <string name="analytics_label_identifier_concatenate" translatable="false">%s,%s</string>
+
+    <string translatable="false" name="movie_screen_name">FILMES_LISTAGEM</string>
+    <string translatable="false" name="theater_place_screen_name">PECA_TEATRO_LISTAGEM</string>
+    <string translatable="false" name="movie_detail_screen_view">FILME_DETALHE</string>
+
+    <string translatable="false" name="theater_detail_screen_view">DETALHE_PECA_TEATRO</string>
+    <string translatable="false" name="movie_about_screen_name">FILME_SOBRE</string>
+    <string translatable="false" name="theater_about_screen_name">TEATRO_SOBRE</string>
+    <string translatable="false" name="detail_category">DETALHE</string>
+    <string translatable="false" name="filter_category">FILTRO</string>
+    <string translatable="false" name="buy_category">COMPRAR</string>
+
+
+</resources>

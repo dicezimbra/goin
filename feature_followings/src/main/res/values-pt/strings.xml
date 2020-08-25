@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_have_no_followers">Você não possui nenhum seguidor.</string>
+    <string name="you_dont_follow_anyone">Você não segue ninguém.</string>
+    <string name="following">Seguindo</string>
+    <string name="followers">Seguidores</string>
+    <string name="unfollow">DEIXAR DE SEGUIR</string>
+    <string name="cancel">Cancelar</string>
+    <string name="unfollow_alert">Deixar de seguir %1$s?</string>
+    <string name="service_error">Erro. Tente novamente.</string>
+</resources>

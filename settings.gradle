@@ -1,0 +1,8 @@
+include ':app', ':base', ':component_user_session', ':feature_home', ':feature_login', ':component_rest_api', ':feature_search_location', ':feature_theater_plays_movies', ':feature_configuration', ':component_push', ':feature_change_password', ':feature_profile', ':component_payment',
+        ':component_navigation', ':component_analytics', ':feature_terms', ':feature_notifications', ':feature_feed',
+        ':component_ui_kit', ':component_model_event', ':component_model_category', 'feature_filter', ':feature_wallet', ':feature_place',
+        ':feature_all_categories', ':feature_wallet', ':feature_event', ':component_model_uber', ':feature_search_event', ':feature_followings', ":legacy",
+         ':feature_full_image', ':feature_welcome',':feature_movie_theater', ':component_deep_link', ':feature_search_category', ':component_model_club', ":feature_splash",
+        ':feature_all_categories', ':feature_wallet', ':feature_event', ':component_model_uber', ':feature_search_event', ':feature_followings',
+        ':component_model_club', ':feature_full_image',
+        ':feature_movie_theater', ':feature_find_friends', ':feature_invite_friends'

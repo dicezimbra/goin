@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grapefruit">ff5050</color>
+    <color name="red_wallet">#FF5050</color>
+    <color name="card_gray">#4D4D4D</color>
+    <color name="card_gray_2">#65707E</color>
+</resources>

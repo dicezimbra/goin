@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.change.password" >
+
+    <application>
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme" />
+
+    </application>
+</manifest>

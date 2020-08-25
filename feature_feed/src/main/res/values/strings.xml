@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feed">Feed</string>
+    <string name="what_are_you_thinking">What are you thinking?</string>
+    <string name="emptyFeed">There are no posts.</string>
+    <string name="read_more"><![CDATA[Read more >]]></string>
+
+    <string name="there_is_no_events_near_you_to_check_in">There are no eventApis near you to check in</string>
+    <string name="no_users_found">No users found</string>
+    <string name="be_the_first_to_comment">Be the first to comment</string>
+    <string name="this_post_has_no_likes">This post has no likes</string>
+    <string name="post_reported_message">We’ll analyse your report and, if necessary, we’ll get in touch soon.</string>
+    <string name="confirm_report_message">Are you sure you\'d like to report this post?</string>
+    <string name="confirm_delete_message">Are you sure you want to delete this post?</string>
+    <string name="confirm_delete_comment">Are you sure you want to delete this comment?</string>
+    <string name="okay">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="post">Post</string>
+
+    <string name="emoji_glad">Glad</string>
+    <string name="emoji_excited">Excited</string>
+    <string name="emoji_happy">Happy</string>
+    <string name="emoji_cool">Cool</string>
+    <string name="emoji_anxious">Anxious</string>
+    <string name="emoji_joyful">Joyful</string>
+    <string name="emoji_seductive">Seductive</string>
+    <string name="emoji_angry">Angry</string>
+    <string name="emoji_sick">Sick</string>
+
+    <string name="is_feeling">is feeling</string>
+    <string name="my_feeling">I am feeling…</string>
+    <string name="feeling">Feelings</string>
+    <string name="in">in</string>
+    <string name="did_checkin">checked in to</string>
+
+    <string name="needed_permissions">"We need our permission to get the eventApis location!"</string>
+    <string name="needed_permissions_check_in">"We need our permission to check-in eventApis near you!"</string>
+
+    <string name="shared_a_post">%s shared a post.</string>
+    <string name="publishing">Publishing…</string>
+    <string name="create_post">Create post</string>
+    <string name="post_something">Post something....</string>
+    <string name="publish">Publish</string>
+    <string name="thank_you">Thank you</string>
+    <string name="thank_you_for_report">We\'ll analyse your report and, if need, we\'ll get in touch soon.</string>
+    <string name="ok">OK</string>
+    <string name="add_a_comment">Add a comment</string>
+    <string name="comments">Comments</string>
+    <string name="msg_delete">Are you sure you want to delete this post?</string>
+    <string name="what_do_you_need_to_find">What do you need to find?</string>
+
+    <plurals name="days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="seconds_ago">
+        <item quantity="one">%d second ago</item>
+        <item quantity="other">%d seconds ago</item>
+    </plurals>
+    <string name="long_time_ago">a long time ago</string>
+
+</resources>

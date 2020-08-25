@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature_all_categories">
+
+    <application>
+
+        <activity
+            android:name=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CategoriesTheme" />
+
+    </application>
+</manifest>

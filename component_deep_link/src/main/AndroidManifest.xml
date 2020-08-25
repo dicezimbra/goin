@@ -1,0 +1,2 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.component_deep_link" />

@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.goin.feature.profile">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application>
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfileTheme" />
+
+        <activity
+            android:name=".edit.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfileTheme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

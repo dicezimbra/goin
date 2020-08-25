@@ -1,0 +1,102 @@
+<resources>
+
+    <!--facebook-->
+    <string name="fb_login_protocol_scheme" translatable="false">fb1864781376934348</string>
+    <string name="facebook_app_id" translatable="false">1864781376934348</string>
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="email_exists">This e-mail address is already registered.</string>
+    <string name="invalid_user">Invalid e-mail address or password.</string>
+    <string name="needed_permissions_check_in">"We need our permission to check-in eventApis near you!"</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+
+    <!--Field Validation-->
+    <string name="invalid_email">Please enter a valid e-mail address.</string>
+    <string name="invalid_checked">Please agree to the terms and conditions.</string>
+    <string name="invalid_password">The password must contain at least 8 characters and a capital letter</string>
+    <string name="forgot_password_send_code_success">Email code sent</string>
+
+    <string name="send">Send</string>
+
+    <string name="btn_sign_up">Sign up</string>
+    <string name="email">E-mail*</string>
+    <string name="email_login">E-mail</string>
+    <string name="name">Name*</string>
+    <string name="password">Password*</string>
+    <string name="confirm_password">Confirm password*</string>
+
+    <!-- map fragment-->
+
+    <string name="new_password">New Password</string>
+
+
+    <!--Notifications-->
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="please_insert_name">Please enter your name.</string>
+    <string name="please_insert_password">Please enter your password.</string>
+    <string name="please_confirm_password">Please confirm your password.</string>
+    <string name="password_dont_match">Your password does not match.</string>
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+
+    <!--Post-->
+
+    <!--Chat-->
+    <string name="error_uploading_image">It was not possible to upload the image. It is not stored locally in your device.</string>
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+    <string name="btn_log_in">Log in</string>
+
+
+    "
+
+
+    <string name="enter">Login</string>
+    <string name="type_your_password">Your password</string>
+
+    <string name="privacy_terms">By registering, I declare that I have read and accept the <u>Terms and Conditions</u> and the <u>Privacy Policy</u>.</string>
+
+    <!-- terms of use lorem -->
+    <string name="terms_of_use_lorem">Terms Of Use</string>
+
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+    <string name="email_not_found">Email not found</string>
+
+
+    <string name="fill_your_email_below">Insira seu endereço de e-mail abaixo para receber um link de redefinição de senha.</string>
+
+    <string name="enter_a_valid_email">Type a valid e-mail</string>
+    <string name="enter_a_valid_password">Type a valid password</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="or">or</string>
+    <string name="pin_text">To reset your password enter your new password and the PIN that you received on your email.</string>
+    <string name="save_new_password">Save new password</string>
+    <string name="your_password_must_contain">Your password must contain a capital letter and at least 8 characters.</string>
+    <string name="your_pass">Your password must contain a</string>
+    <string name="capital_letter">capital letter</string>
+    <string name="and_at_least">and at least</string>
+    <string name="eight_chars">8 characters</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="choose_photo">Choose photo</string>
+    <string name="save_photo">Save picture</string>
+    <string name="permissions_gallery_needed">You need to allow the permissions to upload your profile picture!</string>
+    <string name="invalidEmail">Please, type a valid e-mail!</string>
+    <string name="password_changed_successfully">Password changed successfully!</string>
+    <string name="not_now">Not now</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password_screen_name_2">ESQUECI_SENHA_PASSO_2</string>
+
+
+</resources>
+

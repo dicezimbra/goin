@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">component_payment</string>
+    <string name="new_address">Novo endereço</string>
+    <string name="new_credit_card">Pagamento</string>
+    <string name="zipcode">CEP</string>
+    <string name="nickname">Nickname</string>
+    <string name="next">Próximo</string>
+    <string name="back">Voltar</string>
+    <string name="address_not_found">Endereço não encontrado. Tente novamente!</string>
+    <string name="add_address">Salvar</string>
+
+    <string-array name="address_view_pager_array">
+        <item>Apelido</item>
+        <item>CEP</item>
+        <item>Rua, avenida, etc</item>
+        <item>Número</item>
+        <item>Bairro</item>
+        <item>Complemento (opcional)</item>
+    </string-array>
+
+    <string-array name="card_view_pager_array">
+        <item>Número do cartão de crédito</item>
+        <item>Nome impresso no cartão</item>
+        <item>Validade</item>
+        <item>CVV</item>
+        <item>CPF (titular do cartão)</item>
+        <item>Data de nascimento (titular do cartão)</item>
+    </string-array>
+
+
+
+</resources>

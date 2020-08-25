@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feed">Feed</string>
+    <string name="what_are_you_thinking">O que você está pensando?</string>
+    <string name="emptyFeed">O feed está vazio.</string>
+    <string name="read_more"><![CDATA[Ler mais >]]></string>
+
+    <string name="there_is_no_events_near_you_to_check_in">Não há eventos no momento.</string>
+    <string name="no_users_found">Usuário não encontrado</string>
+    <string name="be_the_first_to_comment">Seja o primeiro a comentar</string>
+    <string name="this_post_has_no_likes">Esta foto não possui nenhuma curtida</string>
+    <string name="thank_you">Obrigado</string>
+
+    <string name="post_reported_message">Vamos analisar a sua denúncia e, caso necessário, entraremos em contato em breve.</string>
+    <string name="confirm_report_message">Você tem certeza que deseja denunciar esse post?</string>
+    <string name="confirm_delete_message">Tem certeza que quer excluir esse post?</string>
+    <string name="confirm_delete_comment">Tem certeza que quer excluir esse comentário?</string>
+    <string name="okay">Ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="post">Post</string>
+
+    <string name="emoji_glad">Contente</string>
+    <string name="emoji_excited">Empolgado</string>
+    <string name="emoji_happy">Feliz</string>
+    <string name="emoji_cool">Descolado</string>
+    <string name="emoji_anxious">Ansioso</string>
+    <string name="emoji_joyful">Alegre</string>
+    <string name="emoji_seductive">Sedutor</string>
+    <string name="emoji_angry">Bravo</string>
+    <string name="emoji_sick">Enjoado</string>
+
+    <string name="is_feeling">está se sentindo</string>
+    <string name="my_feeling">Estou me sentindo…</string>
+    <string name="feeling">Sentimentos</string>
+    <string name="in">em</string>
+    <string name="did_checkin">fez check-in em</string>
+
+    <string name="needed_permissions">Nós precisamos de sua permissão para mostrar as informações de localização do evento!</string>
+    <string name="needed_permissions_check_in">Nós precisamos de sua permissão para fazer check-in nos eventos próximos à você!</string>
+
+    <string name="shared_a_post">%s compartilhou o post.</string>
+    <string name="publishing">Publicando post...</string>
+    <string name="create_post">Criar post</string>
+    <string name="post_something">Publicar algo...</string>
+    <string name="publish">Publicar</string>
+    <string name="thank_you_for_report">Analisaremos sua denúncia e, se necessário, entraremos em contato.</string>
+    <string name="ok">OK</string>
+    <string name="add_a_comment">Adicione um comentário</string>
+    <string name="comments">Comentários</string>
+    <string name="msg_delete">Você tem certeza que deseja apagar esse post?</string>
+    <string name="what_do_you_need_to_find">O que você deseja encontrar?</string>
+
+    <plurals name="days_ago">
+        <item quantity="one">%d dia atrás</item>
+        <item quantity="other">%d dias atrás</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="one">%d hora atrás</item>
+        <item quantity="other">%d horas atrás</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="one">%d minuto atrás</item>
+        <item quantity="other">%d minutos atrás</item>
+    </plurals>
+    <plurals name="seconds_ago">
+        <item quantity="one">%d segundo atrás</item>
+        <item quantity="other">%d segundos atrás</item>
+    </plurals>
+    <string name="long_time_ago">há muito tempo atrás</string>
+
+
+</resources>

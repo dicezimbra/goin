@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="DialogThemeTicketPolicy" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/white</item>
+        <!--<item_success_dialog name="android:windowBackground">@null</item_success_dialog>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="LoginActivityTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/login_background_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="CustomTextFields" parent="TextViewStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/battleship_grey</item>
+    </style>
+
+    <style name="ProgressWhite" parent="TextViewStyle">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="LightTheme2" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="HomeTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MovieDetailTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/grayBackgroundBoard</item>
+    </style>
+
+    <style name="EventTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/grayBackgroundBoard</item>
+    </style>
+
+    <style name="MoviesTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark" tools:targetApi="23">@color/grayBackgroundBoard</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+    <style name="SearchLocationTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/gray_primary</item>
+        <item name="colorPrimaryDark">@color/gray_primary_dark</item>
+    </style>
+
+    <style name="CheckInTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark" tools:targetApi="23">@color/gray_primary_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark" tools:targetApi="23">@color/grayBackgroundBoard</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CategoriesTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark" tools:targetApi="m">@color/lightSilver</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!--Sign Up-->
+
+    <style name="card_event_close_text">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:text">X</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Text styles -->
+
+    <style name="text_white_11sp">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_white_12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_white_13sp_bold">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_white_16sp_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_white_18sp_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_purple_12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="text_purple_14sp_bold">
+        <item name="android:textSize">14.8sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_purple_15sp_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_primaryDark_12sp_bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_primaryDark_13sp_bold">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_primaryDark_15sp_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_grey_9sp">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="text_grey_10sp">
+        <item name="android:textSize">10.5sp</item>
+    </style>
+
+    <style name="text_grey_10sp_bold">
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_grey_12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_grey_12sp_bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_grey_14sp_italic_centered">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="text_grey_14sp">
+        <item name="android:textSize">14.8sp</item>
+    </style>
+
+    <style name="text_grey_15sp_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_grey_18sp_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- SeekBar style -->
+
+    <!-- RatingBar -->
+
+    <!-- RatingBar MyClubs -->
+    <style name="CustomRatingBarMyClubs" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+
+    <style name="button_orange_style">
+        <item name="android:height">@dimen/_40sdp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_buy_orange_style</item>
+    </style>
+
+    <style name="button_gradient_style">
+        <item name="android:height">@dimen/_40sdp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/gradient_background_welcome</item>
+    </style>
+
+    <style name="EditTextEditProfile">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/lightGray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/grayTabEditProfile</item>
+        <item name="colorControlNormal">@color/colorBlack20percent</item>
+        <item name="colorControlActivated">@color/grayTabEditProfile</item>
+    </style>
+
+    <style name="EditTextTicket" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/lightGray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/lightGray</item>
+        <item name="colorControlNormal">@color/lightGray</item>
+        <item name="colorControlActivated">@color/gray</item>
+    </style>
+
+    <!-- Tabas on ProfileFragment-->
+
+    <style name="text_black_15sp_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="DialogThemeFullscreen" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/adark_grey</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+
+
+    <style name="TabWallet" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabTextColor">@color/grayTabEditProfile</item>
+        <item name="tabTextAppearance">@style/TextAppearanceTabWallet</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabGravity">center</item>
+
+    </style>
+
+    <style name="TextAppearanceTabWallet" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="ActivityDialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="InputTextstyle" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/style_orange</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/style_orange</item>
+        <item name="colorControlNormal">@color/style_orange</item>
+        <item name="colorControlActivated">@color/style_orange</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange_dark</item>
+        <item name="colorAccent">@color/style_orange</item>
+        <item name="autoCompleteTextViewStyle">@style/CursorOrangeTheme</item>
+    </style>
+
+    <style name="CursorOrangeTheme" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@color/battleshipGrey</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

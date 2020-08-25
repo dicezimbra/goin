@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="br.com.legacy.viewControllers.activitites.PhotoGalleryActivity"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_custom_toolbar_term"
+        android:id="@+id/gallery_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photo_gallery_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

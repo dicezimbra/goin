@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="photoGallery"
+            type="br.com.legacy.models.PhotoGalleryModel"/>
+    </data>
+
+    <br.com.legacy.customViews.SquareFrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/item_photo_gallery_container"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            >
+
+            <ImageView
+                android:id="@+id/item_photo_gallery_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@{photoGallery.photoImage}"/>
+
+        </RelativeLayout>
+
+    </br.com.legacy.customViews.SquareFrameLayout>
+
+</layout>

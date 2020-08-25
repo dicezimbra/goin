@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+
+    <style name="SearchLocationTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/gray_primary</item>
+        <item name="colorPrimaryDark">@color/gray_primary_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="SearchViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange_dark</item>
+        <item name="colorAccent">@color/style_orange</item>
+        <item name="autoCompleteTextViewStyle">@style/CursorOrangeTheme</item>
+    </style>
+
+    <style name="CursorOrangeTheme" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@color/battleshipGrey</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,83 @@
+<resources>
+
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+
+    <!--Field Validation-->
+
+
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    "
+
+    <!-- map fragment-->
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+    <string name="uber_estimate_time_arrival"> %d minutes</string>
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <string name="endere_o">Endereço</string>
+
+    <!-- terms of use lorem -->
+
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+
+    <string name="await">Await: </string>
+    <string name="theater_title">Theater</string>
+    <string name="label_pick_time">Choose for which hour would like to buy the ticker</string>
+    <string name="como_chegar">Como chegar</string>
+    <string name="veja_rotas_dispon_veis">Veja rotas disponíveis</string>
+    <string name="v_de_uber">Vá de Uber</string>
+    <string name="uber_wait_time" formatted="false">Espera: %d min </string>
+    <string name="uber_price" formatted="false">R$ %.2f</string>
+    <string name="label_buy_theater">Choose the time to buy the ticket</string>
+    <string name="about_movie">About movie</string>
+    <string name="get_location_error">Coordinates of this location are not yet available</string>
+</resources>
+

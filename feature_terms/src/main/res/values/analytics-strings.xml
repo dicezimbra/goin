@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="term_use_screen_name">TERMOS_DE_USO</string>
+    <string translatable="false" name="half_ticket_screen_name">POLITICA_MEIA_ENTRADA</string>
+    <string translatable="false" name="privicy_screen_name">POLITICA_PRIVACIDADE</string>
+</resources>

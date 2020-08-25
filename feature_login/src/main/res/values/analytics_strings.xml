@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="login_home_screen_name">HOME_LOGIN</string>
+    <string translatable="false" name="login_screen_view">LOGIN</string>
+    <string translatable="false"  name="forgot_password_screen_name">ESQUECI_SENHA</string>
+    <string translatable="false" name="register_screen_name">CADASTRO</string>
+    <string translatable="false" name="register_choose_picture_screen_name">CADASTRO_FOTO</string>
+</resources>

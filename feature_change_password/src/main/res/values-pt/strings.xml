@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+
+    <!--Field Validation-->
+    <string name="invalid_password">A senha deve conter, pelo menos 8 caracteres e uma letra maiúscula</string>
+
+
+    <string name="different_passwords">Senhas diferentes</string>
+    <string name="fill_all_fields_password">Preencha todos os campos</string>
+    <string name="invalid_password_error">Senha inválida</string>
+    <string name="change_password_old_password">Senha Antiga</string>
+
+
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+
+    <!-- map fragment-->
+
+    <string name="new_password">Senha nova</string>
+    <string name="new_password_confirmation">Confirmar senha nova</string>
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <!--Event EventSessionDetail-->
+
+
+    <!--Post-->
+
+    <!--Chat-->
+    <!--Global Search-->
+    <!--Tickets-->
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="change_password_success">Senha trocada com sucesso!</string>
+
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+
+    <string name="change_password_title">Trocar senha</string>
+
+    <!-- Tab Wallet-->
+
+    <!-- Tab Search -->
+
+    <string name="new_password_same_old">A sua nova senha não pode ser igual a antiga.</string>
+
+</resources>

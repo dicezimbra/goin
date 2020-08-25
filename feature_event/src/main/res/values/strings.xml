@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+
+    <!--Field Validation-->
+
+
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    "
+
+    <string name="cancel">Cancel</string>
+
+    <!-- map fragment-->
+
+
+    <string name="free">Free</string>
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+    <string name="uber_estimate_time_arrival"> %d minutes</string>
+    <string name="confirmation_checkin">Would you like to check in to this event?</string>
+    <string name="check_in_disabled_message">It’s only possible to check-in during the eventApi.</string>
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+
+    <string name="go_to_party">Let\'s do it! Get my ticket.</string>
+    <string name="confirm_on_list">Put me in!</string>
+
+
+    <string name="cant_remove_checkin">It is not possible to remove your interest after you checked in.</string>
+    <string name="unfollow_event_question">Do you want to unfollow this eventApi?</string>
+    <string name="presence_confirmed">Your presence is confirmed</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+
+    <string name="do_checkin">Do\nCheckin</string>
+    <string name="buy_ticket">Buy\nTicket</string>
+    <string name="invite_friends_event">Invite\nFriends</string>
+    <string name="information_section">Informations</string>
+
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <string name="comprar_sem_taxa">BUY TICKET</string>
+    <string name="endere_o">Endereço</string>
+
+    <!-- terms of use lorem -->
+
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+    <string name="attendance_confirmation">Confirm attendance</string>
+    <string name="you_dont_have_permissions_to_see_event" formatted="false">You dont have permissions to open this eventApi!</string>
+    <string name="fill_the_discount_field">Fill the discount field.</string>
+    <string name="invalid_discount_code">Invalid discount code.</string>
+
+
+    <string name="place_address">Establishment address</string>
+
+    <string name="await">Await: </string>
+    <string name="fromPrice">From R$</string>
+
+    <string name="advantages_goin">Advantages Go In</string>
+    <string name="text_buttom_dialog_voucher">I want! Redeem Voucher.</string>
+    <string name="regulation_title"><u>regulation</u></string>
+    <string name="text_view_label_voucher" translatable="false">VOUCHER</string>
+    <string name="text_view_check_the_regulation">check the regulation</string>
+    <string name="go_in_special_list">Go In Special List</string>
+    <string name="access_wallet">Access wallet</string>
+    <string name="close">Close</string>
+    <string name="enjoy_the_party">Enjoy the party, your name is on the list!</string>
+    <string name="send">Send</string>
+    <string name="your_name_is_on_the_list">Você já está com o nome na lista</string>
+    <string name="have_you_used">Have you used</string>
+    <string name="you_can_once_time">You can only use it once.</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+
+
+    <style name="MovieDetailTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/grayBackgroundBoard</item>
+    </style>
+
+    <style name="MoviesTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark" tools:targetApi="23">@color/grayBackgroundBoard</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+    <!--Sign Up-->
+
+    <!-- Text styles -->
+
+    <!-- SeekBar style -->
+
+    <!-- RatingBar -->
+
+    <!-- RatingBar MyClubs -->
+
+
+    <!-- Tabas on ProfileFragment-->
+
+
+</resources>

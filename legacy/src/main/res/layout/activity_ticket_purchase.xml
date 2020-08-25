@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:databinding="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="br.com.legacy.viewModels.TicketPurchaseVM" />
+
+        <variable
+            name="activity"
+            type="br.com.legacy.viewControllers.activitites.TicketPurchaseActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ticket_purchase_toolbar"
+            layout="@layout/item_custom_toolbar_orange"
+            app:model="@{activity.toolbar}"
+            app:parent="@{activity}" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/ticket_purchase_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/ticket_purchase_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grayBackgroundBoard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16.5dp"
+                    android:layout_marginStart="13.5dp">
+
+                    <LinearLayout
+                        android:id="@+id/ticket_event_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/event_name"
+                            style="@style/text_grey_18sp_bold"
+                            android:layout_width="@dimen/_220sdp"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="@{activity.ticketModel.eventName}"
+                            tools:text="EDSON E HUDSON NO VILLA COUNTRY" />
+
+                        <TextView
+                            android:id="@+id/event_address"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:ellipsize="end"
+                            android:text="@{activity.ticketModel.eventAddress}"
+                            tools:text="Av. Francisco Matarazzo, 774 - Água Branca - São Paulo" />
+
+                        <TextView
+                            android:id="@+id/event_price"
+                            style="@style/text_primaryDark_15sp_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.priceInformation}"
+                            tools:text="NOME DO INGRESSO - R$ 80,00" />
+
+                        <TextView
+                            android:id="@+id/event_vip_box_capacity"
+                            style="@style/text_grey_12sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{activity.vipBoxCapacityInformation}"
+                            android:visibility="@{activity.shouldShowSplitValueCheckbox() ? View.VISIBLE : View.GONE}"
+                            tools:text="Para 10 pessoas" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/label_ticket_info"
+                        style="@style/text_grey_12sp_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ticket_event_information"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/tickets_data"
+                        android:textAllCaps="true" />
+
+                        <Switch
+                            android:id="@+id/switch_my_self"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/text_grey_12sp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:checked="@{activity.myTicketEnabled}"
+                            android:enabled="true"
+                            android:switchListener="@{activity}"
+                            android:thumbTint="@color/colorPrimary"
+                            android:text="@string/buy_for_myself"
+                            android:textColor="@color/battleship_gray"
+                            android:textAlignment="textStart"
+                            android:layout_below="@id/label_ticket_info"
+                            android:visibility="@{activity.shouldShowIncludeSwitch() ? View.VISIBLE : View.GONE}"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/selected_friends_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_my_self"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="15dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        databinding:binding_data="@{activity.ticketPurchaseVM.ticketOwnerInfoComponents}"
+                        databinding:binding_layout="@{@layout/component_ticket_owner_info}"
+                        databinding:binding_variable='@{"data"}' />
+
+
+
+                    <TextView
+                        android:id="@+id/add_friends_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/selected_friends_rv"
+                        android:layout_marginBottom="18dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="@{activity::onClickAddFriendsButton}"
+                        android:text="@string/add_friends_button_text"
+                        android:visibility="@{activity.isIngresse() ? View.GONE : View.VISIBLE}"/>
+
+                    <CheckBox
+                        android:id="@+id/split_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/add_friends_button"
+                        android:layout_marginBottom="18dp"
+                        android:text="@string/split_vip_box"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:visibility="@{activity.shouldShowSplitValueCheckbox() ? View.GONE : View.VISIBLE}" />
+
+                    <TextView
+                        android:id="@+id/text_terms"
+                        android:gravity="center"
+                        android:layout_below="@+id/split_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacy_terms_buy"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/text_terms"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/next_button"
+                            style="@style/text_white_13sp_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_primary_dark"
+                            android:onClick="@{activity::onClickNextButton}"
+                            android:text="@string/next" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

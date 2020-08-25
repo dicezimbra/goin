@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+
+    <string name="value_up_to">Até</string>
+
+    <string name="categorie_label">Categoria:</string>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+
+    <string name="clear_filter">Limpar Filtros</string>
+    <string name="filter_button">Filtrar</string>
+    <string name="filter_lable_price">Preço</string>
+    <string name="date">Data</string>
+    <string name="from">De</string>
+    <string name="toDate">Até</string>
+
+    <string name="invalid_date">Data inválida!</string>
+    <string name="search_cities">Pesquisar cidades</string>
+    <string name="filter_search">Filter</string>
+    <string name="no_result_nearby">Poxa! Não encontramos nenhum resultado na região selecionada. Exibindo resultados mais próximos.</string>
+    <string name="convenince">Comodidades</string>
+    <string name="label_price">Preço</string>
+    <string name="range_dollar">até</string>
+    <string name="range_label_dollar">$ até $$$$$</string>
+</resources>

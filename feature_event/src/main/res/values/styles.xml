@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="EventTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/grayBackgroundBoard</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+
+    <style name="ProgressWhite" parent="TextViewStyle">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:height">40dp</item>
+        <item name="android:background">@drawable/button_buy_orange</item>
+    </style>
+
+    <style name="button_presence">
+        <item name="android:background">@drawable/button_event_presence_style</item>
+    </style>
+
+    <style name="PresenceDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <!-- Tabas on ProfileFragment-->
+
+
+    <style name="ActivityDialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="InputTextstyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/style_orange</item>
+        <item name="colorAccent">@color/style_orange</item>
+        <item name="colorControlNormal">@color/style_orange</item>
+        <item name="colorControlActivated">@color/style_orange</item>
+    </style>
+
+</resources>

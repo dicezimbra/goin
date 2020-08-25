@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature">
+
+    <application>
+        <activity
+            android:name=".place.PlaceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlaceTheme" />
+
+        <activity
+            android:name=".rating.RatingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlaceTheme" />
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.event" >
+
+    <application>
+        <activity
+            android:name=".EventActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/EventTheme" />
+    </application>
+
+</manifest>

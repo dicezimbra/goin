@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.full.image" >
+    <application>
+
+        <activity
+            android:name=".FullImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullTheme" />
+
+    </application>
+</manifest>

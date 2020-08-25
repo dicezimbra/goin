@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notTooBlack">#323232</color>
+    <color name="gray_background_distance">#9B9B9B</color>
+    <color name="battleship_gray">#65707e</color>
+    <color name="adark_grey_2">#505050</color>
+    <color name="dark_grey">#24262a</color>
+    <color name="style_orange">#ff5150</color>
+    <color name="gray">#7d7e7e</color>
+    <color name="whiteTransparent">#4dffffff</color>
+</resources>

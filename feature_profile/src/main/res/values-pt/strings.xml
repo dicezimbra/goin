@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+
+    <!--Field Validation-->
+
+
+    <string name="app_name">Feature Perfil</string>
+
+
+    <string name="email">E-mail*</string>
+    <string name="name">Nome*</string>
+
+    <string name="posts">Posts</string>
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+
+    <string name="you_have_no_events">Você não possui nenhum evento.</string>
+
+    <string name="edit">Editar perfil</string>
+    <string name="interest">Interesses</string>
+
+    <!-- map fragment-->
+
+    <string name="edit_profile">Editar perfil</string>
+    <string name="profile_updated_successfully">Perfil atualizado com sucesso!</string>
+
+
+    <string name="profile">Perfil</string>
+    <string name="my_profile">Meu Perfil</string>
+    <string name="error_name_empty">O campo Nome não pode ser vazio!</string>
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <!--Event EventSessionDetail-->
+
+
+    <!--Post-->
+
+    <!--Chat-->
+    <string name="error_uploading_image">Não foi possível carregar a imagem. Aparentemente ela não está armazenada localmente em seu celular.</string>
+    <!--Global Search-->
+    <!--Tickets-->
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+
+    <!-- Tab Wallet-->
+
+    <!-- Tab Search -->
+
+</resources>

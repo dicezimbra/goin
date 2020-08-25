@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+
+    <color name="style_orange">#ff5150</color>
+
+    <color name="lightSilver">#f6f6f8</color>
+
+    // Yellow
+</resources>

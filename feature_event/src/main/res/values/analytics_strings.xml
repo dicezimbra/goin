@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Event details-->
+        <!--Screen Name-->
+        <item name="analytics_event_details_screen_name" type="string" translatable="false">EVENTO_DETALHE</item>
+
+        <!--Categories-->
+        <item name="analytics_event_details_category" type="string" translatable="false">EVENTO_DETALHE</item>
+
+        <!--Action-->
+        <item name="analytics_event_details_buy_ticket_carousel_action" type="string" translatable="false">COMPRAR_TICKET_CARROUSSEL</item>
+        <item name="analytics_event_details_buy_main_ticket_action" type="string" translatable="false">COMPRAR_TICKET_PRINCIPAL</item>
+        <item name="analytics_event_details_back_action" type="string" translatable="false">VOLTAR</item>
+        <item name="analytics_event_details_favorite_action" type="string" translatable="false">FAVORITAR</item>
+        <item name="analytics_event_details_share_action" type="string" translatable="false">COMPARTILHAR</item>
+        <item name="analytics_event_details_checkin_action" type="string" translatable="false">FAZER_CHECKIN</item>
+        <item name="analytics_event_details_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+        <item name="analytics_event_details_informations_action" type="string" translatable="false">INFORMACAO</item>
+        <item name="analytics_event_details_waypoint_action" type="string" translatable="false">COMO_CHEGAR</item>
+        <item name="analytics_event_details_uber_action" type="string" translatable="false">VA_DE_UBER</item>
+
+
+
+    <!--Label Identifier-->
+    <string name="analytics_event_label_identifier" translatable="false">NOME_EVENTO:%s</string>
+    <string translatable="false" name="event_screen_name">EVENTO_DETALHE</string>
+
+</resources>

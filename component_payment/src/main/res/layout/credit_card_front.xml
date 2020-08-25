@@ -1,0 +1,99 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/credit_card_front"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_189sdp"
+    android:layout_marginTop="@dimen/_30sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="@id/guideline_right"
+    app:layout_constraintStart_toStartOf="@id/guideline_left"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/credit_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            app:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:textColor="@color/red_wallet"
+            android:textColorHint="@color/red_wallet"
+            android:textSize="@dimen/_20sdp"
+            android:hint="@string/name_card_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/credit_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@color/card_gray"
+            android:textColorHint="@color/card_gray"
+            android:textSize="@dimen/_20sdp"
+            android:hint="**** **** **** ****"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/_15sdp"
+            app:autoSizeMaxTextSize="@dimen/_21sdp"
+            app:autoSizeStepGranularity="2sp"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/credit_card_name" />
+
+        <TextView
+            android:id="@+id/credit_card_valid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/quicksand"
+            android:text="@string/valid"
+            android:textColor="@color/card_gray_2"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/credit_card_number" />
+
+        <TextView
+            android:id="@+id/credit_card_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="00/00"
+            android:maxLength="8"
+            android:textColor="@color/card_gray_2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/credit_card_valid_label"
+            app:layout_constraintTop_toBottomOf="@+id/credit_card_valid_label" />
+
+
+
+
+        <ImageView
+            android:id="@+id/credit_card_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/unknown_cc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/credit_card_number"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

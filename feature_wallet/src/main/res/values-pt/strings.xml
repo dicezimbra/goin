@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="yes">Sim</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+    <string name="delete_ticket_success">Deletado com sucesso</string>
+
+    <!--Field Validation-->
+
+
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+
+    <string name="cancel">Cancelar</string>
+
+    <!-- map fragment-->
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <!--Event EventSessionDetail-->
+    <string name="confirmation_checkin">Você deseja fazer check-in nesse evento?</string>
+    <string name="check_in_disabled_message">Só é possível realizar check-in durante o evento.</string>
+
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+    <string name="buy">Comprar</string>
+    <string name="sold_out">Esgotado</string>
+    <string name="pending_payment">Pagamento pendente</string>
+    <string name="friends_pending_payment">Aguardando pagamento de amigos</string>
+    <plurals name="tickets_bought">
+        <item quantity="one">%d ingresso comprado</item>
+        <item quantity="other">%d ingressos comprados</item>
+    </plurals>
+    <plurals name="tickets_vip_box_bought">
+        <item quantity="one">Para %d pessoa</item>
+        <item quantity="other">Para %d pessoas</item>
+    </plurals>
+    <plurals name="tickets_pending">
+        <item quantity="one">%d ingresso pendente</item>
+        <item quantity="other">%d ingressos pendentes</item>
+    </plurals>
+    <string name="purchase_date"> Data de compra: %s</string>
+    <string name="dottedline">dottedLine</string>
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="label_valid_ticket">Válidos</string>
+    <string name="label_old_ticket">Antigos</string>
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+
+    <string name="my_tickets_title">Meus Ingressos</string>
+    <string name="tickets_empty_list">Lista de tickets vazia</string>
+
+
+    <!-- Tab Wallet-->
+    <string name="text_tab_wallet_all">Todos</string>
+    <string name="text_tab_wallet_booking">Reservas</string>
+    <string name="text_tab_wallet_ticket">Ingresso</string>
+    <string name="text_tab_wallet_voucher">Voucher</string>
+
+    <!-- Tab Search -->
+
+    <string name="qrcode">QRCODE</string>
+
+
+</resources>

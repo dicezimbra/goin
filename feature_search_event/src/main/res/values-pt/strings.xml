@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="email_exists">Este e-mail já está cadastrado.</string>
+    <string name="invalid_user">E-mail ou senha inválidos.</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+    <string name="email_not_confirmed">Seu e-mail ainda não foi confirmado.</string>
+    <string name="fill_all_fields_to_sing_in">Preencha todos os campos.</string>
+    <string name="really_want_to_leave">Deseja realmente sair?</string>
+    <string name="delete_ticket_success">Deletado com sucesso</string>
+
+    <!--Field Validation-->
+    <string name="emptyFeed">O feed está vazio.</string>
+    <string name="invalid_password">A senha deve conter, pelo menos 8 caracteres e uma letra maiúscula</string>
+
+
+    <string name="different_passwords">Senhas diferentes</string>
+    <string name="btn_log_in">Entrar</string>
+    <string name="fill_all_fields_password">Preencha todos os campos</string>
+    <string name="invalid_password_error">Senha inválida</string>
+    <string name="change_password_old_password">Senha Antiga</string>
+    <string name="what_are_you_thinking">O que você está pensando?</string>
+
+
+
+    <string name="btn_sign_up">Cadastrar</string>
+    <string name="categories_title">Categorias</string>
+    <string name="email">E-mail*</string>
+    <string name="name">Nome*</string>
+    <string name="phone">Telefone*</string>
+
+    <string name="password">Senha*</string>
+    <string name="confirm_password">Confirmar senha*</string>
+    <string-array name="sex_selection">
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Outro</item>
+    </string-array>
+    <string name="rg">RG*</string>
+    <string name="half_entrance_id">Documento de identificação da meia*</string>
+    <string name="first_name">Nome*</string>
+    <string name="last_name">Sobrenome*</string>
+    <string name="cpf">CPF*</string>
+    <string name="birthday">Data de nascimento*</string>
+    <string name="card_numer">Número do cartão*</string>
+    <string name="expiration_month">Mês de vencimento Ex. 01</string>
+    <string name="expiration_year">Ano de vencimento: Ex. 25</string>
+    <string name="cvv">CVV*</string>
+    <string name="parcels_number">Número de parcelas*</string>
+    <string name="postal_code">CEP*</string>
+    <string name="street">Rua*</string>
+    <string name="street_number">Número*</string>
+    <string name="location_complement">Complemento</string>
+    <string name="neighborhood">Bairro*</string>
+    <string name="city">Cidade*</string>
+    <string name="state">Estado*</string>
+
+    <string name="save_button">Salvar</string>
+
+    <string name="see_more">ver mais</string>
+    <string name="posts">Posts</string>
+    <string name="next_events">Próximos eventos</string>
+    <string name="photo_gallery">Galeria de Fotos</string>
+    <string name="photo_detail">Detalhe da foto</string>
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+    <string name="unfollow">DEIXAR DE SEGUIR</string>
+    <string name="followersConnections">Seguidores</string>
+    <string name="followingConnections">Seguindo</string>
+    <string name="search">Buscar</string>
+    <string name="search_users">Procurar usuários</string>
+    <string name="search_friends">Procurar amigos</string>
+
+
+    <string name="comment_hint">Escreva aqui o seu comentário…</string>
+    <string name="post_hint">Publicar algo...</string>
+    <string name="new_post">Novo Post</string>
+    <string name="comments">Comentários</string>
+    <string name="publish">Publicar</string>
+
+
+    <string name="week_suggestion">Próximos eventos</string>
+    <string name="near_events_home">Perto de mim</string>
+    <string name="you_have_no_events_suggestions">Você não possui nenhuma sugestão de evento.</string>
+    <string name="you_have_no_events">Você não possui nenhum evento.</string>
+    <string name="you_have_no_friends">Você não possui nenhum amigo no Go In.</string>
+    <string name="you_have_no_followers">Você não possui nenhum seguidor.</string>
+    <string name="you_dont_follow_anyone">Você não segue ninguém.</string>
+    <string name="value_up_to">Até</string>
+    <string name="attendance_confirmation">Confirmar presença</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="unfollow_alert">Deixar de seguir %1$s?</string>
+    <string name="share_alert">Compartilhar o post de %1$s?</string>
+
+    <string name="tickets">tickets</string>
+    <string name="categories">Categorias</string>
+    <string name="categorie_label">Categoria:</string>
+    <string name="subcategories">Subcategorias</string>
+    <string name="no_subcategories_message">Não foi possível encontrar subcategorias para esta categoria.</string>
+    <string name="edit">Editar perfil</string>
+    <string name="interest">Interesses</string>
+
+    <string name="find_friends_facebook">Procurar Amigos do Facebook</string>
+
+    <string name="Following">Seguindo</string>
+    <string name="Followers">Seguidores</string>
+    <string name="post_likes">Curtidas</string>
+
+    <!-- map fragment-->
+    <string name="x">x</string>
+
+    <string name="filter_search">Filtro</string>
+    <string name="change_password">Trocar Senha</string>
+
+    <string name="new_password">Senha nova</string>
+    <string name="new_password_confirmation">Confirmar senha nova</string>
+    <string name="change">Trocar</string>
+    <string name="edit_profile">Editar Perfil</string>
+
+
+    <string name="feed">Feed</string>
+    <string name="profile">Perfil</string>
+    <string name="my_profile">Meu Perfil</string>
+
+    <string name="free">Gratuito</string>
+
+    <string-array name="tabsmain_toolbar_titles">
+        <item>Feed</item>
+        <item>Tickets</item>
+        <item>Eventos</item>
+        <item>Perfil</item>
+        <item>Configurações</item>
+    </string-array>
+
+    <!--Notifications-->
+    <string name="notification_comment">%s comentou no seu post.</string>
+    <string name="notification_invite">%1$s te convidou para o evento %2$s.</string>
+    <string name="notification_like">%s curtiu seu post.</string>
+    <string name="notification_event">Você tem um evento esta semana: %s.</string>
+    <string name="notification_checkin">%1$s fez check-in no evento %2$s.</string>
+    <string name="notification_follow">%s passou a te seguir.</string>
+    <string name="notification_comment_tag">%s marcou você nos comentários de um post.</string>
+    <string name="notification_post_tag">%s marcou você em um post.</string>
+    <string name="notification_added_to_group">%1$s adicionou você ao grupo %2$s.</string>
+    <string name="notification_ticket_received">%1$s te deu um ingresso para o evento %2$s.</string>
+    <string name="notification_ticket_confirmed">%1$s: O pagamento do ingresso foi confirmado.</string>
+    <string name="notification_vip_box_invite">%1$s convidou você para dividir um camarote para o evento %2$s.</string>
+
+
+    <string name="terms_of_use">Termos de Uso</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="entry_policy">Política de Meia Entrada</string>
+    <string name="logout">Sair</string>
+    <string name="without_information_message">Não informado</string>
+    <string name="delete">Excluir</string>
+    <string name="report">Denunciar</string>
+    <string name="post_reported_message">Vamos analisar a sua denúncia e, caso necessário, entraremos em contato em breve.</string>
+    <string name="confirm_report_message">Tem certeza que quer denunciar esse post?</string>
+    <string name="confirm_delete_message">Tem certeza que quer excluir esse post?</string>
+    <string name="confirm_delete_comment">Tem certeza que quer excluir esse comentário?</string>
+    <string name="please_insert_name">Por favor digite o seu nome.</string>
+    <string name="alteration_saved">As alterações foram salvas.</string>
+    <string name="please_insert_password">Por favor digite a sua senha.</string>
+    <string name="please_confirm_password">Por favor confirme a sua senha.</string>
+    <string name="password_dont_match">A senhas são diferentes.</string>
+    <string name="password_incomplete">A senha deve possuir no mínimo 6 caracteres.</string>
+
+
+    <!--Rating-->
+    <string name="rate">Avaliar</string>
+    <string name="ranking">Ranking</string>
+    <string name="without_ratings_message">Seja o primeiro a avaliar o local!</string>
+    <string name="rate_club_message">Avalie este estabelecimento: </string>
+    <string name="rate_comment_field_message">Escreva seu comentário: </string>
+    <string name="new_rating_success_message">Avaliação do local enviada com sucesso!</string>
+    <string name="delete_rating_success_message">Sua avaliação do local foi excluída com sucesso!</string>
+    <plurals name="ratings_count">
+        <item quantity="one">%d avaliação</item>
+        <item quantity="other">%d avaliações</item>
+    </plurals>
+
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <plurals name="attendance">
+        <item quantity="one" tools:ignore="ImpliedQuantity"> interessado</item>
+        <item quantity="other"> interessados</item>
+    </plurals>
+
+    <string name="create_post">Criar post</string>
+
+    <!--Event EventSessionDetail-->
+    <string name="distance_from_you">à %s de você</string>
+    <string name="uber_estimate_time_arrival"> %d minutos</string>
+    <string name="confirmation_checkin">Você deseja fazer check-in nesse evento?</string>
+    <string name="to">a</string>
+    <string name="at">às</string>
+    <string name="check_in_disabled_message">Só é possível realizar check-in durante o evento.</string>
+    <string name="failure_get_categories_message">Não foi possível carregar as categorias. Por favor, tente novamente mais tarde.</string>
+
+
+    <!--Post-->
+    <string name="is_feeling">está se sentindo</string>
+    <string name="my_feeling">Estou me sentindo…</string>
+    <string name="feeling">Sentimentos</string>
+    <string name="in">em</string>
+    <string name="did_checkin">fez check-in em</string>
+    <string name="shared_a_post">compartilhou um post.</string>
+    <string name="share">Compartilhar</string>
+    <string name="share_success">Post compartilhado com sucesso.</string>
+    <string name="error_share">Não foi possível compartilhar o post. Por favor, tente novamente.</string>
+
+    <!--Chat-->
+    <string name="contacts">Contatos</string>
+    <string name="message_input_hint">Escreva sua mensagem aqui…</string>
+    <string name="error_uploading_image">Não foi possível carregar a imagem. Aparentemente ela não está armazenada localmente em seu celular.</string>
+    <string name="next">Próximo</string>
+    <string name="invite_friends">Convidar amigos</string>
+    <string name="empty_members_list">Não é possível criar um grupo sem membros.</string>
+    <!--Global Search-->
+    <!--Tickets-->
+    <string name="my_tickets">Meus Tickets</string>
+    <string name="buy">Comprar</string>
+    <string name="sold_out">Esgotado</string>
+    <string name="pending_payment">Pagamento pendente</string>
+    <string name="friends_pending_payment">Aguardando pagamento de amigos</string>
+    <string name="no_tickets_message">Não há tickets disponíveis no momento.</string>
+    <plurals name="tickets_bought">
+        <item quantity="one">%d ingresso comprado</item>
+        <item quantity="other">%d ingressos comprados</item>
+    </plurals>
+    <plurals name="tickets_vip_box_bought">
+        <item quantity="one">Para %d pessoa</item>
+        <item quantity="other">Para %d pessoas</item>
+    </plurals>
+    <plurals name="tickets_pending">
+        <item quantity="one">%d ingresso pendente</item>
+        <item quantity="other">%d ingressos pendentes</item>
+    </plurals>
+    <string name="purchase_date"> Data de compra: %s</string>
+    <string name="button_paypal_text">Pagar com paypal</string>
+    <string name="button_card_text">Pagar com cartão</string>
+    <string name="button_boleto_text">Pagar com boleto</string>
+    <string name="ticket_purchase">Compra de ingressos</string>
+    <string name="tickets_data">Dados dos tickets</string>
+    <string name="add_friends_button_text">Adicionar amigos +</string>
+    <string name="ticket_owner_info_incomplete">Ainda existem alguns campos em branco.</string>
+    <string name="ticket_owner_info_invalid">Ainda existem alguns campos inválidos</string>
+    <string name="buy_for_myself">Comprar pra mim mesmo</string>
+    <string name="info_payment">Informações de pagamento</string>
+    <string name="purchase_confirmation">Confirmação de Compra</string>
+    <string name="purchase_detail">Detalhe de compra</string>
+    <string name="payment_confirmation_pendencies">Pendente! Aguardando confirmação de pagamento.</string>
+    <string name="friends_payment_pending">Pendente! Aguardando pagamento de convidados.</string>
+    <string name="purchase_information">Informações da compra</string>
+    <string name="purchase_date_info">Data da compra: </string>
+    <string name="user_rg_info">Rg: </string>
+    <string name="user_half_info">Meia: </string>
+    <string name="total_value_info">Valor Total: </string>
+    <string name="payment_method_info">Forma de pagamento: </string>
+    <string name="installments_info">Número de parcelas: </string>
+    <string name="name_info">Nome: </string>
+    <string name="user_cpf_info">CPF: </string>
+    <string name="card_number_info">Número do cartão: </string>
+    <string name="credit_card">Cartão de Crédito</string>
+    <string name="boleto">Boleto</string>
+    <string name="open_bank_slip">Abrir Boleto</string>
+    <string name="open_bank_slip_fail">Falha ao abrir o boleto. Por favor, tente novamente mais tarde.</string>
+    <string name="user_email_info">E-mail: </string>
+    <string name="user_phone_info">Telefone: </string>
+    <string name="user_postal_code_info">CEP: </string>
+    <string name="dottedline">dottedLine</string>
+    <string name="paypal">PayPal</string>
+    <string name="error_with_payment_infos">Erro. Dados de cobrança do cartão incorretos.</string>
+    <string name="finish_payment">Finalizar Pagamento</string>
+    <string name="buy_more_tickets">Comprar mais ingressos</string>
+    <string name="bought_by_info">Compra realizada por  </string>
+    <string name="purchase_detail_error">Não foi possível obter os detalhe da compra. Por favor, tente novamente mais tarde.</string>
+    <string name="empty_ticket_owners_list">Não é possível comprar ingresso sem selecionar os donos.</string>
+    <string name="invalid_selected_quantity">O número de ingressos desejado é superior ao disponível.</string>
+    <string name="success_purchase_message">Compra realizada com sucesso !</string>
+    <string name="failure_purchase_message">Não foi possível realizar a compra do ingresso.</string>
+    <string name="transfer">Transferir</string>
+    <string name="await">Espera: </string>
+    <string name="choose_friend">Escolher amigo</string>
+    <string name="ticket_transfer">Transferência de ticket</string>
+    <string name="transfer_confirmation">Confirmação de transferência</string>
+    <string name="ticket_data">Dados do Ticket</string>
+    <string name="transfer_ticket_to">Transferência de ticket para:</string>
+    <string name="transfer_info">Informações da Transferência</string>
+    <string name="transfer_from">Transferência de:  </string>
+    <string name="transfer_to">Para:  </string>
+    <string name="transfer_date_info">Data da transação: </string>
+    <string name="success_transfer_ticket">O ingresso foi transferido com sucesso !</string>
+    <string name="failure_transfer_ticket">Não foi possível transferir o ingresso. Por favor, tente novamente mais tarde.</string>
+    <string name="split_vip_box">Dividir valor com convidados</string>
+    <plurals name="vip_box_capacity_label">
+        <item quantity="one">Para %d pessoa</item>
+        <item quantity="other">Para %d pessoas</item>
+    </plurals>
+    <string name="selected_friends_over_capacity">O número de amigos selecionados é maior do que o limite do camarote.</string>
+    <string name="vip_box_payment">Pagamento de camarote</string>
+    <string name="vip_box_payment_message">Você foi convidado para dividir o camarote com seus amigos! \n\n Selecione a forma de pagamento:</string>
+    <string name="price_to_pay">Valor a pagar: </string>
+
+
+    <string name="cant_remove_checkin">Não é possível remover interesse após fazer o check-in.</string>
+    <string name="unfollow_event_question">Você deseja deixar de seguir o evento?</string>
+    <string name="presence_confirmed">Sua presença foi confirmada.</string>
+    <string name="limit_exceeded">Limite excedido. Por favor, aguarde alguns minutos e tente novamente.</string>
+    <string name="retrofit_error_unable_to_connect">Não foi possível conectar-se à internet, verifique suas configurações de rede.</string>
+    <string name="retrofit_error_unknown">Ocorreu um erro de rede, verifique as configurações de rede.</string>
+
+    <string name="raffle_at">sorteio dia </string>
+    <string name="participate">Participar</string>
+    <string name="participating">Participando</string>
+    <plurals name="maximum_of_participant">
+        <item quantity="one">máximo de %d participante</item>
+        <item quantity="other">máximo de %d participantes</item>
+    </plurals>
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="emoji_glad">Contente</string>
+    <string name="emoji_excited">Empolgado</string>
+    <string name="emoji_happy">Feliz</string>
+    <string name="emoji_cool">Descolado</string>
+    <string name="emoji_anxious">Ansioso</string>
+    <string name="emoji_joyful">Alegre</string>
+    <string name="emoji_seductive">Sedutor</string>
+    <string name="emoji_angry">Bravo</string>
+    <string name="emoji_sick">Enjoado</string>
+    <string name="no_notifications_message">Você não possui notificações</string>
+
+    <string name="there_is_no_events_near_you_to_check_in">Não há eventos no momento.</string>
+    <string name="no_users_found">Usuário não encontrado</string>
+    <string name="be_the_first_to_comment">Seja o primeiro a comentar</string>
+    <string name="this_post_has_no_likes">Esta foto não possui nenhuma curtida</string>
+    <string name="change_password_success">Senha trocada com sucesso!</string>
+    <plurals name="days_ago">
+        <item quantity="one">%d dia atrás</item>
+        <item quantity="other">%d dias atrás</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="one">%d hora atrás</item>
+        <item quantity="other">%d horas atrás</item>
+    </plurals>
+    <plurals name="minutes_ago">
+        <item quantity="one">%d minuto atrás</item>
+        <item quantity="other">%d minutos atrás</item>
+    </plurals>
+    <plurals name="seconds_ago">
+        <item quantity="one">%d segundo atrás</item>
+        <item quantity="other">%d segundos atrás</item>
+    </plurals>
+    <string name="long_time_ago">há muito tempo atrás</string>
+
+    <string name="choose_another_picture">ALTERAR FOTO</string>
+    <string name="choose_picture">ESCOLHER FOTO</string>
+    <string name="not_now">Agora não</string>
+    <string name="choose_your_profile_picture">Escolha sua foto de perfil</string>
+    <string name="save_picture">SALVAR</string>
+    <string name="use_picture_from_facebook">USAR DO FACEBOOK</string>
+    <string name="error_playing_video">Ocorreu um erro ao tentar reproduzir este vídeo. Tente novamente dentro de alguns instantes.</string>
+    <string name="post_title">Post</string>
+    <string name="no_fb_friends">Parece que nenhum dos seus amigos do Facebook usam Go In!</string>
+    <string name="expired_session">Sua sessão expirou. Por favor faça login novamente</string>
+    <string name="confirm_unfollow_club">Tem certeza que deseja parar de seguir essa local?</string>
+    <string name="confirm_unfollow_raffle">Tem certeza que deseja deixar de participar deste sorteio?</string>
+    <string name="search_no_results">Não foi encontrado nenhum usuário para essa busca.</string>
+    <string name="error_media_not_supported">Este tipo de mídia não é suportado atualmente. Desculpe-nos pelo transtorno.</string>
+    <string name="read_more"><![CDATA[Ler mais >]]></string>
+    <string name="forgot_password">Esqueci a Senha</string>
+    <string name="enter">Entrar</string>
+    <string name="type_your_password">Digite sua senha</string>
+    <string name="type_your_email">Digite seu email</string>
+    <string name="label_valid_ticket">Válidos</string>
+    <string name="label_old_ticket">Antigos</string>
+    <string name="needed_permissions">Nós precisamos de sua permissão para mostrar as informações de localização do evento!</string>
+    <string name="needed_permissions_check_in">Nós precisamos de sua permissão para fazer check-in nos eventos próximos à você!</string>
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+    <string name="permissions_dialog_title">Permissões</string>
+
+    <string-array name="welcome_activity_array">
+        <item>Será que a festa vai bombar? Atualizações em tempo real lhe dirão se o rolê vai valer a pena. Daí é só partir pra diversão!</item>
+        <item>Vantagens e benefícios únicos. Ingressos sem taxa, programa de pontos, sorteios e muito mais! Tudo pra você se divertir como merece.</item>
+        <item>Não deixe nada passar! Organize sua agenda de lazer e não perca nenhuma oportunidade de se divertir.</item>
+        <item>Para quem busca o melhor do entretenimento! Encontre sempre os melhores programas e lugares, baseados nos seus interesses e hábitos.</item>
+    </string-array>
+
+    <string-array name="welcome_title_activity_array">
+        <item>SOCIAL</item>
+        <item>FACILITADOR</item>
+        <item>ORGANIZADOR</item>
+        <item>GUIA</item>
+    </string-array>
+
+    <string name="change_password_title">Trocar senha</string>
+    <string name="address_label_establishment">Endereço</string>
+    <string name="see_all_views_establishment_start">Ver todas as</string>
+    <string name="see_all_views_establishment_start_singular">Ver</string>
+    <string name="see_all_views_establishment_end">avaliações</string>
+    <string name="see_all_views_establishment_end_singular">avaliação</string>
+    <string name="do_checkin">Fazer\nCheckin</string>
+    <string name="buy_ticket">Comprar\nIngressos</string>
+    <string name="invite_friends_event">Convidar\namigos</string>
+    <string name="information_section">Informações</string>
+    <string name="item_interest">Eu tenho interesse pelo </string>
+    <string name="text_view_edit_profile_done">Concluir</string>
+    <string name="my_tickets_title">Meus Ingressos</string>
+    <string name="tickets_empty_list">Lista de tickets vazia</string>
+    <string name="follower_count_1">seguidor</string>
+    <string name="follower_count_2"> seguidores</string>
+    <string name="order_by_category">Ordernar por</string>
+    <string name="clear_filter">Limpar Filtros</string>
+    <string name="filter_button">Filtrar</string>
+    <string name="filter_lable_price">Preço</string>
+    <string name="privacy_terms">Ao registrar-me, declaro que eu li e aceito aos <u>Termos de uso</u> e a <u>Política de Privacidade</u>.</string>
+    <string name="privacy_terms_buy">Ao efetivar a compra, declaro que eu li e aceito a <u>Política de Meia Entrada</u>.</string>
+    <string name="see_more_filter">Ver mais</string>
+    <string name="find_friends">Encontre amigos</string>
+    <string name="comprar_sem_taxa">COMPRAR INGRESSOS</string>
+    <string name="endere_o">Endereço</string>
+    <string name="date">Data</string>
+    <string name="from">De:</string>
+    <string name="toDate">Até:</string>
+    <string name="invalid_checked">Por favor concorde com os termos e condições.</string>
+
+    <string name="edit_rating">Alterar avaliação</string>
+    <string name="expandable_info">*Informações sujeitas\n a alterações*</string>
+    <string name="terms_of_use_lorem">Termos de Uso</string>
+    <string name="invalid_date">Data inválida!</string>
+    <string name="message_force_udpate">Por favor, faça a atualização do seu aplicativo</string>
+    <string name="message_optional_udpate">Há uma atualização disponível, sugerimos que você faça a atualização</string>
+    <string name="title_update">Atualização</string>
+    <string name="movie">Filme</string>
+    <string name="plays_in_theaters">Em cartaz</string>
+    <string name="plays_coming_soon">Em breve</string>
+    <string name="update_app">Atualizar</string>
+
+    <string name="update_not_now">Agora não</string>
+    <string name="you_dont_have_permissions_to_see_event">Você não possui permissão para visualizar esse evento!</string>
+    <!-- Tab Wallet-->
+    <string name="text_tab_wallet_all">Todos</string>
+    <string name="text_tab_wallet_booking">Reservas</string>
+    <string name="text_tab_wallet_ticket">Ingresso</string>
+    <string name="text_tab_wallet_voucher">Voucher</string>
+
+    <!-- Tab Search -->
+    <string name="text_tab_search_all">Todos</string>
+    <string name="text_tab_search_events">Eventos</string>
+    <string name="text_tab_search_places">Locais</string>
+    <string name="text_tab_search_movies">Filmes</string>
+
+    <string name="new_password_same_old">A sua nova senha não pode ser igual a antiga.</string>
+    <string name="fill_the_discount_field">Preencha o código do cupom</string>
+    <string name="invalid_discount_code">Código do cupom incorreto</string>
+    <string name="download_goin_title">Go In - BAIXE AGORA</string>
+    <string name="download_goin_description_start">Junte- se a</string>
+    <string name="download_goin_description_end">na rede social de entretenimento</string>
+
+    <string name="facilitator">FACILITADOR</string>
+    <string name="facilitator_description">Vantagens e benefícios únicos. Ingressos sem taxa, programa de pontos, sorteios e muito mais! Tudo pra você se divertir como merece.</string>
+    <string name="social">SOCIAL</string>
+    <string name="social_description">Será que a festa vai bombar?Atualizações em tempo real lhe dirão se o rolê vai valer a pena. Daí é só partir pra diversão!</string>
+    <string name="goin_account">Conta Go In</string>
+    <string name="config_holder_play_header">Quem se diverte entra,\nquem entra se diverte!</string>
+    <string name="config_holder_play">Atualizações em tempo real lhe dirão se o rolê vai valer a pena.\nDaí é só partir pra diversão!</string>
+    <string name="qrcode">QRCODE</string>
+    <string name="place_address">Endereço do estabelecimento</string>
+    <string name="person">Pessoa</string>
+    <string name="search_cities">Pesquisar cidades</string>
+    <string name="current_location">Próximo à localização atual</string>
+    <string name="location">Localização</string>
+    <string name="searching" formatted="false">Procurando</string>
+    <string name="searching_city" formatted="false">Procurando \"%s\"</string>
+    <string name="empty_city_search">Nenhuma cidade correspondente a %s</string>
+
+    <string name="search_all_hint">O que deseja buscar?</string>
+    <string name="no_result_search">Nenhum resutado para</string>
+    <string name="about">Sobre</string>
+    <string name="label_pick_time">Escolha o horário para comprar o ingresso</string>
+    <string name="como_chegar">Como chegar</string>
+    <string name="veja_rotas_dispon_veis">Veja rotas disponíveis</string>
+    <string name="coordinates_unavailable">Ainda não está disponível as coordenadas desse evento</string>
+    <string name="v_de_uber">Vá de Uber</string>
+    <string name="uber_wait_time" formatted="false">Espera: %d min </string>
+    <string name="uber_price" formatted="false">R$ %.2f</string>
+    <string name="theater_title">Teatro</string>
+    <string name="movie_title">Filmes</string>
+    <string name="label_buy_theater">Escolha o horário para comprar o ingresso</string>
+    <string name="about_movie">Sobre o filme</string>
+</resources>

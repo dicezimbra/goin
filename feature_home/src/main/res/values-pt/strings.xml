@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alerta</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+
+    <string name="follow">Seguir</string>
+    <string name="following">Seguindo</string>
+
+    <string name="search">Buscar</string>
+
+
+    <string name="week_suggestion">Próximos eventos</string>
+    <string name="near_events_home">Perto de mim</string>
+    <string name="you_have_no_events_suggestions">Você não possui nenhuma sugestão de evento.</string>
+
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nseguidor</item>
+        <item quantity="other">%d \nseguidores</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nseguindo</item>
+        <item quantity="other">%d \nseguindo</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <string name="failure_get_categories_message">Não foi possível carregar as categorias. Por favor, tente novamente mais tarde.</string>
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d ponto</item>
+        <item quantity="other">%d pontos</item>
+    </plurals>
+
+    <string name="search_cities">Pesquisar cidades</string>
+
+    <string name="highlighted_events">Destaques</string>
+    <string name="this_weekend">Final de semana</string>
+    <string name="you_have_no_highlighted_events">Você não tem eventos de destaque disponíveis</string>
+
+
+    <string name="category_carossel_week_events">CARROSSEL_PROXIMOS_EVENTOS</string>
+    <string name="category_carossel_weekend_events">CARROSSEL_FIM_DE_SEMANA</string>
+    <string name="category_carossel_highlighted_events">CARROSSEL_EVENTOS_DE_DESTAQUE</string>
+
+    <string name="category_carossel_this_week">CARROSSEL_ESTA_SEMANA</string>
+    <string name="category_carossel_nearby">CARROSSEL_PERTO_DE_MIM</string>
+    <string name="category_carossel_scroll">CARROSSEL_SCROLL</string>
+</resources>

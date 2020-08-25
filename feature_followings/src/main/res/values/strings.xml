@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_have_no_followers">You don\u0027 t have any followers.</string>
+    <string name="you_dont_follow_anyone">You do not follow anyone.</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="unfollow">UNFOLLOW</string>
+    <string name="cancel">Cancel</string>
+    <string name="unfollow_alert">Stop following %1$s?</string>
+    <string name="service_error">Error. Please try again</string>
+
+    <!--ANALYTICS-->
+
+    <!--followers-->
+    <item name="analytics_followers_screen_name" translatable="false" type="string">SEGUIDORES</item>
+    <item name="analytics_followers_category" translatable="false" type="string">SEGUIDORES</item>
+    <item name="analytics_followers_follow_action" translatable="false" type="string">SEGUIR</item>
+    <item name="analytics_followers_back_action" translatable="false" type="string">VOLTAR</item>
+
+    <!--following-->
+    <item name="analytics_following_screen_name" translatable="false" type="string">SEGUINDO</item>
+    <item name="analytics_following_category" translatable="false" type="string">SEGUINDO</item>
+    <item name="analytics_following_follow_action" translatable="false" type="string">SEGUIR</item>
+    <item name="analytics_following_back_action" translatable="false" type="string">VOLTAR</item>
+</resources>

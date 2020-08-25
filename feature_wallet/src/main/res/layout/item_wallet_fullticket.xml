@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_front"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ticket_background">
+
+    <br.com.goin.v2.GoinTicketView
+        android:id="@+id/ticket_view"
+        android:layout_weight="12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:goinTicketBackground="@android:color/white"
+        app:goinTicketBottomLayout="@+id/info_container"
+        app:goinTicketCirclesRadius="9dp"
+        app:goinTicketElevation="10dp"
+        app:goinTicketTopLayout="@+id/top"
+        android:clipToPadding="false"
+        app:goinTicketStatus="normal"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toTopOf="@+id/check_regularment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo_container"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/gradient_orange_full_ticket"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/branco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ticket_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dip"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center_horizontal"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo_container"
+                tools:text="@string/voucher_type" />
+
+            <ImageView
+                android:id="@+id/voucher_image"
+                android:layout_width="@dimen/full_ticket_picute_size"
+                android:layout_height="@dimen/full_ticket_picute_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ticket_type" />
+
+            <TextView
+                android:id="@+id/voucher_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="43dip"
+                android:layout_marginTop="@dimen/full_ticket_margin_title"
+                android:layout_marginEnd="43dip"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="#FF5150"
+                android:textSize="@dimen/full_ticket_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/voucher_image"
+                tools:text="1 cerveja grátis" />
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/full_ticket_date_margin_top"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_date"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/quicksand"
+                android:textColor="#58626E"
+                android:lines="1"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/voucher_description"
+                tools:text="Válido até 30/03/2019" />
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_pin"
+                android:drawablePadding="5dp"
+                android:lines="1"
+                android:fontFamily="@font/quicksand"
+                android:foreground="?selectableItemBackground"
+                android:textColor="#58626E"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date"
+                tools:text="Tour du Monde" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/voucher_information"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="16dip"
+                android:layout_marginBottom="16dip"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/voucher_information"
+                android:textColor="#CC4D4D4D"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/information_button"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/information_button"
+                android:layout_width="21dip"
+                android:layout_height="21dip"
+                android:layout_marginEnd="21dip"
+                android:background="@drawable/info"
+                android:backgroundTint="#FF5050"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:layout_constraintBottom_toBottomOf="@+id/voucher_information"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toTopOf="@+id/voucher_information" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </br.com.goin.v2.GoinTicketView>
+</LinearLayout>

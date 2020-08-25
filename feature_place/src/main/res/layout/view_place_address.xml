@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_place">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/view_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="address_container,imageView,textViewLabelAddress,map_view"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewLabelAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/address_label_establishment"
+        android:textColor="@color/gray_title"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/map_view"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toTopOf="@id/address_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/new_pin"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_view"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/map_view" />
+
+    <LinearLayout
+        android:id="@+id/address_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLabelPhotos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/event_icon_adress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/full_address_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/battleship_grey"
+                android:textAlignment="textStart"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/location_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/location_icon"
+                app:layout_constraintTop_toTopOf="@+id/location_icon"
+                tools:text="Rua kndlksnlskdlsddsd lknlknlk ldknc Rua kndlksnlskdlsddsd lknlknlk ldknc Rua kndlksnlskdlsddsd lknlknlk ldknc " />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewDirectionEstablishment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/how_to_arrive"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewHowToGet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:textColor="@color/battleship_grey"
+                android:text="Como chegar"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDirectionEstablishment"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDirectionEstablishment"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDirectionEstablishment" />
+
+            <TextView
+                android:id="@+id/textViewAvailableRoutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Veja rotas disponíveis"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:textAlignment="textEnd"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewHowToGet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.962"
+                app:layout_constraintStart_toEndOf="@+id/textViewHowToGet"
+                app:layout_constraintTop_toTopOf="@+id/textViewHowToGet" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutUber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewUber"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/uber_icon_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewGoToUber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/battleship_grey"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:text="Vá de Uber"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewUber"
+                app:layout_constraintStart_toEndOf="@+id/imageViewUber"
+                app:layout_constraintTop_toTopOf="@+id/imageViewUber" />
+
+            <TextView
+                android:id="@+id/textViewTimeUber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Espera: 00 min"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewGoToUber"
+                app:layout_constraintEnd_toStartOf="@+id/textViewPriceUber"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewGoToUber"
+                app:layout_constraintTop_toTopOf="@+id/textViewGoToUber" />
+
+            <TextView
+                android:id="@+id/textViewPriceUber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/quicksand"
+                android:text="R$ 00,00"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewTimeUber" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/realTransparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="320dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/login_preview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="40dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="40dp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/logo_go_in"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_right"
+                    app:layout_constraintStart_toStartOf="@id/guideline_left"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_login"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Quem se diverte entra, \nquem entra se diverte!"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+                <TextView
+                    android:id="@+id/sub_title_login"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:text="As melhores opções de lazer e \nentretenimento reunidas em um só lugar."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                    app:layout_constraintTop_toBottomOf="@+id/title_login" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_left_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="40dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_right_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="40dp" />
+
+                <Button
+                    android:id="@+id/btn_sign_up_preview"
+                    style="@style/button_orange_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/btn_sign_up"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right_bottom"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left_bottom"
+                    app:layout_constraintTop_toTopOf="@id/sub" />
+
+                <Button
+                    android:id="@+id/btn_sign_up_facebook_preview"
+                    style="@style/button_facebook_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:drawableStart="@drawable/facebook_icon"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="60dp"
+                    android:text="@string/sign_up_with_facebook"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right_bottom"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left_bottom"
+                    app:layout_constraintTop_toBottomOf="@id/btn_sign_up_preview" />
+
+
+                <Button
+                    android:id="@+id/btn_sign_up_google"
+                    style="@style/button_google_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_google"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="60dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/sign_up_with_google"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gray_google"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right_bottom"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left_bottom"
+                    app:layout_constraintTop_toBottomOf="@id/btn_sign_up_facebook_preview" />
+
+                <View
+                    android:id="@+id/underline_login"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="08dp"
+                    android:background="@color/gray"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toStartOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textColor="@color/gray_google"
+                    android:textSize="12sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right_bottom"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left_bottom"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_sign_up_google" />
+
+
+                <View
+                    android:id="@+id/underline_login_2"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/gray"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+
+                <Button
+                    android:id="@+id/btn_login_preview"
+                    style="@style/button_preview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/btn_log_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grapefruit2"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right_bottom"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_left_bottom"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <import type="br.com.legacy.customViews.CustomEditText"/>
+        <variable
+            name="data"
+            type="br.com.legacy.components.TicketOwnerInfoComponent" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ticket_owner_info_container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/component_index_label"
+            style="@style/text_grey_12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.indexLabel}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="@{data.index == -1 ? View.GONE : View.VISIBLE}"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/component_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintLeft_toRightOf="@id/component_index_label"
+            app:layout_constraintRight_toRightOf="@id/transfer_button"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:lineSpacingExtra="14sp"
+            android:text="@{data.name}"
+            tools:text="Nome do usuário"
+            style="@style/text_grey_12sp" />
+
+        <TextView
+            android:id="@+id/component_rg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/component_name"
+            app:layout_constraintRight_toRightOf="@id/transfer_button"
+            app:layout_constraintTop_toBottomOf="@id/component_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:lineSpacingExtra="14sp"
+            android:text="@{data.rgInfo}"
+            tools:text="Rg: 73829748392"
+            style="@style/text_grey_12sp" />
+
+        <TextView
+            android:id="@+id/component_half_entrance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/component_rg"
+            app:layout_constraintRight_toRightOf="@id/transfer_button"
+            app:layout_constraintTop_toBottomOf="@id/component_rg"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:lineSpacingExtra="14sp"
+            android:text="@{data.halfInfo}"
+            tools:text="Meia: 73829748392"
+            android:visibility="@{data.hasHalfEntrance ? View.VISIBLE : View.GONE, default = gone}"
+            style="@style/text_grey_12sp" />
+
+        <Button
+            android:id="@+id/transfer_button"
+            android:layout_width="122.5dp"
+            android:layout_height="30.5dp"
+            android:background="@drawable/button_white_border_prim_dark"
+            android:onClick="@{data::onClickTransferButton}"
+            android:stateListAnimator="@null"
+            android:text="@string/transfer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/component_half_entrance"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/component_name" />
+
+        <!-- TODO above code-->
+        <!--<Button-->
+            <!--android:id="@+id/transfer_button"-->
+            <!--android:layout_width="122.5dp"-->
+            <!--android:layout_height="30.5dp"-->
+            <!--android:background="@drawable/button_white_border_prim_dark"-->
+            <!--android:stateListAnimator="@null"-->
+            <!--android:text="@string/transfer"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:textSize="9sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintTop_toTopOf="@id/component_name"-->
+            <!--app:layout_constraintBottom_toBottomOf="@id/component_half_entrance"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--android:visibility="@{(data.isMyTicketComponent &amp;&amp; data.shouldShowTransferButton) ? View.VISIBLE : View.GONE, default = gone}"-->
+            <!--android:onClick="@{data::onClickTransferButton}"/>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

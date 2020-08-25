@@ -1,0 +1,120 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+            consumerProguardFiles(file('../proguard').listFiles())
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+        homolog {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_vmmkhBIFQ\""
+            buildConfigField "String", 'BASE_URL', "\"https://hmg.appgoin-v1.com/v1/\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-hmg.s3-accelerate.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-hmg\""
+
+        }
+        jumpers {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_k1i2UU2qW\""
+            buildConfigField "String", 'BASE_URL', "\"https://e98rbw83zc.execute-api.us-east-1.amazonaws.com/devOld/\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://s3.amazonaws.com/jumpers-storage/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"jumpers-storage\""
+
+        }
+
+        local {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_HRZ5Y2b0T\""
+            buildConfigField "String", 'BASE_URL', "\"http://029fee1b.ngrok.io/\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-dev.s3-accelerate.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-dev\""
+        }
+        develop {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_HRZ5Y2b0T\""
+            //buildConfigField "String", 'BASE_URL', "\"http://3b7f4c90.ngrok.io/\""
+            buildConfigField "String", 'BASE_URL', "\"https://dev.appgoin-v1.com/v1/\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-dev.s3-accelerate.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-dev\""
+
+        }
+        prod {
+            dimension "app"
+            buildConfigField "String", 'BASE_URL', "\"https://prod.appgoin-v1.com/v1/\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_OnQZQ1uEo\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public.s3-accelerate.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public\""
+
+        }
+    }
+}
+
+dependencies {
+    //Rxjava2
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    api 'io.reactivex.rxjava2:rxjava:2.2.2'
+    api 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-core:3.0.0-alpha1'
+    api 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.0.0-alpha1'
+
+    //Glide
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //Others
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    //AndroidX
+    api 'androidx.core:core-ktx:1.0.1'
+    api 'androidx.core:core:1.0.1'
+    api "androidx.emoji:emoji-bundled:1.0.0"
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    api 'com.google.code.gson:gson:2.8.2'
+
+    api 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.legacy:legacy-support-v13:1.0.0'
+
+    api 'androidx.multidex:multidex:2.0.0'
+    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'com.google.android.material:material:1.0.0-rc01'
+    kapt 'androidx.annotation:annotation:1.0.0'
+
+    //Play Services
+    api 'com.google.android.gms:play-services-location:16.0.0'
+    api 'com.google.android.gms:play-services-maps:16.0.0'
+
+    //Firebase
+    api 'com.google.firebase:firebase-core:16.0.5'
+    api 'com.google.firebase:firebase-messaging:17.3.4'
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_notifications_message">Você não possui notificações</string>
+    <string name="title_notifications">Notificações</string>
+
+    <string name="notification_comment">%s comentou no seu post.</string>
+    <string name="notification_invite">%1$s te convidou para o evento %2$s.</string>
+    <string name="notification_like">%s curtiu seu post.</string>
+    <string name="notification_event">Você tem um evento esta semana: %s.</string>
+    <string name="notification_checkin">%1$s fez check-in no evento %2$s.</string>
+    <string name="notification_follow">%s passou a te seguir.</string>
+    <string name="notification_comment_tag">%s marcou você nos comentários de um post.</string>
+    <string name="notification_post_tag">%s marcou você em um post.</string>
+    <string name="notification_added_to_group">%1$s adicionou você ao grupo %2$s.</string>
+    <string name="notification_ticket_received">%1$s te deu um ingresso para o evento %2$s.</string>
+    <string name="notification_ticket_confirmed">%1$s: O pagamento do ingresso foi confirmado.</string>
+    <string name="notification_vip_box_invite">%1$s convidou você para dividir um camarote para o evento %2$s.</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="unfollow_alert">Deixar de seguir %1$s?</string>
+    <string name="unfollow">DEIXAR DE SEGUIR</string>"
+</resources>

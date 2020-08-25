@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+
+    <!--Field Validation-->
+
+
+    <string name="see_more"> see more</string>
+    <string name="next_events">Next eventApis</string>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="error_rating">Erro ao enviar sua avaliação</string>
+
+    <!-- map fragment-->
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+    <string name="uber_estimate_time_arrival"> %d minutes</string>
+
+    <!--Post-->
+
+    <!--Chat-->
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+
+
+    <string name="unfollow_place_question">Do you want to unfollow this place?</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+
+    <string name="address_label_establishment">Address</string>
+    <string name="see_all_views_establishment">See all ratings</string>
+    <string name="see_all_views_establishment_singular">See the %d rating</string>
+
+    <string name="expandable_info">*Information subject\n to changes*</string>
+
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <!-- terms of use lorem -->
+
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+
+    <string name="await">Await: </string>
+    <string name="advantages_goin">Advantages Go In</string>
+    <string name="text_buttom_dialog_voucher">I want! Redeem Voucher.</string>
+    <string name="regulation_title"><u>regulation</u></string>
+    <string name="text_view_label_voucher" translatable="false">VOUCHER</string>
+    <string name="text_view_check_the_regulation">check the regulation</string>
+    <string name="access_wallet">Access Wallet</string>
+    <string name="close">close</string>
+    <string name="send">Send</string>
+    <string name="enjoy_the_party">Enjoy the party, your name is on the list!</string>
+    <string name="have_you_used">Have you used</string>
+    <string name="you_can_once_time">You can only use it once.</string>
+    <string translatable="false" name="check_in">Checkin</string>
+    <string translatable="false" name="interrest">Tenho Interesse</string>
+    <string translatable="false" name="invite_friends">Convidar Amigos</string>
+    <string translatable="false" name="confirmation_checkin">Você deseja fazer check-in nesse lugar?</string>
+    <string translatable="false" name="cancel">Cancelar</string>
+</resources>

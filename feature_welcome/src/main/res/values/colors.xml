@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparentAll">#00000000</color>
+    <color name="lightGray">#d2d2d2</color>
+    <color name="grapefruit">#ff5150</color>
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+
+</resources>

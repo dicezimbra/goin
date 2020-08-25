@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Feature_Find_Friends</string>
+    <string name="Followers">Followers</string>
+    <string name="Following">Following</string>
+    <string name="no_users_found">No users found</string>
+    <string name="find_friends">Find friends</string>
+    <string name="unfollow">UNFOLLOW</string>
+    <string name="cancel">Cancel</string>
+    <string name="unfollow_alert">Stop following %1$s?</string>
+    <string name="service_error">Error. Please try again</string>
+
+    <!--ANALYTICS-->
+    <item name="analytics_findFriends_screen_name" translatable="false" type="string">FIND FRIENDS</item>
+    <item name="analytics_findFriends_category" translatable="false" type="string">FIND FRIENDS</item>
+    <item name="analytics_findFriends_follow_action" translatable="false" type="string">SEGUIR</item>
+    <item name="analytics_findFriends_back_action" translatable="false" type="string">VOLTAR</item>
+</resources>

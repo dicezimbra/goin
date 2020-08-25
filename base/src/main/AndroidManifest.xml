@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.base" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application >
+        <provider
+            android:authorities="${applicationId}.base.appInitProvider"
+            android:exported="false"
+            android:enabled="true"
+            android:name=".BaseAppInitProvider" />
+    </application>
+</manifest>

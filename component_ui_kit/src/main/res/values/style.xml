@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+    <style name="DefaultGoinButton">
+        <item name="android:layout_height">@dimen/_30sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/gradient_background_default_goin_button</item>
+    </style>
+
+
+    <style name="DefaultGoinWhiteButton">
+        <item name="android:layout_height">@dimen/_30sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/grayBackgroundBoard</item>
+    </style>
+
+</resources>

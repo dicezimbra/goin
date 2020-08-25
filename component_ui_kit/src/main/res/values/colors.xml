@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray_error">#9B9B9B</color>
+    <color name="gray_dark_error">#58626E</color>
+    <color name="gray_dark_modal">#2B2F34</color>
+
+    <color name="lightSilver">#f6f6f8</color>
+
+    // Yellow
+
+    <color name="gray">#7d7e7e</color>
+    // Yellow
+
+    <color name="battleshipGrey">#65707e</color>
+    <color name="style_orange">#ff5150</color>
+    <color name="orange">#F6F6F8</color>
+    <color name="orange_dark">#acacad</color>
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+</resources>

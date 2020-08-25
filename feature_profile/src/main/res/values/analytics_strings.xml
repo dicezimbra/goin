@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Home-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Establisment-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Feed-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Profile-->
+        <!--Screen Name-->
+        <item name="analytics_profile_screen_name" type="string" translatable="false">PERFIL</item>
+
+        <!--Categories-->
+        <item name="analytics_profile_category" type="string" translatable="false">PERFIL</item>
+        <item name="analytics_profile_events_category" type="string" translatable="false">MAIS_EVENTOS</item>
+
+        <!--Action-->
+        <item name="analytics_profile_click_event_action" type="string" translatable="false">EVENTO</item>
+    <item name="analytics_profile_find_friends_action" type="string" translatable="false">PROCURAR_AMIGOS</item>
+        <item name="analytics_profile_notification_action" type="string" translatable="false">NOTIFICACAO</item>
+    <item name="analytics_profile_followers_action" type="string" translatable="false">SEGUIDORES</item>
+        <item name="analytics_profile_following_action" type="string" translatable="false">SEGUINDO</item>
+        <item name="analytics_profile_edit_action" type="string" translatable="false">EDITAR_PERFIL</item>
+
+        <!--Parameters-->
+
+    <!--New post-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Check in-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Welcome-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Login-->
+        <!--Screen Name-->
+
+    <!--Sign up-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Forgot Password-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--My tickets-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Ticket details-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Event details-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Play-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Play details-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Search-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Categories list-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Filter-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Movie About-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Search Friends-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Comments-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Followers-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Following-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Edit profile-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Configurations-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Change Password-->
+        <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Label Identifier-->
+
+    <string translatable="false" name="my_profile_screen_name">MEU_PERFIL</string>
+    <string translatable="false" name="profile_screen_name">PERFIL_DETALHE</string>
+
+</resources>

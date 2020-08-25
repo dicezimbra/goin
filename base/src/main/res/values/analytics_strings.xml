@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="LISTA_INGRESSO_EVENTO" translatable="false">LISTA_INGRESSO_EVENTO</string>
+    <string name="LISTA_ENDERECOS"  translatable="false">LISTA_ENDERECOS</string>
+    <string name="ADICIONAR_ENDERECO" translatable="false">ADICIONAR_ENDERECO</string>
+    <string name="LISTA_CARTOES" translatable="false">LISTA_CARTOES</string>
+    <string name="ADICIONAR_CARTOES" translatable="false">ADICIONAR_CARTOES</string>
+    <string name="RESUMO_COMPRA" translatable="false">RESUMO_COMPRA</string>
+    <string name="RESUMO_COMPRA_SUCESSO" translatable="false">RESUMO_COMPRA_SUCESSO</string>
+    <string name="RESUMO_COMPRA_ERRO" translatable="false">RESUMO_COMPRA_ERRO</string>
+
+</resources>

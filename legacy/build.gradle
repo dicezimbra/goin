@@ -1,0 +1,168 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: "com.github.konifar.gradle.unused-resources-remover"
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        resValue "string", "app_name_build", "Go In"
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        resolutionStrategy {
+            preferProjectModules()
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+            consumerProguardFiles(file('../proguard').listFiles())
+        }
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+        homolog {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:95225dc0-7ab3-4cfd-885f-ea1cffe098fb\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_vmmkhBIFQ\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"24ipob6jg17ib5p3ojvdd1irlo\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"1mvu2rgdtgravlpqpv5emon9lu8qvli90b0fprtji06s62lqa0cb\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-hmg\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-hmg.s3-accelerate.amazonaws.com/\""
+        }
+
+        jumpers {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:6df6914f-5a2c-4e86-93f9-76cab3c4eba4\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_k1i2UU2qW\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"2liejaf7agim5db15pnono6dcs\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"1ei7ukhr5tr7bdjvskuov8qejl1l0ao3l6dkhdr9ivuchedv3e6g\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"jumpers-storage\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://s3.amazonaws.com/jumpers-storage/\""
+        }
+
+        local {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:090ad616-fd7a-4afe-852d-0e472d3c599c\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_HRZ5Y2b0T\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"7clhsumcmartvpp3p0cao8an3f\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"cggvsu0c72tdliiu5f6oa94dbcbdu1fk8g5pctt7mlunfc5lrl0\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-dev\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-dev.s3-accelerate.amazonaws.com/\""
+        }
+
+        develop {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:090ad616-fd7a-4afe-852d-0e472d3c599c\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_HRZ5Y2b0T\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"7clhsumcmartvpp3p0cao8an3f\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"cggvsu0c72tdliiu5f6oa94dbcbdu1fk8g5pctt7mlunfc5lrl0\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public-dev\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public-dev.s3-accelerate.amazonaws.com/\""
+        }
+
+        prod {
+            dimension "app"
+            buildConfigField "String", 'COGNITO_IDENTITY_POOL_ID', "\"us-east-1:8272cd20-c87a-4cd9-8a2b-d97d5c2eafe1\""
+            buildConfigField "String", 'COGNITO_USER_POOL_ID', "\"us-east-1_OnQZQ1uEo\""
+            buildConfigField "String", 'COGNITO_CLIENT_ID', "\"lefmonak5qfl8r84mqifi4ncb\""
+            buildConfigField "String", 'COGNITO_CLIENT_SECRET', "\"19d61t2iaitn3r8tubr8oinr3iqe53i4hup6f6jfpr37lo1qa6o0\""
+            buildConfigField "String", 'COGNITO_IP_PREFIX', "\"cognito-idp.us-east-1.amazonaws.com/\""
+            buildConfigField "String", 'BUCKET_NAME', "\"goin-public\""
+            buildConfigField "String", 'BUCKET_PATH', "\"https://goin-public.s3-accelerate.amazonaws.com/\""
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+kapt {
+    javacOptions {
+        option("-Xmaxerrs", 500)
+    }
+}
+
+dependencies {
+    implementation project(':feature_login')
+
+    //Components
+    implementation project(':component_rest_api')
+    implementation project(':component_ui_kit')
+    implementation project(':component_user_session')
+    implementation project(':component_analytics')
+    implementation project(':component_navigation')
+    implementation project(':component_model_event')
+    implementation project(':component_model_club')
+    implementation project(':component_model_category')
+    implementation project(':component_model_uber')
+    implementation project(':component_push')
+
+    //Butterknife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    kapt 'com.jakewharton:butterknife-compiler:10.0.0'
+
+
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.0.0"
+
+    //Others
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.6.1'
+    implementation 'com.ethanhua:skeleton:1.0.0'
+
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
+    kapt 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
+
+    implementation 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+    implementation 'com.appyvet:materialrangebar:1.3'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.1'
+    implementation ('io.branch.sdk.android:library:3.0.4'){
+        exclude module: 'answers-shim'
+    }
+    api 'com.github.outsmartyourself:OSEditText:v0.1.7'
+    implementation 'com.linkedin.android.spyglass:spyglass:1.4.0'
+
+
+    implementation 'com.github.cahemunoz:MediaPicker:1.1.5'
+    implementation('com.paypal.sdk:paypal-android-sdk:2.15.3') {
+        exclude group: 'io.card'
+    }
+    implementation 'com.gtomato.android.library:carouselview:2.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+    <!--Field Validation-->
+    <string name="invalid_password">The password must contain at least 8 characters and a capital letter</string>
+
+
+    <string name="different_passwords">Differents Passwords</string>
+    <string name="fill_all_fields_password">Fill in all the fields</string>
+    <string name="invalid_password_error">Invalid Password</string>
+
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+
+    <!-- map fragment-->
+
+    <string name="new_password">New Password</string>
+    <string name="new_password_confirmation">Confirm new Password</string>
+
+
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+
+    <!--Post-->
+
+    <!--Chat-->
+    <!--Global Search-->
+    <!--Tickets-->
+
+
+    <string name="change_password_old_password">Old Password</string>
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+    <string name="change_password_success">Password changed successfully!</string>
+
+
+    <string name="change_password_title">Change Password</string>
+
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <!-- terms of use lorem -->
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+    <string name="new_password_same_old">New Password should not be same as old password</string>
+
+
+</resources>

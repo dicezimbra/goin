@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/search_bar_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grapefruit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="43.5dp"
+            android:layout_weight="1"
+            app:iconifiedByDefault="false"
+            android:theme="@style/SearchViewTheme"
+            android:background="@null"
+            app:searchIcon="@null"
+            app:closeIcon="@null"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textCapWords" />
+
+        <ImageView
+            android:id="@+id/search_bar_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_search_24dp"
+            android:tint="@color/grapefruit" />
+
+        <ImageView
+            android:id="@+id/search_bar_close_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_clear_black_36dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_bar_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grapefruit" />
+
+</LinearLayout>

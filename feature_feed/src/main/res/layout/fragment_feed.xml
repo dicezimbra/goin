@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <br.com.goin.component.ui.kit.features.error.ErrorConstraintLayout
+        android:id="@+id/coordinator_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayBackgroundBoard"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" />
+
+        <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+            android:id="@+id/recycler_view_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/profile_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="toolbar, new_feed_bar, newPostItens"/>
+
+                <br.com.goin.component.ui.kit.toolbar.GoinToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/new_feed_bar"
+                    layout="@layout/item_new_feed_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <include
+                    android:id="@+id/newPostItens"
+                    layout="@layout/layout_new_post_itens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_feed_bar" />
+
+                <TextView
+                    android:id="@+id/no_more_posts"
+                    style="@style/text_grey_14sp_italic_centered"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="14dp"
+                    android:gravity="center"
+                    android:text="@string/emptyFeed"
+                    android:visibility="gone"
+                    app:layout_anchorGravity="center_vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/newPostItens" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/publish_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintEnd_toEndOf="@+id/new_feed_bar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/newPostItens">
+
+                    <ProgressBar
+                        android:id="@+id/more_posts_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:theme="@style/ProgressOrange"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/title_feed_new_post"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title_feed_new_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="@string/publishing"
+                        android:textColor="@color/black"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/more_posts_loading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/more_posts_loading"
+                        app:layout_constraintTop_toTopOf="@+id/more_posts_loading"
+                        app:layout_constraintVertical_bias="0.333" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+    </br.com.goin.component.ui.kit.features.error.ErrorConstraintLayout>

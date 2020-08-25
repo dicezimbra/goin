@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+
+    <style name="CustomTextFields" parent="TextViewStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/battleship_grey</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+
+    <!--Sign Up-->
+
+    <!-- Text styles -->
+
+    <style name="text_grey_12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_grey_15sp_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- SeekBar style -->
+
+    <!-- RatingBar -->
+
+    <!-- RatingBar MyClubs -->
+
+
+    <!-- Tabas on ProfileFragment-->
+
+    <style name="text_black_15sp_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="BottomLineTextInputLayout">
+        <item name="android:colorControlNormal">@color/gray</item>
+        <item name="android:colorControlActivated">@color/grapefruit</item>
+        <item name="android:colorControlHighlight">@color/grapefruit</item>
+    </style>
+
+    <style name="EmailDesactivatedInputLayout">
+        <item name="android:colorControlNormal">@color/lightGray</item>
+        <item name="android:colorControlActivated">@color/lightGray</item>
+        <item name="android:colorControlHighlight">@color/lightGray</item>
+    </style>
+
+    <style name="ProfileTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark" tools:targetApi="23">@color/grayBackgroundBoard</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+</resources>

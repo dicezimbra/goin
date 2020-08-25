@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Followers">Seguidores</string>
+    <string name="Following">Seguindo</string>
+    <string name="no_users_found">Usuário não encontrado</string>
+    <string name="find_friends">Encontre amigos</string>
+    <string name="unfollow">DEIXAR DE SEGUIR</string>
+    <string name="cancel">Cancelar</string>
+    <string name="unfollow_alert">Deixar de seguir %1$s?</string>
+    <string name="service_error">Erro. Tente novamente.</string>
+</resources>

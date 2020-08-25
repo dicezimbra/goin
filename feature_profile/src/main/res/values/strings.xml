@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--facebook-->
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="alert_warning">Alert</string>
+    <string name="unkown_error">An unexpected error has occurred. Please try again later.</string>
+    <!--Field Validation-->
+
+
+    <string name="email">E-mail*</string>
+    <string name="name">Name*</string>
+
+    <string name="posts">Posts</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+
+    <string name="you_have_no_events">You have no eventApis.</string>
+
+    <string name="edit">Edit profile</string>
+    <string name="interest">Interests</string>
+
+    <!-- map fragment-->
+
+
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+<string name="error_name_empty">Name field can not be empty!</string>
+    <!--Notifications-->
+
+
+    <!--Rating-->
+
+    <!--Event EventSessionDetail-->
+
+    <!--Post-->
+
+    <!--Chat-->
+    <string name="error_uploading_image">It was not possible to upload the image. It is not stored locally in your device.</string>
+    <!--Global Search-->
+    <!--Tickets-->
+
+
+    <plurals name="score_number">
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+
+    <plurals name="followers_counter">
+        <item quantity="one">%d \nfollower</item>
+        <item quantity="other">%d \nfollowers</item>
+    </plurals>
+
+    <plurals name="following_counter">
+        <item quantity="one">%d \nfollowing</item>
+        <item quantity="other">%d \nfollowings</item>
+    </plurals>
+
+    <plurals name="post_counter">
+        <item quantity="one">%d\npost</item>
+        <item quantity="other">%d\nposts</item>
+    </plurals>
+
+
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="permissions_dialog_title">Permissions</string>
+
+    <!-- terms of use lorem -->
+    <!-- Tab Wallet -->
+
+    <!-- Tab Search -->
+
+
+    <string name="app_name">Feature Profile</string>
+
+    <string name="edit_profile">Edit profile</string>
+    <string name="profile_updated_successfully">Profile updated successfully!</string>
+    <string name="edit_profile_screen_name">PERFIL_EDITAR</string>
+</resources>

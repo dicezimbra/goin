@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="colorPrimaryDarkAccent">#a9ff5851</color>
+    <color name="colorPrimaryDarkRedAccent">#e0f76a64</color>
+    <color name="colorDarkRed">#dd4040</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray">#7d7e7e</color>
+    <color name="grayTabEditProfile">#58626E</color>
+
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+
+    <color name="style_orange">#ff5150</color>
+
+    <color name="battleship_gray">#65707e</color>
+    <color name="lightSilver">#f6f6f8</color>
+    <color name="dark_grey">#24262a</color>
+    <color name="slate_grey">#58626e</color>
+    <color name="melon">#ff8155</color>
+    <color name="silver">#c2c8d1</color>
+    <color name="adark_grey">#24262a</color>
+    <color name="grapefruit">#ff5150</color>
+    <color name="red_wallet">#FF5050</color>
+    <color name="ticket_background">#FBF9F8</color>
+    <color name="shadow">#ADB6D9</color>
+    <color name="gray_ticket">#2B2F34</color>
+
+    // Yellow
+
+</resources>

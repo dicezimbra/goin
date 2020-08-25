@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_notifications_message">You have no notifications</string>
+    <string name="title_notifications">Notificactions</string>
+
+    <string name="notification_comment">%s commented on your post.</string>
+    <string name="notification_invite">%1$s invited you to the eventApi %2$s.</string>
+    <string name="notification_like">%s liked your post.</string>
+    <string name="notification_event">You have an eventApi this week: %s.</string>
+    <string name="notification_checkin">%1$s checked in to %2$s.</string>
+    <string name="notification_follow">%s followed you.</string>
+    <string name="notification_comment_tag">%s tagged you in a post’s comments.</string>
+    <string name="notification_post_tag">%s tagged you in a post.</string>
+    <string name="notification_added_to_group">%1$s added you to %2$s.</string>
+    <string name="notification_ticket_received">%1$s gave you a ticket to %2$s.</string>
+    <string name="notification_ticket_confirmed">%1$s: The ticket`s payment was confirmed.</string>
+    <string name="notification_vip_box_invite">%1$s invited you to share a vip box for the eventApi %2$s.</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="unfollow_alert">Stop following %1$s?</string>
+    <string name="unfollow">UNFOLLOW</string>"
+</resources>

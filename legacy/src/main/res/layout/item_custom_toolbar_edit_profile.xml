@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/grayBackgroundBoard"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/toolbar_left_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_keyboard_arrow_left_orange_24dp" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="22sp"
+        android:text="Edit profile"
+        android:textColor="@color/grapefruit"
+        android:textSize="18sp" />
+
+
+
+    <ImageView
+        android:layout_marginRight="@dimen/_8sdp"
+        android:id="@+id/toolbar_right_icon"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="26sp"
+        android:src="@drawable/outline_done_white_24dp"
+        android:textColor="@color/battleship_gray"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+
+</LinearLayout>
+
+
+

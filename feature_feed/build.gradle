@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+            consumerProguardFiles(file('../proguard').listFiles())
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+        homolog {
+            dimension "app"
+        }
+        jumpers {
+            dimension "app"
+        }
+        local {
+            dimension "app"
+        }
+        develop {
+            dimension "app"
+        }
+        prod {
+            dimension "app"
+        }
+    }
+}
+
+dependencies {
+    implementation project(':component_rest_api')
+    implementation project(':component_user_session')
+    implementation project(':component_navigation')
+    implementation project(':component_analytics')
+    implementation project(':component_ui_kit')
+    api project(':base')
+
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    implementation 'com.linkedin.android.spyglass:spyglass:1.4.0'
+    implementation 'com.github.cahemunoz:MediaPicker:1.1.5'
+
+    implementation 'com.andkulikov:transitionseverywhere:1.8.1'
+    implementation "android.arch.work:work-runtime:1.0.0-alpha02"
+    implementation 'com.andkulikov:transitionseverywhere:1.8.1'
+    implementation 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

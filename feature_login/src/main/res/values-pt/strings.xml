@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Buttons-->
+    <string name="sign_up_with_facebook">Entrar com Facebook</string>
+    <string name="sign_up_with_google">Entrar com Google</string>
+    <string name="or">ou</string>
+
+    <!--Alert-->
+    <string name="alert_ok">Ok</string>
+    <string name="email_exists">Este e-mail já está cadastrado.</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+    <string name="save_photo">Salvar foto</string>
+    <string name="permissions_gallery_needed">Você precisa permitir o acesso para adicionar sua foto de perfil!</string>
+    <string name="invalidEmail">Por favor, digite um e-mail válido!</string>
+    <string name="invalid_user">E-mail ou senha inválidos.</string>
+
+
+
+    <string name="capital_letter">letra maiúscula</string>
+    <string name="and_at_least"> e pelo menos</string>
+    <string name="eight_chars"> 8 caractéres</string>
+    <string name="password_changed_successfully">Senha alterada com sucesso!</string>
+    <string name="profile_picture">Foto de perfil</string>
+    <string name="choose_photo">Escolher foto</string>
+    <string name="your_pass">Sua senha deve conter uma </string>
+
+
+
+    <!--Field Validation-->
+    <string name="invalid_email">Por favor, insira um e-mail válido.</string>
+    <string name="invalid_password">A senha deve conter, pelo menos 8 caracteres e uma letra maiúscula</string>
+    <string name="forgot_password_send_code_success">Código enviado por e-mail</string>
+    <string name="btn_log_in">Entrar</string>
+    <string name="pin_text">Para trocar sua senha digite sua nova senha e o PIN que você recebeu em seu e-mail.</string>
+    <string name="save_new_password">Salvar nova senha</string>
+    <string name="your_password_must_contain">A sua senha deve ter pelo menos 8 caracteres e conter pelo menos: uma letra maiúscula, uma letra minúscula e um dígito.</string>
+    <string name="not_now">Agora não</string>
+
+
+
+    <string name="send">Enviar</string>
+
+    <string name="btn_sign_up">Cadastrar</string>
+    <string name="email">E-mail*</string>
+    <string name="name">Nome*</string>
+    <string name="password">Senha*</string>
+    <string name="confirm_password">Confirmar senha*</string>
+    <string name="forgot_password">Esqueceu sua senha?</string>
+
+
+    <!-- map fragment-->
+
+    <string name="new_password">Senha nova</string>
+
+
+    <!--Notifications-->
+
+
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="please_insert_name">Por favor digite o seu nome.</string>
+    <string name="please_insert_password">Por favor digite a sua senha.</string>
+    <string name="please_confirm_password">Por favor confirme a sua senha.</string>
+    <string name="password_dont_match">A verificação não corresponde à senha definida.</string>
+
+
+    <!--Rating-->
+
+
+    <!--Event EventSessionDetail-->
+
+
+    <!--Post-->
+
+    <!--Chat-->
+    <string name="error_uploading_image">Não foi possível carregar a imagem. Aparentemente ela não está armazenada localmente em seu celular.</string>
+
+    <!--Global Search-->
+
+    <!--Tickets-->
+    <string name="enter_a_valid_password">Digite uma senha válida</string>
+
+
+    <string name="enter">Entrar</string>
+    <string name="email_login">E-mail</string>
+    <string name="type_your_password">Digite sua senha</string>
+
+    <string name="privacy_terms">Ao registrar-me, declaro que eu li e aceito aos <u>Termos de uso</u> e a <u>Política de Privacidade</u>.</string>
+    <string name="invalid_checked">Por favor concorde com os termos e condições.</string>
+
+    <string name="terms_of_use_lorem">Termos de Uso</string>
+
+
+    <!-- Tab Wallet-->
+
+    <!-- Tab Search -->
+
+    <string name="email_not_found">E-mail não encontrado</string>
+
+    <string name="fill_your_email_below">Insira seu endereço de e-mail abaixo para receber um link de redefinição de senha.</string>
+    <string name="enter_a_valid_email">Digite um e-mail válido</string>
+
+
+</resources>

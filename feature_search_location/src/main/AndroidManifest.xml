@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.search.location" >
+
+    <application>
+        <activity
+            android:name="br.com.goin.feature.search.location.searchLocation.SearchLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SearchLocationTheme" />
+    </application>
+</manifest>

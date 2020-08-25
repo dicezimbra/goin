@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbarTabsMain"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/toolbar_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleType="center"
+            android:tint="@color/colorPrimary"
+            android:visibility="invisible"
+            tools:src="@drawable/ic_arrow_orange_24dp"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/title_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/toolbar_left_icon"
+            android:layout_toStartOf="@+id/toolbar_right_icon"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:layout_margin="5dp"
+                tools:layout_toRightOf="@id/toolbar_middle_icon"
+                tools:text="TITLE"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/toolbar_middle_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:tint="@color/colorPrimary"
+                android:visibility="gone"
+                tools:visibility="gone" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/toolbar_right_icon"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:scaleType="fitStart"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tint="@color/colorPrimary"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/search_bar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toStartOf="@id/toolbar_right_icon"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</layout>

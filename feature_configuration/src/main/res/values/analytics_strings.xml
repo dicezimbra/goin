@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Configurations-->
+    <!--Screen Name-->
+    <item name="analytics_configurations_screen_name" type="string" translatable="false">CONFIGURACOES</item>
+
+    <!--Categories-->
+    <item name="analytics_configurations_category" type="string" translatable="false">CONFIGURACOES</item>
+
+    <!--Action-->
+    <item name="analytics_configurations_user_terms_action" type="string" translatable="false">TERMOS_USO</item>
+    <item name="analytics_configurations_half_price_policy_action" type="string" translatable="false">POLITICA_MEIA_ENTRADA</item>
+    <item name="analytics_configurations_privacy_policy_action" type="string" translatable="false">POLITICA_PRIVACIDADE</item>
+    <item name="analytics_configurations_invite_friends_action" type="string" translatable="false">CONVIDAR_AMIGOS</item>
+    <item name="analytics_configurations_logout_action" type="string" translatable="false">SAIR</item>
+    <item name="analytics_configurations_edit_profile_action" type="string" translatable="false">EDITAR_PERFIL</item>
+    <item name="analytics_configurations_change_password_action" type="string" translatable="false">MUDAR_SENHA</item>
+
+    <string translatable="false" name="confi_screen_name">CONFIGURACOES</string>
+    <string translatable="false" name="invite_friends_category">CONVIDAR_AMIGOS</string>
+    <string translatable="false" name="logout_category">LOGOUT</string>
+</resources>

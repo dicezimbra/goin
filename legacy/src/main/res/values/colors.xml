@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="colorPrimaryDarkAccent">#a9ff5851</color>
+    <color name="colorPrimaryDarkRedAccent">#e0f76a64</color>
+    <color name="colorDarkRed">#dd4040</color>
+    <color name="red">#ff0000</color>
+    <color name="colorPrimaryGradientEndWelcome">#FF8150</color>
+    <color name="colorRedButtonFilter">#FF5150</color>
+    <color name="notTooBlack">#323232</color>
+    <color name="gray_primary">#F6F6F8</color>
+    <color name="gray_primary_dark">#acacad</color>
+    <color name="gray_background_distance">#9B9B9B</color>
+    <color name="blue">#16559f</color>
+    <color name="paypalButtonColor">#3f85ea</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="whiteTransparent">#4dffffff</color>
+    <color name="transparent">#144f</color>
+    <color name="transparentAll">#00000000</color>
+    <color name="realTransparent">#00ffffff</color>
+    <color name="charcoal">#2F342F</color>
+    <color name="battleshipGrey_2">#65707E</color>
+
+    <color name="lightGray">#d2d2d2</color>
+    <color name="gray">#7d7e7e</color>
+    <color name="grayTabEditProfile">#58626E</color>
+    <color name="grayTransparent">#af7d7e7e</color>
+    <color name="colorBlack20percent">#20000000</color>
+    <color name="bodyColor">#7e7e7e</color>
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+    <color name="colorBlackTitle">#2B2F34</color>
+
+    <color name="style_orange">#ff5150</color>
+    <color name="login_background_color">#553041</color>
+
+    <color name="battleship_gray">#65707e</color>
+    <color name="battleship_grey">#8065707e</color>
+    <color name="lightSilver">#f6f6f8</color>
+    <color name="dark_grey">#24262a</color>
+    <color name="slate_grey">#58626e</color>
+    <color name="melon">#ff8155</color>
+    <color name="silver">#c2c8d1</color>
+    <color name="adark_grey">#24262a</color>
+    <color name="adark_grey_2">#505050</color>
+    <color name="grapefruit">#ff5150</color>
+    <color name="battleshipGrey">#65707e</color>
+
+    // Yellow
+    <color name="yellowStarProfile">#EAAE5C</color>
+    <color name="orange">#F6F6F8</color>
+    <color name="orange_dark">#acacad</color>
+</resources>

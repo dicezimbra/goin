@@ -1,0 +1,66 @@
+pipeline {
+    post {
+      notBuilt{
+        updateGitlabCommitStatus name: 'build', state: 'pending'
+      }
+      failure {
+        updateGitlabCommitStatus name: 'build', state: 'failed'
+        slackSend baseUrl: 'https://go-in-hq.slack.com/services/hooks/jenkins-ci/',
+        botUser: true, channel: '#go-in-dev-android', color: '#ff5150',
+        message: 'Develop quebrada!!\ntools.goin.com.br:8080',
+        token: 'a7fAqcOF7rg5iKVMVERruK48'
+      }
+      success {
+        updateGitlabCommitStatus name: 'build', state: 'success'
+        updateGitlabCommitStatus name: 'upload-beta', state: 'success'
+        slackSend baseUrl: 'https://go-in-hq.slack.com/services/hooks/jenkins-ci/',
+                botUser: true, channel: '#android-ci', color: '#36A64F',
+                message: 'Build develop gerado com sucesso!',
+                token: 'a7fAqcOF7rg5iKVMVERruK48'
+      }
+    }
+    options {
+        skipStagesAfterUnstable()
+        disableConcurrentBuilds()
+        gitLabConnection('Gitlab Android')
+    }
+    triggers {
+        gitlab(triggerOnPush: true,
+         triggerOnMergeRequest: true,
+         triggerOpenMergeRequestOnPush: "source",
+         triggerOnNoteRequest: false,
+         noteRegex: "Jenkins please retry a build",
+         skipWorkInProgressMergeRequest: true,
+         setBuildDescription: true,
+         addNoteOnMergeRequest: true,
+         addCiMessage: true,
+         addVoteOnMergeRequest: true,
+         branchFilterType: "RegexBasedFilter",
+         targetBranchRegex: "develop",
+         sourceBranchRegex: "develop",
+         acceptMergeRequestOnSuccess: false,
+         pendingBuildName: "Jenkins",
+         cancelPendingBuildsOnUpdate: true,
+        secretToken: "ce380266d72f0c3d33b0e7459de05d41")
+
+    }
+    agent {
+        label 'android'
+    }
+    stages {
+        stage('Compile APK') {
+            steps {
+                updateGitlabCommitStatus name: 'build', state: 'running'
+                sh './gradlew assembleDevelopRelease'
+            }
+        }
+
+        stage('Upload to beta') {
+          steps {
+            updateGitlabCommitStatus name: 'build', state: 'success'
+            updateGitlabCommitStatus name: 'upload-beta', state: 'running'
+            sh './gradlew crashlyticsUploadDistributionDevelopRelease'
+          }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Home-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Establisment-->
+    <!--Screen Name-->
+    <item name="analytics_establishment_screen_name" type="string" translatable="false">ESTABELECIMENTO_DETALHE</item>
+
+    <!--Categories-->
+    <item name="analytics_establishment_category" type="string" translatable="false">ESTABELECIMENTO_DETALHE</item>
+
+    <!--Action-->
+    <item name="analytics_establishment_favorite_action" type="string" translatable="false">FAVORITAR</item>
+    <item name="analytics_establishment_share_action" type="string" translatable="false">COMPARTILHAR</item>
+    <item name="analytics_establishment_waypoint_action" type="string" translatable="false">COMO_CHEGAR</item>
+    <item name="analytics_establishment_uber_action" type="string" translatable="false">VADE_UBER</item>
+    <item name="analytics_establishment_new_avaliation_action" type="string" translatable="false">NOVA_AVALIACAO_POSTAR</item>
+    <item name="analytics_establishment_back_action" type="string" translatable="false">VOLTAR</item>
+
+    <!--Feed-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Profile-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Parameters-->
+
+    <!--New post-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Check in-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Welcome-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Login-->
+    <!--Screen Name-->
+
+    <!--Sign up-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Forgot Password-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--My tickets-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Ticket details-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Event details-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Play-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Play details-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Search-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Categories list-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Filter-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Movie About-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Search Friends-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Comments-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Followers-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Following-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Edit profile-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Configurations-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Change Password-->
+    <!--Screen Name-->
+
+    <!--Categories-->
+
+    <!--Action-->
+
+    <!--Label Identifier-->
+    <string name="analytics_establishment_label_identifier" translatable="false">NOME_ESTABELECIMENTO:%s</string>
+    <string translatable="false" name="place_screen_name">BALADA_DETALHE</string>
+
+</resources>

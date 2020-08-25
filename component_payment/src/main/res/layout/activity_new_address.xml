@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.goin.component.newaddress.NewAddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/list_address_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintBottom_toTopOf="@id/event_scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/toolbar_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="#BB000000" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/arrow_left_payment" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back_button"
+            android:layout_alignBottom="@+id/back_button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_toEndOf="@+id/back_button"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:hint="Novo endereco"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/arrow_left_payment"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_address_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/scroll_view_address"
+            app:layout_constraintEnd_toEndOf="@id/scroll_view_address"
+            app:layout_constraintStart_toStartOf="@id/scroll_view_address"
+            app:layout_constraintTop_toTopOf="@id/scroll_view_address">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="40dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="40dp" />
+
+            <TextView
+                android:id="@+id/nickname_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/gray_dark_modal"
+                android:textColorHint="@color/gray_dark_modal"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+                app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:hint="Endereço" />
+
+            <TextView
+                android:id="@+id/full_address"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_70sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="0dp"
+                android:maxLines="4"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+                app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                app:layout_constraintTop_toBottomOf="@+id/nickname_address"
+                tools:hint="Av de exemplo - Bairro,\nSão Paulo - SP, 01310-300 Av. Paulista - Bela Vista,\nSão Paulo - SP, 01310-300" />
+
+
+            <br.com.goin.component.helper.CustomViewPager
+                android:id="@+id/view_pager_address"
+                android:layout_width="0dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/full_address"/>
+
+            <LinearLayout
+                android:isScrollContainer="true"
+                android:id="@+id/bottom_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintTop_toBottomOf="@+id/view_pager_address"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/back_button_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:stateListAnimator="@null"
+                    android:text="@string/back"
+                    android:textColor="@color/grapefruit" />
+
+
+                <Button
+                    android:id="@+id/next_button_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.4"
+                    android:background="@drawable/gradient_background_default_goin_button"
+                    android:enabled="false"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/next"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/save_button_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_background_default_goin_button"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/add_address"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

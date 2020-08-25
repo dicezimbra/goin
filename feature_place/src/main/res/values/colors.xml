@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5150</color>
+    <color name="colorPrimaryDark">#ff5851</color>
+    <color name="colorAccent">#ffb094</color>
+    <color name="startGradientButtonDialog">#FF5050</color>
+    <color name="endGradientButtonDialog">#FF8155</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray">#7d7e7e</color>
+    <color name="gray_title">#58626E</color>
+    <color name="coral">#ff5150</color>
+    <color name="dark_grey">#24262a</color>
+    <color name="gray_rating">#2B2F34</color>
+
+    <color name="lightSilver">#f6f6f8</color>
+    <color name="gray_light">#454E5A</color>
+
+    <color name="brown_grey">#9b9b9b</color>
+    // Yellow
+    <color name="battleship_gray">#65707e</color>
+    <color name="grayBackgroundBoard">#F6F6F8</color>
+    <color name="gray_category">#65707E</color>
+    <color name="gray_background_distance">#9B9B9B</color>
+    <color name="battleship_grey">#65707e</color>
+    <color name="very_light_pink">#fbf9f8</color>
+    <color name="grapefruit2">#FF4F4F</color>
+    <color name="lightGray">#d2d2d2</color>
+    <color name="grayVoucherLabel">#CC4D4D4D</color>
+</resources>

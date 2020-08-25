@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardPreventCornerOverlap="false"
+>
+
+    <LinearLayout
+        android:padding="@dimen/_16sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:id="@+id/dialog_icon"
+        />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/dialog_title"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/quicksand_light"
+        android:id="@+id/dialog_description"
+        android:gravity="center"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        />
+
+        <Button
+            android:text="Entendi!"
+            android:id="@+id/dialog_action"
+            style="@style/DefaultGoinButton"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            />
+
+
+    </LinearLayout>
+    
+</androidx.cardview.widget.CardView>

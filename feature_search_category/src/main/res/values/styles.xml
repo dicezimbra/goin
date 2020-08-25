@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">helvetica</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="Animated.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/Animated</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="Animated" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_in_out_up</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_out_up</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_in_down</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">helvetica</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+
+    <style name="SearchCategoryTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="colorPrimary">@color/grayBackgroundBoard</item>
+    </style>
+
+    <style name="TabWallet">
+        <item name="tabTextAppearance">@style/TextAppearanceTabWallet</item>
+    </style>
+
+    <style name="TextAppearanceTabWallet">
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/quicksand_light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/grayBackgroundBoard</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SearchByCategoryTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="FilterCategoryPartyTheme" parent="@style/Theme.MaterialComponents">
+    </style>
+
+    <style name="FilterChip" parent="@style/Widget.MaterialComponents.Chip.Filter">
+        <item name="chipCornerRadius">6dp</item>
+        <item name="android:textColor">@color/selector_chip_tag_text</item>
+        <item name="checkedIconVisible">false</item>FilterCategoryPartyTheme
+        <item name="chipBackgroundColor">@color/selector_chip_tag</item>
+    </style>
+</resources>

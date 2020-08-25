@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Home-->
+        <!--Screen Name-->
+        <item name="analytics_home_screen_name" type="string" translatable="false">HOME</item>
+
+        <!--Categories-->
+        <item name="analytics_home_category" type="string" translatable="false">HOME</item>
+
+        <!--Action-->
+        <item name="analytics_home_highlight_action" type="string" translatable="false">DESTAQUE</item>
+        <item name="analytics_home_category_action" type="string" translatable="false">CATEGORIA</item>
+        <item name="analytics_home_next_events_action" type="string" translatable="false">PROXIMOS_EVENTOS</item>
+        <item name="analytics_home_ad_action" type="string" translatable="false">PUBLICIDADE</item>
+
+        <!--Label Identifier-->
+        <string name="analytics_event_label_identifier" translatable="false">NOME_EVENTO:%s</string>
+        <string name="analytics_category_label_identifier" translatable="false">NOME_CATEGORIA:%s</string>
+
+    <string translatable="false" name="home_app_screen_name">HOME_APP</string>
+    <string translatable="false" name="category_category">CATEGORIA</string>
+    <string translatable="false" name="category_local">LOCALIZACAO</string>
+    <string translatable="false" name="category_search_name">BUSCAR_NOME</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature_theater">
+
+    <application>
+
+        <activity
+        android:name="br.com.goin.feature_theater.TheaterDetailActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/LightTheme" />
+
+    </application>
+
+</manifest>

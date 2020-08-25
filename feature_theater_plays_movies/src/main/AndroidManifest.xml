@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.goin.feature.theaters" >
+
+    <application>
+
+        <activity
+            android:name="br.com.goin.feature.theaters.plays.movies.theatherPlays.TheaterPlaysActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MoviesTheme" />
+        <activity
+            android:name="br.com.goin.feature.theaters.plays.movies.movies.MoviesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MoviesTheme" />
+
+        <activity
+            android:name="br.com.goin.feature.theaters.plays.movies.playsMoviesDetail.PlaysMoviesDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MovieDetailTheme" />
+
+        <activity
+            android:name="br.com.goin.feature.theaters.plays.movies.playsMoviesDetail.about.MovieAboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MovieDetailTheme" />
+
+    </application>
+</manifest>

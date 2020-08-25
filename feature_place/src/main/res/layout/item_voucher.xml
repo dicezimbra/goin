@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="@dimen/ticket_height"
+    android:id="@+id/itemVoucherContainer">
+
+    <com.vipulasri.ticketview.TicketView
+        android:id="@+id/ticketView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ticket_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ticketCornerRadius="6dp"
+        app:ticketElevation="10dp"
+        app:ticketCornerType="rounded"
+        app:ticketDividerType="dash"
+        app:ticketOrientation="vertical"
+        app:ticketScallopPositionPercent="60"
+        app:ticketScallopRadius="9dp"
+        app:ticketShowBorder="false"
+        app:ticketShowDivider="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/side_height"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintVertical_bias="0.27"
+        app:layout_constraintBottom_toBottomOf="@+id/ticketView"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/ticketView"
+        app:layout_constraintTop_toTopOf="@+id/ticketView">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="13dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_pin_voucher"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewLabelVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/grayVoucherLabel"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/text_view_label_voucher" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/quicksand_medium"
+                android:lines="2"
+                android:textColor="@color/grapefruit2"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewLabelVoucher"
+                tools:text="1 cerveja" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewLocation"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/icon_ticket_pin"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/gray_background_distance"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewLocation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/imageViewLocation"
+                app:layout_constraintTop_toTopOf="@id/imageViewLocation"
+                android:text="@string/text_view_check_the_regulation" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewRegularion"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_regulation_24dp"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewLocation"
+                />
+
+            <TextView
+                android:id="@+id/textViewRegulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/gray_background_distance"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewRegularion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/imageViewRegularion"
+                app:layout_constraintTop_toTopOf="@id/imageViewRegularion"
+                android:text="@string/text_view_check_the_regulation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewVoucher"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

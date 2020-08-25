@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="br.com.legacy.models.TicketModel.TicketStatus" />
+
+        <import type="br.com.legacy.models.TicketModel.CardType" />
+
+        <variable
+            name="ticket"
+            type="br.com.legacy.models.TicketModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        card_view:cardBackgroundColor="@{ticket.setCardColor(context)}"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="@dimen/_2sdp"
+        card_view:cardPreventCornerOverlap="true"
+        tools:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="18dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="19dp">
+
+                <TextView
+                    android:id="@+id/ticket_name"
+                    style="@style/text_white_13sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toStartOf="@+id/ticket_price"
+                    android:ellipsize="end"
+                    android:textAllCaps="false"
+                    android:maxLines="2"
+                    android:text="@{ticket.name}"
+                    android:textColor="@color/black"
+                    tools:text="Meia ENTRADA - CAMAROTE CAMAROTE CAMAROTE CAMAROTE CAMAROTE" />
+
+                <LinearLayout
+                    android:id="@+id/ticket_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/ticket_name"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@id/ticket_price"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ticket_description"
+                        style="@style/text_white_11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:text="@{ticket.description}"
+                        android:textColor="@color/battleship_gray"
+                        android:visibility="@{ticket.description == null ? View.GONE : View.VISIBLE}"
+                        tools:text="Somente com carteirinha"
+                        tools:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ticket_purchase_date"
+                        style="@style/text_white_11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dp"
+                        android:text="@{ticket.getPurchaseDate(context)}"
+                        android:textColor="@color/battleship_gray"
+                        android:visibility="@{ticket.ticketCardType.equals(CardType.MY_TICKET) ? View.VISIBLE : View.GONE}"
+                        tools:text="Data de compra: 29/06/2018"
+                        tools:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/qtd_purchased_tickets"
+                        style="@style/text_white_11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:text="@{ticket.getTextPurchasedTickets(context)}"
+                        android:textColor="@color/battleship_gray"
+                        android:visibility="@{ticket.ticketCardType.equals(CardType.MY_TICKET) || ticket.ticketCardType.equals(CardType.MY_TICKET_VIP_BOX) ? View.VISIBLE : View.GONE}"
+                        tools:text="3 tickets comprados" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/ticket_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/ticket_name"
+                    android:gravity="end"
+                    android:lines="1"
+                    android:text="@{ticket.getPrice()}"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorBlackTitle"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    tools:text="R$ 200,00" />
+
+
+                <TextView
+                    android:id="@+id/ticket_count_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/ticket_price"
+                    android:gravity="end"
+                    android:lines="1"
+                    android:visibility="@{ticket.hasTicketDiscount() ? View.VISIBLE : View.GONE}"
+                    android:text="@{ticket.getDiscountPrice()}"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorBlackTitle"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    tools:text="R$ 200,00" />
+
+                <TextView
+                    android:id="@+id/ticket_event_name"
+                    style="@style/text_white_13sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/ticket_info"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toStartOf="@+id/ticket_date"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@{ticket.eventName}"
+                    android:textColor="@color/black"
+                    tools:text="FESTIVAL HOLI COLORS" />
+
+                <TextView
+                    android:id="@+id/ticket_event_club"
+                    style="@style/text_white_11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/ticket_event_name"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toStartOf="@id/ticket_date"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{ticket.club}"
+                    android:textColor="@color/battleship_gray"
+                    tools:text="Villa Country" />
+
+                <TextView
+                    android:id="@id/ticket_date"
+                    style="@style/text_white_16sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/ticket_event_name"
+                    android:gravity="end"
+                    android:lines="2"
+                    android:text="@{ticket.getEventDate()}"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorBlackTitle"
+                    tools:text="20 JUL\n20h30" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/ticket_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:padding="0dp"
+                android:background="@{ticket.getButtonDrawable(context)}"
+                android:text="@{ticket.getTicketStatus()}"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="@{ticket.isTicketStatusButtonVisible() ? View.VISIBLE : View.GONE}"
+                tools:text="COMPRAR"
+                tools:background="@drawable/button_orange_style"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="alert_warning">Alerta</string>
+    <string name="alert_ok" translatable="false">Ok</string>
+    <string name="unkown_error">Ocorreu um erro desconhecido. Por favor, tente mais tarde.</string>
+    <string name="permissions_dialog_title">Permissões</string>
+    <string name="yes_dialog">Sim</string>
+    <string name="no_dialog">Não</string>
+
+</resources>

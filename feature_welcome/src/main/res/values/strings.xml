@@ -1,0 +1,21 @@
+<resources>
+
+    <string-array name="welcome_activity_array">
+        <item>Is the party going to bomb? Real-time updates will tell you if the party is going to be worth it. Then just go for fun!</item>
+        <item>Unique advantages and benefits. No Fee Tickets, Points Program, Sweepstakes and more! Everything for you to have fun as you deserve.</item>
+        <item>Do not let anything pass! Organize your leisure schedule and do not miss any chance to have fun.</item>
+        <item>For those who seek the best of entertainment! Always find the best programs and places, based on your interests and habits.</item>
+    </string-array>
+
+    <string-array name="welcome_title_activity_array">
+        <item>SOCIAL</item>
+        <item>FACILITATOR</item>
+        <item>ORGANIZER</item>
+        <item>GUIDE</item>
+    </string-array>
+
+    <string name="btn_sign_in2">Sign in</string>
+    <string name="not_now">Not now</string>
+
+
+</resources>

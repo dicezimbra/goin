@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Feature Configuration</string>
+    <string name="really_want_to_leave">Deseja realmente sair?</string>
+    <string name="logout">Sair</string>
+    <string name="no">Não</string>
+    <string name="goin_account">Conta Go In</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="change_password_title">Trocar senha</string>
+    <string name="invite_friends">Convidar amigos</string>
+    <string name="terms_of_use">Termos de uso</string>
+    <string name="privacy_policy">Política de privacidade</string>
+    <string name="entry_policy">Política de meia-entrada</string>
+    <string name="config_holder_play_header">Quem se diverte entra,\nquem entra se diverte!</string>
+    <string name="config_holder_play">Atualizações em tempo real lhe dirão se o rolê vai valer a pena.\nDaí é só partir pra diversão!</string>
+    <string name="btn_sign_up">Cadastrar</string>
+    <string name="download_goin_title">Go In - BAIXE AGORA</string>
+    <string name="download_goin_description_start">Junte- se a</string>
+    <string name="download_goin_description_end">na rede social de entretenimento</string>
+    <string name="share">Compartilhar</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.goin.feature.login">
+
+    <application>
+        <activity
+            android:name="br.goin.features.login.login.preview.LoginPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme2"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="br.goin.features.login.password.newpassword.NewPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme2"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="br.goin.features.login.password.forgotpassword.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="br.goin.features.login.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="br.goin.features.login.signUp.choosePicture.ChoosePictureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/CustomTheme" />
+
+        <activity
+            android:name="br.goin.features.login.signUp.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme" />
+
+        <!-- teste -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- facebook -->
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+
+</manifest>

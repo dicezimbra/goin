@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">component_payment</string>
+    <string name="new_address">New address</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="new_credit_card">Pagamento</string>
+    <string name="nickname">Nickname</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="address_not_found">Address not found. Try again!</string>
+    <string name="add_address">Save</string>
+    <string name="valid">Validade</string>
+    <string name="cvv">CVV</string>
+    <string name="name_card_hint">Nome do titular</string>
+
+    <string-array name="address_view_pager_array">
+        <item>Nickname</item>
+        <item>Zipcode</item>
+        <item>Throughfare</item>
+        <item>Number</item>
+        <item>Bairro</item>
+        <item>Add-on (optional)</item>
+    </string-array>
+
+    <string-array name="card_view_pager_array">
+        <item>Número do cartão de crédito</item>
+        <item>Nome impresso no cartão</item>
+        <item>Validade</item>
+        <item>CVV</item>
+        <item>CPF (titular do cartão)</item>
+        <item>Data de nascimento (titular do cartão)</item>
+    </string-array>
+
+
+</resources>

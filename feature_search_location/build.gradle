@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+            consumerProguardFiles(file('../proguard').listFiles())
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+        homolog {
+            dimension "app"
+        }
+        jumpers {
+            dimension "app"
+        }
+        local {
+            dimension "app"
+        }
+        develop {
+            dimension "app"
+        }
+        prod {
+            dimension "app"
+        }
+    }
+}
+
+dependencies {
+    implementation project(":component_navigation")
+    implementation project(':component_rest_api')
+    implementation project(':component_ui_kit')
+    implementation project(':component_user_session')
+    implementation project(':component_analytics')
+    implementation project(':component_analytics')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}
